@@ -16,17 +16,17 @@ The Fall 2025 course homepage is provided for reference below (the new semester 
 
 Textbooks:
 
-• Gelfand, Alekseyevskaya, Geometry (required for class and homeworks).
-• Byrne's Euclid web interactive version: ([Link](https://www.c82.net/euclid/en/book1/)) (Required for homework reading assignment)
-• Oliver Byrne, The First Six Books of the Elements of Euclid ([Link](https://laureladastra.com/docs/euclid-byrne-elements.pdf?utm_source=chatgpt.com)): recommended for further reading
-• Kiselev's Geometry Book I. Planimetry (search on Google for free e-book version): required for class and homeworks
-• Introduction to Geometry, AOPS (further reading)
+- Gelfand, Alekseyevskaya, Geometry (required for class and homeworks).
+- Byrne's Euclid web interactive version: ([Link](https://www.c82.net/euclid/en/book1/)) (Required for homework reading assignment)
+- Oliver Byrne, The First Six Books of the Elements of Euclid ([Link](https://laureladastra.com/docs/euclid-byrne-elements.pdf?utm_source=chatgpt.com)): recommended for further reading
+- Kiselev's Geometry Book I. Planimetry (search on Google for free e-book version): required for class and homeworks
+- Introduction to Geometry, AOPS (further reading)
 
 What to bring for classes:
 
-• Pencils, scratch papers, and a ruler/compass for geometric constructions.
-• Please feel free to ask the [ChatGPT](https://chatgpt.com/) to learn challenge math problems.
-• Please bring the homework each class either in paper or sending your solutions in markdown to [math.zhu@gmail.com](math.zhu@gmail.com). See Homework solution [last year sample code](https://github.com/math-zhu/middle_school_math_competitions).
+- Pencils, scratch papers, and a ruler/compass for geometric constructions.
+- Please feel free to ask the [ChatGPT](https://chatgpt.com/) to learn challenge math problems.
+- Please bring the homework each class either in paper or sending your solutions in markdown to [math.zhu@gmail.com](math.zhu@gmail.com). See Homework solution [last year sample code](https://github.com/math-zhu/middle_school_math_competitions).
 
 ### Course Material
 
