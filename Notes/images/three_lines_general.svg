@@ -1,0 +1,12 @@
+<svg width="400" height="250" xmlns="http://www.w3.org/2000/svg">
+  <text x="200" y="20" text-anchor="middle" font-size="14" font-weight="bold">General Position</text>
+  <!-- Three lines: two original intersecting lines plus a third -->
+  <!-- First line (vertical) -->
+  <line x1="150" y1="0" x2="150" y2="250" stroke="black" stroke-width="2"/>
+  <!-- Second line (horizontal) -->
+  <line x1="0" y1="125" x2="400" y2="125" stroke="black" stroke-width="2"/>
+  <!-- Third line (diagonal) passing through the two intersection points -->
+  <line x1="100" y1="45" x2="280" y2="185" stroke="blue" stroke-width="2"/>
+  <!-- Intersection point of first two lines -->
+  <circle cx="150" cy="125" r="4" fill="black"/>
+</svg>

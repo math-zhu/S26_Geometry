@@ -1,0 +1,10 @@
+<svg width="400" height="250" xmlns="http://www.w3.org/2000/svg">
+  <!-- Upper solid line with gentle slope -->
+  <line x1="50" y1="40" x2="350" y2="110" stroke="black" stroke-width="2"/>
+  
+  <!-- Lower solid line - slope of 0.40 -->
+  <line x1="50" y1="110" x2="350" y2="230" stroke="black" stroke-width="2"/>
+  
+  <!-- Additional point outside the lines -->
+  <circle cx="100" cy="220" r="4" fill="blue"/>
+</svg>

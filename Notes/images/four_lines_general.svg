@@ -1,0 +1,8 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <text x="200" y="20" text-anchor="middle" font-size="14" font-weight="bold">Four Lines - General Position</text>
+  <!-- Four lines in general position: no two parallel, no three concurrent -->
+  <line x1="50" y1="50" x2="350" y2="280" stroke="black" stroke-width="2"/>
+  <line x1="80" y1="280" x2="380" y2="60" stroke="blue" stroke-width="2"/>
+  <line x1="20" y1="150" x2="400" y2="180" stroke="green" stroke-width="2"/>
+  <line x1="150" y1="40" x2="200" y2="290" stroke="red" stroke-width="2"/>
+</svg>

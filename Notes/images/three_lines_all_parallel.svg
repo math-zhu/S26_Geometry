@@ -1,0 +1,10 @@
+<svg width="400" height="250" xmlns="http://www.w3.org/2000/svg">
+  <text x="200" y="20" text-anchor="middle" font-size="14" font-weight="bold">Special Position: All Parallel</text>
+  <!-- Three parallel lines - special position -->>
+  <!-- First parallel line -->
+  <line x1="0" y1="60" x2="400" y2="60" stroke="black" stroke-width="2"/>
+  <!-- Second parallel line -->
+  <line x1="0" y1="125" x2="400" y2="125" stroke="black" stroke-width="2"/>
+  <!-- Third parallel line (blue) -->
+  <line x1="0" y1="190" x2="400" y2="190" stroke="blue" stroke-width="2"/>
+</svg>

@@ -1,0 +1,12 @@
+<svg width="400" height="250" xmlns="http://www.w3.org/2000/svg">
+  <!-- Two intersecting lines dividing plane into 4 regions -->
+  <line x1="200" y1="0" x2="200" y2="250" stroke="black" stroke-width="2"/>
+  <line x1="0" y1="125" x2="400" y2="125" stroke="black" stroke-width="2"/>
+  <!-- Shading to show four different regions -->
+  <rect x="0" y="0" width="200" height="125" fill="lightblue" opacity="0.3"/>
+  <rect x="200" y="0" width="200" height="125" fill="lightgreen" opacity="0.3"/>
+  <rect x="0" y="125" width="200" height="125" fill="lightyellow" opacity="0.3"/>
+  <rect x="200" y="125" width="200" height="125" fill="lightpink" opacity="0.3"/>
+  <!-- Intersection point -->
+  <circle cx="200" cy="125" r="4" fill="black"/>
+</svg>

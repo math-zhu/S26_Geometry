@@ -1,0 +1,7 @@
+<svg width="400" height="250" xmlns="http://www.w3.org/2000/svg">
+  <!-- Two rays forming an angle -->
+  <line x1="200" y1="150" x2="350" y2="150" stroke="black" stroke-width="2"/>
+  <line x1="200" y1="150" x2="280" y2="40" stroke="black" stroke-width="2"/>
+  <!-- Vertex point -->
+  <circle cx="200" cy="150" r="4" fill="black"/>
+</svg>

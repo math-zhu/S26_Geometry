@@ -30,12 +30,13 @@ What to bring for classes:
 
 ### Course Material
 
-| Date | Notes | Pages | Reading | Homework |
+| Date | Notes | Reading | eReading | Homework |
 |------|-------|-------|---------|----------|
-| 1/10 | N1 | TBD | TBD | HW1 |
+| 1/10 | [N1](Notes/N1.md) | 1-29 |  [Elements BOOK I, Proposition 1-3](https://www.c82.net/euclid/en/book1/) | Problem 1-19 |
 | 1/17 | N2 | TBD | TBD | HW2 |
 | 1/24 | N3 | TBD | TBD | HW3 |
 | 1/31 | N4 | TBD | TBD | HW4 |
+<!--
 | 2/7 | N5 | TBD | TBD | HW5 |
 | 2/14 | N6 and Quiz 1 | TBD |   |   |
 | 2/21 | N7 | TBD | TBD | HW6 |
@@ -45,3 +46,4 @@ What to bring for classes:
 | 3/21 | N11 | TBD | TBD | HW10 |
 | 3/28 | N12 | TBD | TBD | HW11 |
 | 4/4 | Quiz 2 & Q&A Session |   |   |   |
+-->

@@ -1,0 +1,10 @@
+<svg width="400" height="250" xmlns="http://www.w3.org/2000/svg">
+  <text x="200" y="20" text-anchor="middle" font-size="14" font-weight="bold">General Position: Transversal</text>
+  <!-- Three lines: two parallel lines plus a third intersecting both -->
+  <!-- First parallel line -->
+  <line x1="0" y1="80" x2="400" y2="80" stroke="black" stroke-width="2"/>
+  <!-- Second parallel line -->
+  <line x1="0" y1="170" x2="400" y2="170" stroke="black" stroke-width="2"/>
+  <!-- Third line (transversal) intersecting both -->
+  <line x1="100" y1="30" x2="300" y2="220" stroke="blue" stroke-width="2"/>
+</svg>

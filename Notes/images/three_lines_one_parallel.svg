@@ -1,0 +1,13 @@
+<svg width="400" height="250" xmlns="http://www.w3.org/2000/svg">
+  <text x="200" y="20" text-anchor="middle" font-size="14" font-weight="bold">Special Position: One Parallel</text>
+  <!-- Three lines: two intersecting lines, third parallel to one of them -->
+  <!-- First line (vertical) -->
+  <line x1="150" y1="0" x2="150" y2="250" stroke="black" stroke-width="2"/>
+  <!-- Second line (horizontal) -->
+  <line x1="0" y1="125" x2="400" y2="125" stroke="black" stroke-width="2"/>
+  <!-- Third line (vertical, parallel to first) in blue -->
+  <line x1="250" y1="0" x2="250" y2="250" stroke="blue" stroke-width="2"/>
+  <!-- Intersection points -->
+  <circle cx="150" cy="125" r="4" fill="black"/>
+  <circle cx="250" cy="125" r="4" fill="black"/>
+</svg>

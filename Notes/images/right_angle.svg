@@ -1,0 +1,9 @@
+<svg width="400" height="250" xmlns="http://www.w3.org/2000/svg">
+  <!-- Right angle - two perpendicular rays -->
+  <line x1="200" y1="150" x2="350" y2="150" stroke="black" stroke-width="2"/>
+  <line x1="200" y1="150" x2="200" y2="30" stroke="black" stroke-width="2"/>
+  <!-- Vertex point -->
+  <circle cx="200" cy="150" r="4" fill="black"/>
+  <!-- Small square indicating right angle -->
+  <rect x="200" y="130" width="20" height="20" fill="none" stroke="black" stroke-width="1.5"/>
+</svg>

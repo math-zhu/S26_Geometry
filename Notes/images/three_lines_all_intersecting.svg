@@ -1,0 +1,12 @@
+<svg width="400" height="250" xmlns="http://www.w3.org/2000/svg">
+  <text x="200" y="20" text-anchor="middle" font-size="14" font-weight="bold">Special Position: All Concurrent</text>
+  <!-- Three lines all intersecting at a single point -->
+  <!-- First line (vertical) -->
+  <line x1="200" y1="0" x2="200" y2="250" stroke="black" stroke-width="2"/>
+  <!-- Second line (horizontal) -->
+  <line x1="0" y1="125" x2="400" y2="125" stroke="black" stroke-width="2"/>
+  <!-- Third line (diagonal) passing through same intersection point in blue -->
+  <line x1="50" y1="50" x2="350" y2="200" stroke="blue" stroke-width="2"/>
+  <!-- Single intersection point for all three lines -->
+  <circle cx="200" cy="125" r="4" fill="black"/>
+</svg>
