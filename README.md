@@ -32,7 +32,7 @@ What to bring for classes:
 
 | Date | Notes | Reading | eReading | Homework |
 |------|-------|-------|---------|----------|
-| 1/10 | [N1](Notes/N1.md) | 1-29 |  [Elements BOOK I, Proposition 1-3](https://www.c82.net/euclid/en/book1/) | Problem 1-19 |
+| 1/10 | [N1](Notes/N1.pdf) | 1-29 |  [Elements BOOK I, Proposition 1-3](https://www.c82.net/euclid/en/book1/) | Problem 1-19 |
 | 1/17 | N2 | TBD | TBD | HW2 |
 | 1/24 | N3 | TBD | TBD | HW3 |
 | 1/31 | N4 | TBD | TBD | HW4 |

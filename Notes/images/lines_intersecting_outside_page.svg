@@ -1,0 +1,19 @@
+<svg width="400" height="250" xmlns="http://www.w3.org/2000/svg">
+  <!-- First solid line -->
+  <line x1="50" y1="50" x2="350" y2="200" stroke="black" stroke-width="2"/>
+  
+  <!-- Second line - dotted around intersection point -->
+  <line x1="150" y1="100" x2="250" y2="50" stroke="black" stroke-width="2" stroke-dasharray="5,5"/>
+  
+  <!-- Second line - solid after intersection -->
+  <line x1="250" y1="50" x2="350" y2="0" stroke="black" stroke-width="2"/>
+  
+  <!-- Intersection point (where dotted meets solid) -->
+  <circle cx="150" cy="100" r="4" fill="black"/>
+  
+  <!-- Blue dot outside the lines -->
+  <circle cx="100" cy="220" r="4" fill="blue"/>
+  
+  <!-- Line from blue dot to intersection point -->
+  <line x1="100" y1="220" x2="150" y2="100" stroke="blue" stroke-width="2"/>
+</svg>
