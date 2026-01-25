@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 350">
+  <!-- Three non-collinear points -->
+  <circle cx="200" cy="80" r="5" fill="blue"/>
+  <circle cx="120" cy="250" r="5" fill="blue"/>
+  <circle cx="320" cy="230" r="5" fill="blue"/>
+  
+  <!-- Extended lines (not just segments) connecting them -->
+  <!-- Line e = AB: extends through A(200,80) and B(120,250) -->
+  <!-- Slope = (250-80)/(120-200) = 170/(-80) = -2.125, y = -2.125x + 505 -->
+  <line x1="240" y1="-5" x2="80" y2="335" stroke="black" stroke-width="2"/>
+  <!-- Line d = BC: extends through B(120,250) and C(320,230) -->
+  <!-- Slope = (230-250)/(320-120) = -20/200 = -0.1, y = -0.1x + 262 -->
+  <line x1="50" y1="257" x2="380" y2="224" stroke="black" stroke-width="2"/>
+  <!-- Line f = CA: extends through C(320,230) and A(200,80) -->
+  <!-- Slope = (80-230)/(200-320) = 1.25, y = 1.25x - 170 -->
+  <line x1="140" y1="5" x2="380" y2="305" stroke="black" stroke-width="2"/>
+  
+  <!-- Labels for points -->
+  <text x="200" y="65" text-anchor="middle" font-family="serif" font-size="18" font-style="italic" fill="blue">A</text>
+  <text x="110" y="248" text-anchor="end" font-family="serif" font-size="18" font-style="italic" fill="blue">B</text>
+  <text x="335" y="220" font-family="serif" font-size="18" font-style="italic" fill="blue">C</text>
+  
+  <!-- Labels for sides -->
+  <text x="135" y="170" font-family="serif" font-size="16" font-style="italic" fill="gray">e</text>
+  <text x="230" y="260" font-family="serif" font-size="16" font-style="italic" fill="gray">d</text>
+  <text x="270" y="150" font-family="serif" font-size="16" font-style="italic" fill="gray">f</text>
+  
+  <!-- Title -->
+  <text x="200" y="25" text-anchor="middle" font-family="serif" font-size="16" font-weight="bold">Triangle (3 points)</text>
+  <text x="200" y="310" text-anchor="middle" font-family="serif" font-size="14">3 non-collinear points + 3 connecting lines</text>
+</svg>

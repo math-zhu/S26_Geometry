@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 350">
+  <!-- Two base lines -->
+  <line x1="50" y1="100" x2="450" y2="100" stroke="black" stroke-width="2"/>
+  <line x1="50" y1="250" x2="450" y2="250" stroke="black" stroke-width="2"/>
+  
+  <!-- Points on first line -->
+  <circle cx="120" cy="100" r="4" fill="blue"/>
+  <circle cx="250" cy="100" r="4" fill="blue"/>
+  <circle cx="380" cy="100" r="4" fill="blue"/>
+  
+  <!-- Points on second line -->
+  <circle cx="150" cy="250" r="4" fill="red"/>
+  <circle cx="280" cy="250" r="4" fill="red"/>
+  <circle cx="410" cy="250" r="4" fill="red"/>
+  
+  <!-- Cross connections (showing Pappus configuration) -->
+  <line x1="120" y1="100" x2="280" y2="250" stroke="green" stroke-width="1.5" opacity="0.6"/>
+  <line x1="150" y1="250" x2="250" y2="100" stroke="green" stroke-width="1.5" opacity="0.6"/>
+  
+  <line x1="250" y1="100" x2="410" y2="250" stroke="purple" stroke-width="1.5" opacity="0.6"/>
+  <line x1="280" y1="250" x2="380" y2="100" stroke="purple" stroke-width="1.5" opacity="0.6"/>
+  
+  <line x1="380" y1="100" x2="150" y2="250" stroke="orange" stroke-width="1.5" opacity="0.6"/>
+  <line x1="410" y1="250" x2="120" y2="100" stroke="orange" stroke-width="1.5" opacity="0.6"/>
+  
+  <!-- Intersection points (would be collinear) -->
+  <circle cx="195" cy="175" r="3" fill="darkgreen"/>
+  <circle cx="330" cy="175" r="3" fill="darkgreen"/>
+  <circle cx="265" cy="175" r="3" fill="darkgreen"/>
+  
+  <!-- Pappus line (through intersection points) -->
+  <line x1="100" y1="175" x2="450" y2="175" stroke="darkgreen" stroke-width="2" stroke-dasharray="5,5" opacity="0.7"/>
+  
+  <!-- Labels -->
+  <text x="120" y="90" text-anchor="middle" font-family="serif" font-size="14" font-style="italic">A</text>
+  <text x="250" y="90" text-anchor="middle" font-family="serif" font-size="14" font-style="italic">B</text>
+  <text x="380" y="90" text-anchor="middle" font-family="serif" font-size="14" font-style="italic">C</text>
+  
+  <text x="150" y="270" text-anchor="middle" font-family="serif" font-size="14" font-style="italic">A'</text>
+  <text x="280" y="270" text-anchor="middle" font-family="serif" font-size="14" font-style="italic">B'</text>
+  <text x="410" y="270" text-anchor="middle" font-family="serif" font-size="14" font-style="italic">C'</text>
+  
+  <text x="190" y="165" font-family="serif" font-size="12" font-style="italic">P</text>
+  <text x="265" y="165" font-family="serif" font-size="12" font-style="italic">Q</text>
+  <text x="330" y="165" font-family="serif" font-size="12" font-style="italic">R</text>
+  
+  <!-- Title -->
+  <text x="250" y="25" text-anchor="middle" font-family="serif" font-size="16">Pappus' Theorem: P, Q, R are collinear</text>
+</svg>

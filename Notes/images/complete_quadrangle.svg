@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 400">
+  <!-- Four points (no three collinear) -->
+  <circle cx="150" cy="100" r="5" fill="blue"/>
+  <circle cx="350" cy="100" r="5" fill="blue"/>
+  <circle cx="350" cy="300" r="5" fill="blue"/>
+  <circle cx="150" cy="300" r="5" fill="blue"/>
+  
+  <!-- Six lines connecting them -->
+  <line x1="150" y1="100" x2="350" y2="100" stroke="red" stroke-width="1.5"/>
+  <line x1="350" y1="100" x2="350" y2="300" stroke="red" stroke-width="1.5"/>
+  <line x1="350" y1="300" x2="150" y2="300" stroke="red" stroke-width="1.5"/>
+  <line x1="150" y1="300" x2="150" y2="100" stroke="red" stroke-width="1.5"/>
+  <line x1="150" y1="100" x2="350" y2="300" stroke="red" stroke-width="1.5" stroke-dasharray="5,5"/>
+  <line x1="350" y1="100" x2="150" y2="300" stroke="red" stroke-width="1.5" stroke-dasharray="5,5"/>
+  
+  <!-- Labels -->
+  <text x="145" y="90" text-anchor="end" font-family="serif" font-size="14" font-style="italic">A</text>
+  <text x="355" y="90" font-family="serif" font-size="14" font-style="italic">B</text>
+  <text x="355" y="315" font-family="serif" font-size="14" font-style="italic">C</text>
+  <text x="145" y="315" text-anchor="end" font-family="serif" font-size="14" font-style="italic">D</text>
+  
+  <!-- Title -->
+  <text x="225" y="25" text-anchor="middle" font-family="serif" font-size="16">4 points → 6 connecting lines</text>
+</svg>

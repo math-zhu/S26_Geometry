@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 150">
+  <!-- Line -->
+  <line x1="50" y1="75" x2="350" y2="75" stroke="black" stroke-width="2"/>
+  
+  <!-- Points -->
+  <circle cx="100" cy="75" r="4" fill="blue"/>
+  <circle cx="200" cy="75" r="4" fill="blue"/>
+  <circle cx="300" cy="75" r="4" fill="blue"/>
+  
+  <!-- Labels -->
+  <text x="100" y="95" text-anchor="middle" font-family="serif" font-size="16" font-style="italic">A</text>
+  <text x="200" y="95" text-anchor="middle" font-family="serif" font-size="16" font-style="italic">B</text>
+  <text x="300" y="95" text-anchor="middle" font-family="serif" font-size="16" font-style="italic">C</text>
+  <text x="360" y="70" font-family="serif" font-size="16" font-style="italic">ℓ</text>
+</svg>

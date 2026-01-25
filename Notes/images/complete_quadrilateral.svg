@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 400">
+  <!-- Four lines forming a complete quadrilateral -->
+  <line x1="50" y1="100" x2="400" y2="100" stroke="blue" stroke-width="2"/>
+  <line x1="50" y1="300" x2="400" y2="300" stroke="blue" stroke-width="2"/>
+  <line x1="150" y1="50" x2="150" y2="350" stroke="blue" stroke-width="2"/>
+  <line x1="350" y1="50" x2="350" y2="350" stroke="blue" stroke-width="2"/>
+  
+  <!-- Six intersection points -->
+  <circle cx="150" cy="100" r="4" fill="red"/>
+  <circle cx="350" cy="100" r="4" fill="red"/>
+  <circle cx="150" cy="300" r="4" fill="red"/>
+  <circle cx="350" cy="300" r="4" fill="red"/>
+  <circle cx="150" cy="100" r="4" fill="red"/>
+  <circle cx="350" cy="300" r="4" fill="red"/>
+  
+  <!-- Labels for lines -->
+  <text x="410" y="105" font-family="serif" font-size="14" font-style="italic">a</text>
+  <text x="410" y="305" font-family="serif" font-size="14" font-style="italic">b</text>
+  <text x="155" y="40" font-family="serif" font-size="14" font-style="italic">c</text>
+  <text x="355" y="40" font-family="serif" font-size="14" font-style="italic">d</text>
+  
+  <!-- Title -->
+  <text x="225" y="25" text-anchor="middle" font-family="serif" font-size="16">4 lines → 6 intersection points</text>
+</svg>
