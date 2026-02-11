@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 400">
+  <!-- Main line containing A, B, C -->
+  <line x1="30" y1="300" x2="470" y2="300" stroke="black" stroke-width="2"/>
+  
+  <!-- Given segment AB and point C on the same line -->
+  <circle cx="80" cy="300" r="4" fill="blue"/>
+  <circle cx="200" cy="300" r="4" fill="blue"/>
+  <circle cx="280" cy="300" r="4" fill="red"/>
+  <line x1="80" y1="300" x2="200" y2="300" stroke="blue" stroke-width="3"/>
+  
+  <!-- Step 1: Construct parallel line to AB -->
+  <line x1="30" y1="120" x2="470" y2="120" stroke="gray" stroke-width="1.5" stroke-dasharray="5,5"/>
+  
+  <!-- Construct EF equal to AB on parallel line -->
+  <circle cx="150" cy="120" r="4" fill="green"/>
+  <circle cx="270" cy="120" r="4" fill="green"/>
+  <line x1="150" y1="120" x2="270" y2="120" stroke="green" stroke-width="3"/>
+  
+  <!-- Connect E to C and F to D (parallel lines) -->
+  <line x1="150" y1="120" x2="280" y2="300" stroke="purple" stroke-width="1.5" stroke-dasharray="3,3"/>
+  <line x1="270" y1="120" x2="400" y2="300" stroke="purple" stroke-width="1.5" stroke-dasharray="3,3"/>
+  
+  <!-- Connect A to E and B to F (also dashed) -->
+  <line x1="80" y1="300" x2="150" y2="120" stroke="purple" stroke-width="1.5" stroke-dasharray="3,3"/>
+  <line x1="200" y1="300" x2="270" y2="120" stroke="purple" stroke-width="1.5" stroke-dasharray="3,3"/>
+  
+  <!-- Resulting point D -->
+  <circle cx="400" cy="300" r="4" fill="red"/>
+  
+  <!-- Resulting segment CD -->
+  <line x1="280" y1="300" x2="400" y2="300" stroke="red" stroke-width="3"/>
+  
+  <!-- Labels -->
+  <text x="80" y="320" text-anchor="middle" font-family="serif" font-size="16" font-style="italic" fill="blue">A</text>
+  <text x="200" y="320" text-anchor="middle" font-family="serif" font-size="16" font-style="italic" fill="blue">B</text>
+  <text x="280" y="320" text-anchor="middle" font-family="serif" font-size="16" font-style="italic" fill="red">C</text>
+  <text x="400" y="320" text-anchor="middle" font-family="serif" font-size="16" font-style="italic" fill="red">D</text>
+  <text x="150" y="110" text-anchor="middle" font-family="serif" font-size="16" font-style="italic" fill="green">E</text>
+  <text x="270" y="110" text-anchor="middle" font-family="serif" font-size="16" font-style="italic" fill="green">F</text>
+  
+  <text x="140" y="290" text-anchor="middle" font-family="serif" font-size="14" fill="blue">AB (given)</text>
+  <text x="210" y="110" text-anchor="middle" font-family="serif" font-size="14" fill="green">EF = AB</text>
+  <text x="340" y="290" text-anchor="middle" font-family="serif" font-size="14" fill="red">CD = EF</text>
+  
+  <!-- Annotations -->
+  <text x="210" y="220" font-family="serif" font-size="12" fill="purple">EC ∥ FD</text>
+  
+  <!-- Title -->
+  <text x="250" y="30" text-anchor="middle" font-family="serif" font-size="16" font-weight="bold">Construction #2: Equal Segments on Same Line</text>
+  <text x="250" y="360" text-anchor="middle" font-family="serif" font-size="13">Given AB and C on same line, construct D such that CD = AB</text>
+  <text x="250" y="380" text-anchor="middle" font-family="serif" font-size="12" fill="gray">(Uses Construction #1 twice: first for EF = AB, then for CD = EF)</text>
+</svg>

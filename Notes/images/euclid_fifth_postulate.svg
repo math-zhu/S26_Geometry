@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <!-- Original line ℓ -->
+  <line x1="30" y1="200" x2="370" y2="200" stroke="black" stroke-width="2"/>
+  
+  <!-- Point P above the line -->
+  <circle cx="200" cy="100" r="4" fill="blue"/>
+  
+  <!-- Unique parallel line through P -->
+  <line x1="30" y1="100" x2="370" y2="100" stroke="blue" stroke-width="2"/>
+  
+  <!-- Dashed lines showing other lines through P that are NOT parallel -->
+  <!-- Line n₁: extends beyond both ℓ and m -->
+  <line x1="30" y1="270" x2="370" y2="-70" stroke="gray" stroke-width="1.5" stroke-dasharray="5,5" opacity="0.6"/>
+  <!-- Line n₂: extends beyond both ℓ and m -->
+  <line x1="30" y1="-70" x2="370" y2="270" stroke="gray" stroke-width="1.5" stroke-dasharray="5,5" opacity="0.6"/>
+  
+  <!-- Labels -->
+  <text x="380" y="205" font-family="serif" font-size="16" font-style="italic">ℓ</text>
+  <text x="190" y="90" font-family="serif" font-size="16" font-style="italic" fill="blue">P</text>
+  <text x="380" y="105" font-family="serif" font-size="16" font-style="italic" fill="blue">m</text>
+  <text x="50" y="255" font-family="serif" font-size="14" font-style="italic" fill="gray">n₁</text>
+  <text x="50" y="30" font-family="serif" font-size="14" font-style="italic" fill="gray">n₂</text>
+  
+  <!-- Annotation -->
+  <text x="200" y="30" text-anchor="middle" font-family="serif" font-size="14">Line m through P is parallel to ℓ</text>
+  <text x="200" y="50" text-anchor="middle" font-family="serif" font-size="12" fill="gray">(Dashed lines are NOT parallel - they intersect ℓ)</text>
+</svg>

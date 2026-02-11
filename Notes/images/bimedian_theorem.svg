@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 550 400">
+  <!-- Triangle ABC (matching bimedian_triangle.svg coordinates) -->
+  <line x1="300" y1="80" x2="100" y2="320" stroke="blue" stroke-width="2"/>
+  <line x1="100" y1="320" x2="450" y2="320" stroke="blue" stroke-width="2"/>
+  <line x1="450" y1="320" x2="300" y2="80" stroke="blue" stroke-width="2"/>
+  
+  <!-- Step 4: NO parallel to AB (O on BC) -->
+  <line x1="375" y1="200" x2="275" y2="320" stroke="purple" stroke-width="2" stroke-dasharray="5,5"/>
+  
+  <!-- Parallelogram MNOB edges (MN) -->
+  <line x1="200" y1="200" x2="375" y2="200" stroke="orange" stroke-width="2.5"/>
+  
+  <!-- Points -->
+  <circle cx="300" cy="80" r="4" fill="blue"/>
+  <circle cx="100" cy="320" r="4" fill="blue"/>
+  <circle cx="450" cy="320" r="4" fill="blue"/>
+  <circle cx="200" cy="200" r="4" fill="red"/>
+  <circle cx="375" cy="200" r="4" fill="green"/>
+  <circle cx="275" cy="320" r="4" fill="purple"/>
+  
+  <!-- Labels -->
+  <text x="300" y="65" font-family="serif" font-size="18" font-style="italic" text-anchor="middle">A</text>
+  <text x="85" y="325" font-family="serif" font-size="18" font-style="italic" text-anchor="end">B</text>
+  <text x="465" y="325" font-family="serif" font-size="18" font-style="italic" text-anchor="start">C</text>
+  <text x="185" y="195" font-family="serif" font-size="18" font-style="italic" text-anchor="end">M</text>
+  <text x="390" y="195" font-family="serif" font-size="18" font-style="italic" text-anchor="start">N</text>
+  <text x="275" y="345" font-family="serif" font-size="18" font-style="italic" text-anchor="middle">O</text>
+  
+  <!-- Annotations -->
+  <text x="310" y="265" font-family="serif" font-size="13" fill="purple">NO ∥ AB</text>
+  <text x="275" y="185" font-family="serif" font-size="14" fill="orange" font-style="italic">MN = OB</text>
+  <text x="220" y="360" font-family="serif" font-size="12" fill="gray">OB = ½BC</text>
+  <text x="275" y="380" font-family="serif" font-size="13" font-weight="bold" text-anchor="middle">MBON is a parallelogram</text>
+</svg>

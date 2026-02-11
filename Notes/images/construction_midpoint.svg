@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 450">
+  <!-- Main segment AB -->
+  <line x1="100" y1="350" x2="400" y2="350" stroke="black" stroke-width="3"/>
+  <circle cx="100" cy="350" r="5" fill="blue"/>
+  <circle cx="400" cy="350" r="5" fill="blue"/>
+  
+  <!-- Step 1 & 2: Pick point C and construct AC -->
+  <circle cx="150" cy="200" r="4" fill="green"/>
+  <line x1="100" y1="350" x2="150" y2="200" stroke="green" stroke-width="2"/>
+  
+  <!-- Step 3: Construct D such that AC = CD (doubling) -->
+  <circle cx="200" cy="50" r="4" fill="green"/>
+  <line x1="150" y1="200" x2="200" y2="50" stroke="green" stroke-width="2" stroke-dasharray="5,5"/>
+  
+  <!-- Step 4: Line BD -->
+  <line x1="400" y1="350" x2="200" y2="50" stroke="purple" stroke-width="2"/>
+  
+  <!-- Step 5: Line through C parallel to BD, intersecting AB at M -->
+  <line x1="150" y1="200" x2="250" y2="350" stroke="orange" stroke-width="2" stroke-dasharray="5,5"/>
+  
+  <!-- Midpoint M -->
+  <circle cx="250" cy="350" r="5" fill="red"/>
+  
+  <!-- Labels -->
+  <text x="100" y="375" text-anchor="middle" font-family="serif" font-size="18" font-style="italic" fill="blue">A</text>
+  <text x="400" y="375" text-anchor="middle" font-family="serif" font-size="18" font-style="italic" fill="blue">B</text>
+  <text x="150" y="190" text-anchor="middle" font-family="serif" font-size="16" font-style="italic" fill="green">C</text>
+  <text x="210" y="45" text-anchor="start" font-family="serif" font-size="16" font-style="italic" fill="green">D</text>
+  <text x="250" y="375" text-anchor="middle" font-family="serif" font-size="18" font-style="italic" fill="red">M</text>
+  
+  <!-- Annotations -->
+  <text x="120" y="280" font-family="serif" font-size="13" fill="green">AC</text>
+  <text x="170" y="130" font-family="serif" font-size="13" fill="green">CD = AC</text>
+  <text x="310" y="210" font-family="serif" font-size="13" fill="purple">BD</text>
+  <text x="190" y="280" font-family="serif" font-size="13" fill="orange">CM ∥ BD</text>
+  
+  <!-- Result annotations -->
+  <text x="175" y="340" text-anchor="middle" font-family="serif" font-size="14" fill="red">AM = MB</text>
+  
+  <!-- Title -->
+  <text x="250" y="25" text-anchor="middle" font-family="serif" font-size="16" font-weight="bold">Construction #4: Halving a Segment</text>
+  <text x="250" y="410" text-anchor="middle" font-family="serif" font-size="13">Given AB, construct midpoint M such that AM = MB</text>
+  <text x="250" y="430" text-anchor="middle" font-family="serif" font-size="11" fill="gray">Line through C parallel to BD intersects AB at midpoint M</text>
+</svg>

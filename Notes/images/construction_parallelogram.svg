@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 350">
+  <!-- Line ℓ parallel to AB -->
+  <line x1="30" y1="80" x2="420" y2="80" stroke="black" stroke-width="2"/>
+  <line x1="30" y1="240" x2="420" y2="240" stroke="black" stroke-width="2"/>
+  
+  <!-- Given segment AB on top line -->
+  <circle cx="100" cy="80" r="4" fill="blue"/>
+  <circle cx="250" cy="80" r="4" fill="blue"/>
+  <line x1="100" y1="80" x2="250" y2="80" stroke="blue" stroke-width="3"/>
+  
+  <!-- Given point C on line ℓ -->
+  <circle cx="150" cy="240" r="4" fill="red"/>
+  
+  <!-- Step 1: Construct line AC (shown in green) -->
+  <line x1="100" y1="80" x2="150" y2="240" stroke="green" stroke-width="2" stroke-dasharray="5,5"/>
+  
+  <!-- Step 2: Construct line through B parallel to AC to find D (shown in green) -->
+  <line x1="250" y1="80" x2="300" y2="240" stroke="green" stroke-width="2" stroke-dasharray="5,5"/>
+  
+  <!-- Resulting point D -->
+  <circle cx="300" cy="240" r="4" fill="red"/>
+  
+  <!-- Resulting segment CD (equal to AB) -->
+  <line x1="150" y1="240" x2="300" y2="240" stroke="red" stroke-width="3"/>
+  
+  <!-- Labels -->
+  <text x="100" y="65" text-anchor="middle" font-family="serif" font-size="16" font-style="italic" fill="blue">A</text>
+  <text x="250" y="65" text-anchor="middle" font-family="serif" font-size="16" font-style="italic" fill="blue">B</text>
+  <text x="150" y="260" text-anchor="middle" font-family="serif" font-size="16" font-style="italic" fill="red">C</text>
+  <text x="300" y="260" text-anchor="middle" font-family="serif" font-size="16" font-style="italic" fill="red">D</text>
+  
+  <text x="175" y="70" text-anchor="middle" font-family="serif" font-size="14" fill="blue">AB (given)</text>
+  <text x="225" y="255" text-anchor="middle" font-family="serif" font-size="14" fill="red">CD = AB</text>
+  <text x="430" y="85" font-family="serif" font-size="14" font-style="italic">ℓ</text>
+  
+  <!-- Annotations -->
+  <text x="115" y="165" font-family="serif" font-size="12" fill="green">AC</text>
+  <text x="285" y="165" font-family="serif" font-size="12" fill="green">BD ∥ AC</text>
+  
+  <!-- Title -->
+  <text x="225" y="25" text-anchor="middle" font-family="serif" font-size="16" font-weight="bold">Construction #1: Parallelogram ABDC</text>
+  <text x="225" y="310" text-anchor="middle" font-family="serif" font-size="13">Given AB and point C on ℓ ∥ AB, construct D so that CD = AB</text>
+</svg>

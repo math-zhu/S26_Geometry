@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 400">
+  <!-- Triangle ABC with A at top-right, B at bottom-left, C at bottom-right -->
+  <circle cx="300" cy="80" r="5" fill="blue"/>
+  <circle cx="100" cy="320" r="5" fill="blue"/>
+  <circle cx="450" cy="320" r="5" fill="blue"/>
+  
+  <!-- Triangle edges -->
+  <line x1="100" y1="320" x2="450" y2="320" stroke="black" stroke-width="2"/>
+  <line x1="100" y1="320" x2="300" y2="80" stroke="black" stroke-width="2"/>
+  <line x1="450" y1="320" x2="300" y2="80" stroke="black" stroke-width="2"/>
+  
+  <!-- Midpoint M of AB -->
+  <circle cx="200" cy="200" r="4" fill="red"/>
+  
+  <!-- Bimedian: horizontal line through M parallel to BC -->
+  <line x1="200" y1="200" x2="375" y2="200" stroke="red" stroke-width="2.5"/>
+  
+  <!-- Point N where bimedian intersects AC -->
+  <circle cx="375" cy="200" r="4" fill="red"/>
+  
+  <!-- Labels -->
+  <text x="300" y="65" text-anchor="middle" font-family="serif" font-size="18" font-style="italic" fill="blue">A</text>
+  <text x="85" y="325" text-anchor="end" font-family="serif" font-size="18" font-style="italic" fill="blue">B</text>
+  <text x="465" y="325" font-family="serif" font-size="18" font-style="italic" fill="blue">C</text>
+  <text x="185" y="195" text-anchor="end" font-family="serif" font-size="16" font-style="italic" fill="red">M</text>
+  <text x="375" y="190" text-anchor="middle" font-family="serif" font-size="16" font-style="italic" fill="red">N</text>
+  
+  <!-- Annotations -->
+  <text x="285" y="190" text-anchor="middle" font-family="serif" font-size="14" fill="red">MN ∥ BC</text>
+  <text x="140" y="260" font-family="serif" font-size="12">AM = MB</text>
+  
+  <!-- Title -->
+  <text x="250" y="25" text-anchor="middle" font-family="serif" font-size="16" font-weight="bold">Bimedian of a Triangle</text>
+  <text x="250" y="360" text-anchor="middle" font-family="serif" font-size="13">M is the midpoint of AB; MN is parallel to BC (horizontal)</text>
+  <text x="250" y="380" text-anchor="middle" font-family="serif" font-size="13" font-weight="bold">Theorem: MN = ½BC</text>
+</svg>
