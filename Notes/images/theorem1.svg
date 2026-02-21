@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <!-- Parallelogram ABCD -->
+  
+  <!-- Point A (bottom left) -->
+  <circle cx="60" cy="220" r="4" fill="black"/>
+  <text x="45" y="240" font-size="16" font-family="serif" font-style="italic">A</text>
+  
+  <!-- Point B (bottom right) -->
+  <circle cx="300" cy="220" r="4" fill="black"/>
+  <text x="305" y="240" font-size="16" font-family="serif" font-style="italic">B</text>
+  
+  <!-- Point C (top left) -->
+  <circle cx="100" cy="60" r="4" fill="black"/>
+  <text x="85" y="50" font-size="16" font-family="serif" font-style="italic">C</text>
+  
+  <!-- Point D (top right) -->
+  <circle cx="340" cy="60" r="4" fill="black"/>
+  <text x="345" y="50" font-size="16" font-family="serif" font-style="italic">D</text>
+  
+  <!-- Parallelogram sides -->
+  <line x1="60" y1="220" x2="300" y2="220" stroke="black" stroke-width="2"/>
+  <line x1="60" y1="220" x2="100" y2="60" stroke="black" stroke-width="2"/>
+  <line x1="300" y1="220" x2="340" y2="60" stroke="black" stroke-width="2"/>
+  <line x1="100" y1="60" x2="340" y2="60" stroke="black" stroke-width="2"/>
+  
+  <!-- Diagonal AD -->
+  <line x1="60" y1="220" x2="340" y2="60" stroke="blue" stroke-width="2.5"/>
+  
+  <!-- Diagonal CB -->
+  <line x1="100" y1="60" x2="300" y2="220" stroke="green" stroke-width="2.5"/>
+  
+  <!-- Center O (intersection of diagonals) -->
+  <circle cx="200" cy="140" r="5" fill="red"/>
+  <text x="205" y="135" font-size="16" font-family="serif" font-style="italic">O</text>
+  
+  <!-- Labels for equal segments -->
+  <text x="120" y="175" font-size="14" font-family="serif" fill="blue">AO</text>
+  <text x="260" y="105" font-size="14" font-family="serif" fill="blue">OD</text>
+  <text x="145" y="95" font-size="14" font-family="serif" fill="green">CO</text>
+  <text x="245" y="185" font-size="14" font-family="serif" fill="green">OB</text>
+</svg>

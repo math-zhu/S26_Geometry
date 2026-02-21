@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <!-- Two lines a and b through O -->
+  
+  <!-- Line a (horizontal) -->
+  <line x1="20" y1="200" x2="380" y2="200" stroke="black" stroke-width="2"/>
+  <text x="385" y="205" font-size="16" font-family="serif" font-style="italic">a</text>
+  
+  <!-- Line b (diagonal through O) -->
+  <line x1="20" y1="260" x2="340" y2="60" stroke="black" stroke-width="2"/>
+  <text x="345" y="55" font-size="16" font-family="serif" font-style="italic">b</text>
+  
+  <!-- Point O (intersection of lines a and b) -->
+  <circle cx="120" cy="200" r="4" fill="purple"/>
+  <text x="105" y="220" font-size="16" font-family="serif" font-style="italic">O</text>
+  
+  <!-- Points A, B, C, D on line a with equal spacing -->
+  <circle cx="160" cy="200" r="4" fill="black"/>
+  <text x="155" y="220" font-size="16" font-family="serif" font-style="italic">A</text>
+  
+  <circle cx="220" cy="200" r="4" fill="black"/>
+  <text x="215" y="220" font-size="16" font-family="serif" font-style="italic">B</text>
+  
+  <circle cx="280" cy="200" r="4" fill="black"/>
+  <text x="275" y="220" font-size="16" font-family="serif" font-style="italic">C</text>
+  
+  <circle cx="340" cy="200" r="4" fill="black"/>
+  <text x="335" y="220" font-size="16" font-family="serif" font-style="italic">D</text>
+  
+  <!-- Point A' on line b -->
+  <circle cx="150" cy="181.25" r="4" fill="red"/>
+  <text x="130" y="178" font-size="16" font-family="serif" font-style="italic">A'</text>
+  
+  <!-- Points B', C', D' such that BB'∥CC'∥DD'∥AA' -->
+  <!-- Line AA' -->
+  <line x1="160" y1="200" x2="150" y2="181.25" stroke="blue" stroke-width="1.5"/>
+  
+  <!-- Point B' on line b (parallel to AA' from B) -->
+  <circle cx="195" cy="153.125" r="4" fill="red"/>
+  <text x="175" y="150" font-size="16" font-family="serif" font-style="italic">B'</text>
+  
+  <!-- Line BB' (parallel to AA') -->
+  <line x1="220" y1="200" x2="195" y2="153.125" stroke="blue" stroke-width="1.5" stroke-dasharray="5,5"/>
+  
+  <!-- Point C' on line b (parallel to AA' from C) -->
+  <circle cx="240" cy="125" r="4" fill="red"/>
+  <text x="220" y="122" font-size="16" font-family="serif" font-style="italic">C'</text>
+  
+  <!-- Line CC' (parallel to AA') -->
+  <line x1="280" y1="200" x2="240" y2="125" stroke="blue" stroke-width="1.5" stroke-dasharray="5,5"/>
+  
+  <!-- Point D' on line b (parallel to AA' from D) -->
+  <circle cx="285" cy="96.875" r="4" fill="red"/>
+  <text x="265" y="93" font-size="16" font-family="serif" font-style="italic">D'</text>
+  
+  <!-- Line DD' (parallel to AA') -->
+  <line x1="340" y1="200" x2="285" y2="96.875" stroke="blue" stroke-width="1.5" stroke-dasharray="5,5"/>
+  
+  <!-- Mark equal segments on line a -->
+  <text x="185" y="215" font-size="12" font-family="serif" fill="green">AB</text>
+  <text x="245" y="215" font-size="12" font-family="serif" fill="green">BC</text>
+  <text x="305" y="215" font-size="12" font-family="serif" fill="green">CD</text>
+</svg>

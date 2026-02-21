@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <!-- Two parallel segments AB and CD where AB=CD -->
+  
+  <!-- Point A -->
+  <circle cx="80" cy="200" r="4" fill="black"/>
+  <text x="70" y="220" font-size="16" font-family="serif" font-style="italic">A</text>
+  
+  <!-- Point B -->
+  <circle cx="240" cy="200" r="4" fill="black"/>
+  <text x="245" y="220" font-size="16" font-family="serif" font-style="italic">B</text>
+  
+  <!-- Point C -->
+  <circle cx="100" cy="80" r="4" fill="black"/>
+  <text x="90" y="70" font-size="16" font-family="serif" font-style="italic">C</text>
+  
+  <!-- Point D (=E) -->
+  <circle cx="260" cy="80" r="4" fill="black"/>
+  <text x="265" y="70" font-size="16" font-family="serif" font-style="italic">D=E</text>
+  
+  <!-- Segment AB -->
+  <line x1="80" y1="200" x2="240" y2="200" stroke="blue" stroke-width="2.5"/>
+  
+  <!-- Segment CD -->
+  <line x1="100" y1="80" x2="260" y2="80" stroke="blue" stroke-width="2.5"/>
+  
+  <!-- Line AC -->
+  <line x1="80" y1="200" x2="100" y2="80" stroke="green" stroke-width="2"/>
+  
+  <!-- Line BD (=BE) -->
+  <line x1="240" y1="200" x2="260" y2="80" stroke="green" stroke-width="2" stroke-dasharray="5,5"/>
+  
+  <!-- Note: showing that ABCE is a parallelogram with CE parallel to AB -->
+  <!-- CE is the same as CD since D=E -->
+  
+  <!-- Add labels for equal segments -->
+  <text x="150" y="215" font-size="14" font-family="serif" fill="blue">AB</text>
+  <text x="170" y="95" font-size="14" font-family="serif" fill="blue">CD=CE</text>
+</svg>

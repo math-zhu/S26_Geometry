@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <!-- Original line ell -->
+  <line x1="20" y1="220" x2="380" y2="220" stroke="black" stroke-width="2"/>
+  <text x="385" y="225" font-size="16" font-family="serif" font-style="italic">ℓ</text>
+  
+  <!-- Points A and B on line ell -->
+  <circle cx="100" cy="220" r="4" fill="black"/>
+  <text x="95" y="240" font-size="16" font-family="serif" font-style="italic">A</text>
+  
+  <circle cx="280" cy="220" r="4" fill="black"/>
+  <text x="275" y="240" font-size="16" font-family="serif" font-style="italic">B</text>
+  
+  <!-- Point P above the line -->
+  <circle cx="120" cy="80" r="4" fill="black"/>
+  <text x="105" y="70" font-size="16" font-family="serif" font-style="italic">P</text>
+  
+  <!-- Parallel line through P -->
+  <line x1="20" y1="80" x2="380" y2="80" stroke="blue" stroke-width="2"/>
+  
+  <!-- Point Q on parallel line -->
+  <circle cx="300" cy="80" r="4" fill="blue"/>
+  <text x="305" y="75" font-size="16" font-family="serif" font-style="italic">Q</text>
+  
+  <!-- Sides of parallelogram ABQP -->
+  <!-- AP -->
+  <line x1="100" y1="220" x2="120" y2="80" stroke="green" stroke-width="2"/>
+  
+  <!-- BQ (parallel to AP) -->
+  <line x1="280" y1="220" x2="300" y2="80" stroke="green" stroke-width="2" stroke-dasharray="5,5"/>
+</svg>

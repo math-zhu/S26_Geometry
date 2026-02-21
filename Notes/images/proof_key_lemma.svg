@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <!-- Line segment AB -->
+  
+  <!-- Point A (left) -->
+  <circle cx="60" cy="180" r="4" fill="black"/>
+  <text x="50" y="200" font-size="16" font-family="serif" font-style="italic">A</text>
+  
+  <!-- Point B (right) -->
+  <circle cx="280" cy="180" r="4" fill="black"/>
+  <text x="285" y="200" font-size="16" font-family="serif" font-style="italic">B</text>
+  
+  <!-- Line AB -->
+  <line x1="60" y1="180" x2="280" y2="180" stroke="black" stroke-width="2.5"/>
+  
+  <!-- Point C on another line through A -->
+  <circle cx="85" cy="110" r="4" fill="black"/>
+  <text x="70" y="105" font-size="16" font-family="serif" font-style="italic">C</text>
+  
+  <!-- Line AC -->
+  <line x1="60" y1="180" x2="85" y2="110" stroke="black" stroke-width="2"/>
+  
+  <!-- Point D such that AC=CD (D is beyond C on line AC extended) -->
+  <circle cx="110" cy="40" r="4" fill="black"/>
+  <text x="95" y="35" font-size="16" font-family="serif" font-style="italic">D</text>
+  
+  <!-- Line CD (extension of AC) -->
+  <line x1="85" y1="110" x2="110" y2="40" stroke="black" stroke-width="2"/>
+  
+  <!-- Line BD -->
+  <line x1="280" y1="180" x2="110" y2="40" stroke="gray" stroke-width="1.5"/>
+  
+  <!-- Point M on AB (intersection of line through C parallel to BD) -->
+  <circle cx="170" cy="180" r="4" fill="red"/>
+  <text x="165" y="200" font-size="16" font-family="serif" font-style="italic">M</text>
+  
+  <!-- Line through C parallel to BD (CM) -->
+  <line x1="85" y1="110" x2="170" y2="180" stroke="blue" stroke-width="2" stroke-dasharray="5,5"/>
+  
+  <!-- Point E (completing parallelogram ADBE where EB∥AD and AE∥DB) -->
+  <!-- E = A + (B - D) = (60,180) + (280-110, 180-40) = (60,180) + (170,140) = (230,320) -->
+  <circle cx="230" cy="320" r="4" fill="purple"/>
+  <text x="235" y="335" font-size="16" font-family="serif" font-style="italic">E</text>
+  
+  <!-- Parallelogram ADBE sides -->
+  <!-- AD -->
+  <line x1="60" y1="180" x2="110" y2="40" stroke="green" stroke-width="2"/>
+  
+  <!-- DB -->
+  <line x1="110" y1="40" x2="280" y2="180" stroke="orange" stroke-width="2"/>
+  
+  <!-- BE (parallel to AD) -->
+  <line x1="280" y1="180" x2="230" y2="320" stroke="green" stroke-width="2" stroke-dasharray="5,5"/>
+  
+  <!-- EA (parallel to DB) -->
+  <line x1="230" y1="320" x2="60" y2="180" stroke="orange" stroke-width="2" stroke-dasharray="5,5"/>
+</svg>
