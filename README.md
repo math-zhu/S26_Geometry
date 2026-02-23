@@ -34,8 +34,8 @@ What to bring for classes:
 |------|-------|-------|---------|----------|
 | 1/10 | [N1](Notes/N1.pdf) | 1-29 |  [Elements BOOK I, Proposition 1-3](https://www.c82.net/euclid/en/book1/) | Chapter I, Problem 1-19 |
 | 1/17 | [N2](Notes/N2.pdf) | 29-58 | [BOOK I, Proposition 4-6](https://www.c82.net/euclid/en/book1/) | Chapter I, Problem 20-40 |
-| 1/24 | [N3](Notes/N3.pdf) | 59-70 | TBD | Chapter I, Problem 41-53 |
-| 2/7 | [N4](Notes/N4.pdf) | 71-88,99-105 | TBD | Chapter II, Problem 1-4, 7-13 |
+| 1/24 | [N3](Notes/N3.pdf) | 59-70 | TBD | Chapter I, [Problem 41-53](HW/HW3.pdf) |
+| 2/7 | [N4](Notes/N4.pdf) | 71-88,99-105 | TBD | Chapter II, [Problem 1-4, 7-13](HW/HW4.pdf) |
 | 2/21 | [N5](Notes/N5.pdf) | 88-99,106-110 | TBD | Chapter II, Problem 5,6,14-18 |
 <!--
 | 2/7 | N5 | TBD | TBD | HW5 |
