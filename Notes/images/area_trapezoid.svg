@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 280">
+
+  <!-- Trapezoid ABCD: A=(110,60), B=(290,60), C=(310,200), D=(50,200) -->
+  <!-- N = midpoint BC = (300,130), M = midpoint AD = (80,130) -->
+  <!-- Line through N parallel to AD (direction (-3,7)):            -->
+  <!--   Q = intersection with line AB extended (y=60): Q=(330,60)  -->
+  <!--   P = intersection with DC (y=200): P=(270,200)              -->
+  <!-- ADPQ is a parallelogram                                       -->
+
+  <!-- Parallelogram ADPQ fill (light gray) -->
+  <polygon points="110,60 50,200 270,200 330,60" fill="#f0f0f0" stroke="none"/>
+
+  <!-- Extension of AB to Q (dashed) -->
+  <line x1="290" y1="60"  x2="340" y2="60"  stroke="black" stroke-width="1.5" stroke-dasharray="5,4"/>
+
+  <!-- Construction line QNP through N parallel to AD -->
+  <line x1="330" y1="60"  x2="270" y2="200" stroke="black" stroke-width="1.5" stroke-dasharray="5,4"/>
+
+  <!-- Trapezoid sides -->
+  <line x1="110" y1="60"  x2="290" y2="60"  stroke="black" stroke-width="2"/>
+  <line x1="290" y1="60"  x2="310" y2="200" stroke="black" stroke-width="2"/>
+  <line x1="310" y1="200" x2="50"  y2="200" stroke="black" stroke-width="2"/>
+  <line x1="50"  y1="200" x2="110" y2="60"  stroke="black" stroke-width="2"/>
+
+  <!-- Parallelogram top side AQ -->
+  <line x1="110" y1="60"  x2="330" y2="60"  stroke="black" stroke-width="1.5"/>
+  <!-- Parallelogram bottom side DP -->
+  <line x1="50"  y1="200" x2="270" y2="200" stroke="black" stroke-width="1.5"/>
+
+  <!-- Median MN -->
+  <line x1="80" y1="130" x2="300" y2="130" stroke="black" stroke-width="1.5"/>
+
+  <!-- Height line (dashed) -->
+  <line x1="190" y1="60" x2="190" y2="200" stroke="black" stroke-width="1" stroke-dasharray="4,3"/>
+  <text x="196" y="138" font-size="13" font-family="serif" font-style="italic">h</text>
+
+  <!-- Vertex dots -->
+  <circle cx="110" cy="60"  r="4" fill="black"/>
+  <circle cx="290" cy="60"  r="4" fill="black"/>
+  <circle cx="310" cy="200" r="4" fill="black"/>
+  <circle cx="50"  cy="200" r="4" fill="black"/>
+
+  <!-- Q and P dots -->
+  <circle cx="330" cy="60"  r="4" fill="black"/>
+  <circle cx="270" cy="200" r="4" fill="black"/>
+
+  <!-- Midpoint dots -->
+  <circle cx="80"  cy="130" r="4" fill="black"/>
+  <circle cx="300" cy="130" r="4" fill="black"/>
+
+  <!-- Vertex labels -->
+  <text x="100" y="48"  font-size="17" font-family="serif" font-style="italic">A</text>
+  <text x="293" y="48"  font-size="17" font-family="serif" font-style="italic">B</text>
+  <text x="316" y="218" font-size="17" font-family="serif" font-style="italic">C</text>
+  <text x="34"  y="218" font-size="17" font-family="serif" font-style="italic">D</text>
+  <text x="334" y="48"  font-size="17" font-family="serif" font-style="italic">Q</text>
+  <text x="255" y="218" font-size="17" font-family="serif" font-style="italic">P</text>
+
+  <!-- Midpoint labels -->
+  <text x="58"  y="128" font-size="15" font-family="serif" font-style="italic">M</text>
+  <text x="305" y="128" font-size="15" font-family="serif" font-style="italic">N</text>
+
+</svg>

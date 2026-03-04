@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-120 0 650 320">
+
+  <!-- Line a: extended left to x=-120 -->
+  <line x1="-120" y1="276" x2="500" y2="42" stroke="black" stroke-width="2"/>
+
+  <!-- Line b: extended left to x=-120 -->
+  <line x1="-120" y1="196" x2="500" y2="293" stroke="black" stroke-width="2"/>
+
+  <!-- Line labels -->
+  <text x="507" y="47" font-size="17" font-family="serif" font-style="italic">a</text>
+  <text x="507" y="298" font-size="17" font-family="serif" font-style="italic">b</text>
+
+  <!-- Point O -->
+  <circle cx="30" cy="220" r="4" fill="black"/>
+  <text x="8" y="218" font-size="17" font-family="serif" font-style="italic">O</text>
+
+  <!-- Parallel projection lines (vertical, dashed, blue) — all equal length y=55 to y=305 -->
+
+  <!-- Left of O, x=-90 -->
+  <line x1="-90" y1="55" x2="-90" y2="305" stroke="#3366cc" stroke-width="1.5" stroke-dasharray="5,4"/>
+
+  <!-- At O, x=30 -->
+  <line x1="30" y1="55" x2="30" y2="305" stroke="#3366cc" stroke-width="1.5" stroke-dasharray="5,4"/>
+
+  <!-- A, x=160 -->
+  <line x1="160" y1="55" x2="160" y2="305" stroke="#3366cc" stroke-width="1.5" stroke-dasharray="5,4"/>
+
+  <!-- B, x=280 -->
+  <line x1="280" y1="55" x2="280" y2="305" stroke="#3366cc" stroke-width="1.5" stroke-dasharray="5,4"/>
+
+  <!-- C, x=400 -->
+  <line x1="400" y1="55" x2="400" y2="305" stroke="#3366cc" stroke-width="1.5" stroke-dasharray="5,4"/>
+
+  <!-- Points on line a -->
+  <circle cx="-90" cy="265" r="4" fill="black"/>
+  <circle cx="160" cy="171" r="4" fill="black"/>
+  <circle cx="280" cy="125" r="4" fill="black"/>
+  <circle cx="400" cy="80"  r="4" fill="black"/>
+
+  <!-- Labels above points on line a -->
+  <text x="145" y="162" font-size="17" font-family="serif" font-style="italic">A</text>
+  <text x="265" y="116" font-size="17" font-family="serif" font-style="italic">B</text>
+  <text x="385" y="71"  font-size="17" font-family="serif" font-style="italic">C</text>
+
+  <!-- Points on line b -->
+  <circle cx="-90" cy="201" r="4" fill="black"/>
+  <circle cx="160" cy="240" r="4" fill="black"/>
+  <circle cx="280" cy="259" r="4" fill="black"/>
+  <circle cx="400" cy="277" r="4" fill="black"/>
+
+  <!-- Labels below points on line b -->
+  <text x="144" y="259" font-size="17" font-family="serif" font-style="italic">A&#x2032;</text>
+  <text x="264" y="278" font-size="17" font-family="serif" font-style="italic">B&#x2032;</text>
+  <text x="384" y="296" font-size="17" font-family="serif" font-style="italic">C&#x2032;</text>
+
+</svg>

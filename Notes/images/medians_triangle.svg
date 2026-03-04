@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+
+  <!-- Triangle ABC: A=(130,30), B=(50,260), C=(360,260) -->
+
+  <!-- Sides -->
+  <line x1="130" y1="30"  x2="50"  y2="260" stroke="black" stroke-width="2"/>
+  <line x1="50"  y1="260" x2="360" y2="260" stroke="black" stroke-width="2"/>
+  <line x1="360" y1="260" x2="130" y2="30"  stroke="black" stroke-width="2"/>
+
+  <!-- Median AM: A=(130,30) to M=midpoint of BC=(205,260) -->
+  <line x1="130" y1="30" x2="205" y2="260" stroke="black" stroke-width="1.5" stroke-dasharray="6,3"/>
+
+  <!-- Vertex dots -->
+  <circle cx="130" cy="30"  r="4" fill="black"/>
+  <circle cx="50"  cy="260" r="4" fill="black"/>
+  <circle cx="360" cy="260" r="4" fill="black"/>
+
+  <!-- Midpoint M dot -->
+  <circle cx="205" cy="260" r="4" fill="black"/>
+
+  <!-- Vertex labels -->
+  <text x="122" y="20"  font-size="17" font-family="serif" font-style="italic">A</text>
+  <text x="30"  y="280" font-size="17" font-family="serif" font-style="italic">B</text>
+  <text x="364" y="280" font-size="17" font-family="serif" font-style="italic">C</text>
+
+  <!-- Midpoint label -->
+  <text x="208" y="255" font-size="15" font-family="serif" font-style="italic">M</text>
+
+</svg>

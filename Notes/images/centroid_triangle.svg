@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+
+  <!-- Triangle ABC: A=(130,30), B=(50,260), C=(360,260) -->
+  <!-- M = midpoint BC = (205,260) -->
+  <!-- N = midpoint AC = (245,145) -->
+  <!-- L = midpoint AB = (90,145) -->
+  <!-- Centroid O = ((130+50+360)/3, (30+260+260)/3) = (180,183) -->
+
+  <!-- Sides -->
+  <line x1="130" y1="30"  x2="50"  y2="260" stroke="black" stroke-width="2"/>
+  <line x1="50"  y1="260" x2="360" y2="260" stroke="black" stroke-width="2"/>
+  <line x1="360" y1="260" x2="130" y2="30"  stroke="black" stroke-width="2"/>
+
+  <!-- Median AM -->
+  <line x1="130" y1="30"  x2="205" y2="260" stroke="black" stroke-width="1.5" stroke-dasharray="6,3"/>
+  <!-- Median BN -->
+  <line x1="50"  y1="260" x2="245" y2="145" stroke="black" stroke-width="1.5" stroke-dasharray="6,3"/>
+  <!-- Median CL -->
+  <line x1="360" y1="260" x2="90"  y2="145" stroke="black" stroke-width="1.5" stroke-dasharray="6,3"/>
+
+  <!-- Vertex dots -->
+  <circle cx="130" cy="30"  r="4" fill="black"/>
+  <circle cx="50"  cy="260" r="4" fill="black"/>
+  <circle cx="360" cy="260" r="4" fill="black"/>
+
+  <!-- Midpoint dots -->
+  <circle cx="205" cy="260" r="4" fill="black"/>
+  <circle cx="245" cy="145" r="4" fill="black"/>
+  <circle cx="90"  cy="145" r="4" fill="black"/>
+
+  <!-- Centroid O -->
+  <circle cx="180" cy="183" r="4" fill="black"/>
+
+  <!-- Vertex labels -->
+  <text x="122" y="20"  font-size="17" font-family="serif" font-style="italic">A</text>
+  <text x="30"  y="280" font-size="17" font-family="serif" font-style="italic">B</text>
+  <text x="364" y="280" font-size="17" font-family="serif" font-style="italic">C</text>
+
+  <!-- Midpoint labels -->
+  <text x="208" y="256" font-size="15" font-family="serif" font-style="italic">M</text>
+  <text x="250" y="142" font-size="15" font-family="serif" font-style="italic">N</text>
+  <text x="72"  y="142" font-size="15" font-family="serif" font-style="italic">L</text>
+
+  <!-- Centroid label -->
+  <text x="186" y="181" font-size="15" font-family="serif" font-style="italic">O</text>
+
+</svg>

@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+
+  <!-- Triangle ABC: A=(130,30), B=(50,260), C=(360,260) -->
+
+  <!-- Sides -->
+  <line x1="130" y1="30"  x2="50"  y2="260" stroke="black" stroke-width="2"/>
+  <line x1="50"  y1="260" x2="360" y2="260" stroke="black" stroke-width="2"/>
+  <line x1="360" y1="260" x2="130" y2="30"  stroke="black" stroke-width="2"/>
+
+  <!-- N = midpoint of AC = ((130+360)/2, (30+260)/2) = (245, 145) -->
+  <!-- L = midpoint of AB = ((130+50)/2, (30+260)/2) = (90, 145) -->
+
+  <!-- Median BN: B=(50,260) to N=(245,145) -->
+  <line x1="50"  y1="260" x2="245" y2="145" stroke="black" stroke-width="1.5" stroke-dasharray="6,3"/>
+
+  <!-- Median CL: C=(360,260) to L=(90,145) -->
+  <line x1="360" y1="260" x2="90"  y2="145" stroke="black" stroke-width="1.5" stroke-dasharray="6,3"/>
+
+  <!-- Intersection O of BN and CL -->
+  <!-- Parametric BN: (50+195t, 260-115t), CL: (360-270s, 260-115s) -->
+  <!-- 50+195t = 360-270s, 260-115t = 260-115s => t=s -->
+  <!-- 50+195t = 360-270t => 465t=310 => t=310/465=2/3 -->
+  <!-- O = (50+195*2/3, 260-115*2/3) = (50+130, 260-76.67) = (180, 183.33) -->
+  <circle cx="180" cy="183" r="4" fill="black"/>
+
+  <!-- Vertex dots -->
+  <circle cx="130" cy="30"  r="4" fill="black"/>
+  <circle cx="50"  cy="260" r="4" fill="black"/>
+  <circle cx="360" cy="260" r="4" fill="black"/>
+
+  <!-- Midpoint dots -->
+  <circle cx="245" cy="145" r="4" fill="black"/>
+  <circle cx="90"  cy="145" r="4" fill="black"/>
+
+  <!-- Vertex labels -->
+  <text x="122" y="20"  font-size="17" font-family="serif" font-style="italic">A</text>
+  <text x="30"  y="280" font-size="17" font-family="serif" font-style="italic">B</text>
+  <text x="364" y="280" font-size="17" font-family="serif" font-style="italic">C</text>
+
+  <!-- Midpoint labels -->
+  <text x="250" y="142" font-size="15" font-family="serif" font-style="italic">N</text>
+  <text x="72"  y="142" font-size="15" font-family="serif" font-style="italic">L</text>
+
+  <!-- Intersection label -->
+  <text x="186" y="181" font-size="15" font-family="serif" font-style="italic">O</text>
+
+</svg>

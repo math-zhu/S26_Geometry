@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+
+  <!-- Triangle ABC: A=(130,30), B=(50,260), C=(360,260) -->
+  <!-- N = midpoint AC = (245,145), L = midpoint AB = (90,145) -->
+  <!-- O = intersection of BN and CL = (180,183) -->
+  <!-- P = midpoint of BO: B=(50,260), O=(180,183) => P=(115,221.5) -->
+  <!-- Q = midpoint of CO: C=(360,260), O=(180,183) => Q=(270,221.5) -->
+
+  <!-- Sides -->
+  <line x1="130" y1="30"  x2="50"  y2="260" stroke="black" stroke-width="2"/>
+  <line x1="50"  y1="260" x2="360" y2="260" stroke="black" stroke-width="2"/>
+  <line x1="360" y1="260" x2="130" y2="30"  stroke="black" stroke-width="2"/>
+
+  <!-- Medians BN and CL -->
+  <line x1="50"  y1="260" x2="245" y2="145" stroke="black" stroke-width="1.5" stroke-dasharray="6,3"/>
+  <line x1="360" y1="260" x2="90"  y2="145" stroke="black" stroke-width="1.5" stroke-dasharray="6,3"/>
+
+  <!-- Bimedian LN of triangle ABC -->
+  <line x1="90" y1="145" x2="245" y2="145" stroke="black" stroke-width="1.5"/>
+
+  <!-- Bimedian PQ of triangle BCO -->
+  <line x1="115" y1="222" x2="270" y2="222" stroke="black" stroke-width="1.5"/>
+
+  <!-- Parallelogram sides NP and LQ -->
+  <line x1="245" y1="145" x2="270" y2="222" stroke="black" stroke-width="1" stroke-dasharray="4,3"/>
+  <line x1="90"  y1="145" x2="115" y2="222" stroke="black" stroke-width="1" stroke-dasharray="4,3"/>
+
+  <!-- Vertex dots -->
+  <circle cx="130" cy="30"  r="4" fill="black"/>
+  <circle cx="50"  cy="260" r="4" fill="black"/>
+  <circle cx="360" cy="260" r="4" fill="black"/>
+
+  <!-- Midpoint dots N, L -->
+  <circle cx="245" cy="145" r="4" fill="black"/>
+  <circle cx="90"  cy="145" r="4" fill="black"/>
+
+  <!-- P, Q dots -->
+  <circle cx="115" cy="222" r="4" fill="black"/>
+  <circle cx="270" cy="222" r="4" fill="black"/>
+
+  <!-- Intersection O -->
+  <circle cx="180" cy="183" r="4" fill="black"/>
+
+  <!-- Vertex labels -->
+  <text x="122" y="20"  font-size="17" font-family="serif" font-style="italic">A</text>
+  <text x="30"  y="280" font-size="17" font-family="serif" font-style="italic">B</text>
+  <text x="364" y="280" font-size="17" font-family="serif" font-style="italic">C</text>
+
+  <!-- Midpoint and key point labels -->
+  <text x="250" y="142" font-size="15" font-family="serif" font-style="italic">N</text>
+  <text x="72"  y="142" font-size="15" font-family="serif" font-style="italic">L</text>
+  <text x="97"  y="220" font-size="15" font-family="serif" font-style="italic">P</text>
+  <text x="275" y="220" font-size="15" font-family="serif" font-style="italic">Q</text>
+  <text x="186" y="181" font-size="15" font-family="serif" font-style="italic">O</text>
+
+</svg>
