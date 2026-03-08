@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 280">
+  <defs>
+    <marker id="arrowAxis" markerWidth="9" markerHeight="7" refX="9" refY="3.5"
+            orient="auto" markerUnits="userSpaceOnUse">
+      <polygon points="0 0, 9 3.5, 0 7" fill="black"/>
+    </marker>
+    <marker id="arrowBlue" markerWidth="10" markerHeight="8" refX="10" refY="4"
+            orient="auto" markerUnits="userSpaceOnUse">
+      <polygon points="0 0, 10 4, 0 8" fill="#3366cc"/>
+    </marker>
+  </defs>
+
+  <!-- origin: (100, 200), scale: 60px/unit -->
+  <!-- x: 0→100, 1→160, 2→220, 3→280   y: 0→200, 1→140, 2→80 -->
+
+  <!-- X axis -->
+  <line x1="40" y1="200" x2="330" y2="200" stroke="black" stroke-width="1.5"
+        marker-end="url(#arrowAxis)"/>
+  <text x="335" y="205" font-family="serif" font-size="16" font-style="italic">x</text>
+
+  <!-- Y axis -->
+  <line x1="100" y1="255" x2="100" y2="20" stroke="black" stroke-width="1.5"
+        marker-end="url(#arrowAxis)"/>
+  <text x="93" y="16" font-family="serif" font-size="16" font-style="italic">y</text>
+
+  <!-- Origin label -->
+  <text x="82" y="217" font-family="serif" font-size="14">O</text>
+
+  <!-- Tick marks on x-axis -->
+  <line x1="160" y1="195" x2="160" y2="205" stroke="black" stroke-width="1.2"/>
+  <text x="160" y="218" text-anchor="middle" font-family="serif" font-size="13">1</text>
+  <line x1="220" y1="195" x2="220" y2="205" stroke="black" stroke-width="1.2"/>
+  <text x="220" y="218" text-anchor="middle" font-family="serif" font-size="13">2</text>
+  <line x1="280" y1="195" x2="280" y2="205" stroke="black" stroke-width="1.2"/>
+  <text x="280" y="218" text-anchor="middle" font-family="serif" font-size="13">3</text>
+
+  <!-- Tick marks on y-axis -->
+  <line x1="95" y1="140" x2="105" y2="140" stroke="black" stroke-width="1.2"/>
+  <text x="86" y="145" text-anchor="end" font-family="serif" font-size="13">1</text>
+  <line x1="95" y1="80" x2="105" y2="80" stroke="black" stroke-width="1.2"/>
+  <text x="86" y="85" text-anchor="end" font-family="serif" font-size="13">2</text>
+
+  <!-- Dashed projection lines to show components -->
+  <line x1="100" y1="140" x2="220" y2="140" stroke="#999" stroke-width="1.2"
+        stroke-dasharray="5,4"/>
+  <line x1="220" y1="200" x2="220" y2="140" stroke="#999" stroke-width="1.2"
+        stroke-dasharray="5,4"/>
+
+  <!-- Endpoint dot -->
+  <circle cx="220" cy="140" r="4.5" fill="#3366cc"/>
+  <!-- Origin dot -->
+  <circle cx="100" cy="200" r="4.5" fill="#3366cc"/>
+
+  <!-- Vector (blue): from (0,0)=(100,200) to (2,1)=(220,140) -->
+  <line x1="100" y1="200" x2="220" y2="140" stroke="#3366cc" stroke-width="2.5"
+        marker-end="url(#arrowBlue)"/>
+
+  <!-- Label (2, 1) at endpoint -->
+  <text x="228" y="135" font-family="serif" font-size="14" fill="#3366cc">(2, 1)</text>
+</svg>

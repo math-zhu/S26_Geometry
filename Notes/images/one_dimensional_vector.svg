@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 185">
+  <defs>
+    <!-- Arrowhead for blue vector -->
+    <marker id="arrowBlue" markerWidth="10" markerHeight="8" refX="10" refY="4"
+            orient="auto" markerUnits="userSpaceOnUse">
+      <polygon points="0 0, 10 4, 0 8" fill="#3366cc"/>
+    </marker>
+    <!-- Arrowhead for red vector -->
+    <marker id="arrowRed" markerWidth="10" markerHeight="8" refX="10" refY="4"
+            orient="auto" markerUnits="userSpaceOnUse">
+      <polygon points="0 0, 10 4, 0 8" fill="#cc3333"/>
+    </marker>
+    <!-- Arrowhead for number line -->
+    <marker id="arrowBlack" markerWidth="9" markerHeight="7" refX="9" refY="3.5"
+            orient="auto" markerUnits="userSpaceOnUse">
+      <polygon points="0 0, 9 3.5, 0 7" fill="black"/>
+    </marker>
+  </defs>
+
+  <!-- Number line: y=100, from x=30 to x=548 -->
+  <line x1="30" y1="100" x2="548" y2="100" stroke="black" stroke-width="2"
+        marker-end="url(#arrowBlack)"/>
+
+  <!-- Tick marks and labels (scale: 60px/unit, 0 at x=220) -->
+  <!-- -3: x=40,  -2: x=100,  -1: x=160,  0: x=220,  1: x=280,  2: x=340,  3: x=400,  4: x=460,  5: x=520 -->
+
+  <line x1="40"  y1="95" x2="40"  y2="105" stroke="black" stroke-width="1.5"/>
+  <text x="40"  y="120" text-anchor="middle" font-family="serif" font-size="14">−3</text>
+
+  <line x1="100" y1="95" x2="100" y2="105" stroke="black" stroke-width="1.5"/>
+  <text x="100" y="120" text-anchor="middle" font-family="serif" font-size="14">−2</text>
+
+  <line x1="160" y1="95" x2="160" y2="105" stroke="black" stroke-width="1.5"/>
+  <text x="160" y="120" text-anchor="middle" font-family="serif" font-size="14">−1</text>
+
+  <line x1="220" y1="93" x2="220" y2="107" stroke="black" stroke-width="2"/>
+  <text x="220" y="120" text-anchor="middle" font-family="serif" font-size="14">0</text>
+
+  <line x1="280" y1="95" x2="280" y2="105" stroke="black" stroke-width="1.5"/>
+  <text x="280" y="120" text-anchor="middle" font-family="serif" font-size="14">1</text>
+
+  <line x1="340" y1="95" x2="340" y2="105" stroke="black" stroke-width="1.5"/>
+  <text x="340" y="120" text-anchor="middle" font-family="serif" font-size="14">2</text>
+
+  <line x1="400" y1="95" x2="400" y2="105" stroke="black" stroke-width="1.5"/>
+  <text x="400" y="120" text-anchor="middle" font-family="serif" font-size="14">3</text>
+
+  <line x1="460" y1="95" x2="460" y2="105" stroke="black" stroke-width="1.5"/>
+  <text x="460" y="120" text-anchor="middle" font-family="serif" font-size="14">4</text>
+
+  <line x1="520" y1="95" x2="520" y2="105" stroke="black" stroke-width="1.5"/>
+  <text x="520" y="120" text-anchor="middle" font-family="serif" font-size="14">5</text>
+
+  <!-- Vector 1 (blue): from 0 (x=220) to 3 (x=400), above line at y=65 -->
+  <circle cx="220" cy="65" r="4" fill="#3366cc"/>
+  <line x1="220" y1="65" x2="400" y2="65" stroke="#3366cc" stroke-width="2.5"
+        marker-end="url(#arrowBlue)"/>
+  <text x="310" y="50" text-anchor="middle" font-family="serif" font-size="15"
+        fill="#3366cc" font-weight="bold">3</text>
+
+  <!-- Vector 2 (red): from 0 (x=220) to -2 (x=100), below line at y=138 -->
+  <circle cx="220" cy="138" r="4" fill="#cc3333"/>
+  <line x1="220" y1="138" x2="100" y2="138" stroke="#cc3333" stroke-width="2.5"
+        marker-end="url(#arrowRed)"/>
+  <text x="160" y="162" text-anchor="middle" font-family="serif" font-size="15"
+        fill="#cc3333" font-weight="bold">−2</text>
+</svg>

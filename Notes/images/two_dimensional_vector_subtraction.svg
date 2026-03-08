@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 290">
+  <defs>
+    <marker id="arrowAxis" markerWidth="9" markerHeight="7" refX="9" refY="3.5"
+            orient="auto" markerUnits="userSpaceOnUse">
+      <polygon points="0 0, 9 3.5, 0 7" fill="black"/>
+    </marker>
+    <marker id="arrowBlue" markerWidth="10" markerHeight="8" refX="10" refY="4"
+            orient="auto" markerUnits="userSpaceOnUse">
+      <polygon points="0 0, 10 4, 0 8" fill="#3366cc"/>
+    </marker>
+    <marker id="arrowRed" markerWidth="10" markerHeight="8" refX="10" refY="4"
+            orient="auto" markerUnits="userSpaceOnUse">
+      <polygon points="0 0, 10 4, 0 8" fill="#cc3333"/>
+    </marker>
+    <marker id="arrowPurple" markerWidth="10" markerHeight="8" refX="10" refY="4"
+            orient="auto" markerUnits="userSpaceOnUse">
+      <polygon points="0 0, 10 4, 0 8" fill="#884499"/>
+    </marker>
+  </defs>
+
+  <!-- origin: (100, 200), scale: 80px/unit -->
+  <!-- x: -1→20, 0→100, 1→180, 2→260, 3→340  |  y: -1→280, 0→200, 1→120, 2→40 -->
+
+  <!-- X axis -->
+  <line x1="20" y1="200" x2="360" y2="200" stroke="black" stroke-width="1.5"
+        marker-end="url(#arrowAxis)"/>
+  <text x="365" y="205" font-family="serif" font-size="16" font-style="italic">x</text>
+
+  <!-- Y axis -->
+  <line x1="100" y1="270" x2="100" y2="12" stroke="black" stroke-width="1.5"
+        marker-end="url(#arrowAxis)"/>
+  <text x="93" y="8" font-family="serif" font-size="16" font-style="italic">y</text>
+
+  <!-- Origin -->
+  <text x="82" y="218" font-family="serif" font-size="14">O</text>
+
+  <!-- Tick marks x -->
+  <line x1="180" y1="195" x2="180" y2="205" stroke="black" stroke-width="1.2"/>
+  <text x="180" y="218" text-anchor="middle" font-family="serif" font-size="13">1</text>
+  <line x1="260" y1="195" x2="260" y2="205" stroke="black" stroke-width="1.2"/>
+  <text x="260" y="218" text-anchor="middle" font-family="serif" font-size="13">2</text>
+
+  <!-- Tick marks y -->
+  <line x1="95" y1="280" x2="105" y2="280" stroke="black" stroke-width="1.2"/>
+  <text x="87" y="285" text-anchor="end" font-family="serif" font-size="13">−1</text>
+  <line x1="95" y1="120" x2="105" y2="120" stroke="black" stroke-width="1.2"/>
+  <text x="87" y="125" text-anchor="end" font-family="serif" font-size="13">1</text>
+
+  <!-- Blue vector (2,1): from (0,0)=(100,200) to (2,1)=(260,120) -->
+  <circle cx="100" cy="200" r="4.5" fill="#3366cc"/>
+  <line x1="100" y1="200" x2="260" y2="120" stroke="#3366cc" stroke-width="2.5"
+        marker-end="url(#arrowBlue)"/>
+  <text x="162" y="148" font-family="serif" font-size="14" fill="#3366cc">(2,1)</text>
+
+  <!-- Red vector (-1,-1) head-to-tail from (2,1)=(260,120) to (1,0)=(180,200) -->
+  <circle cx="260" cy="120" r="4.5" fill="#cc3333"/>
+  <line x1="260" y1="120" x2="180" y2="200" stroke="#cc3333" stroke-width="2.5"
+        marker-end="url(#arrowRed)"/>
+  <text x="244" y="178" font-family="serif" font-size="14" fill="#cc3333">(−1,−1)</text>
+
+  <!-- Result vector (1,0): from (0,0)=(100,200) to (1,0)=(180,200), purple -->
+  <circle cx="180" cy="200" r="4.5" fill="#884499"/>
+  <line x1="100" y1="200" x2="180" y2="200" stroke="#884499" stroke-width="2.5"
+        marker-end="url(#arrowPurple)"/>
+  <text x="140" y="192" text-anchor="middle" font-family="serif" font-size="14"
+        fill="#884499">(1,0)</text>
+</svg>

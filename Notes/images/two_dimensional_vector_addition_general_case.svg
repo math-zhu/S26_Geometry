@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 290">
+  <defs>
+    <marker id="arrowAxis" markerWidth="9" markerHeight="7" refX="9" refY="3.5"
+            orient="auto" markerUnits="userSpaceOnUse">
+      <polygon points="0 0, 9 3.5, 0 7" fill="black"/>
+    </marker>
+    <marker id="arrowBlue" markerWidth="10" markerHeight="8" refX="10" refY="4"
+            orient="auto" markerUnits="userSpaceOnUse">
+      <polygon points="0 0, 10 4, 0 8" fill="#3366cc"/>
+    </marker>
+    <marker id="arrowRed" markerWidth="10" markerHeight="8" refX="10" refY="4"
+            orient="auto" markerUnits="userSpaceOnUse">
+      <polygon points="0 0, 10 4, 0 8" fill="#cc3333"/>
+    </marker>
+    <marker id="arrowPurple" markerWidth="10" markerHeight="8" refX="10" refY="4"
+            orient="auto" markerUnits="userSpaceOnUse">
+      <polygon points="0 0, 10 4, 0 8" fill="#884499"/>
+    </marker>
+  </defs>
+
+  <!-- origin: (80, 230), scale: 70px/unit -->
+  <!-- x: 0→80, 1→150, 2→220, 3→290  |  y: 0→230, 1→160, 2→90 -->
+
+  <!-- X axis -->
+  <line x1="30" y1="230" x2="375" y2="230" stroke="black" stroke-width="1.5"
+        marker-end="url(#arrowAxis)"/>
+  <text x="380" y="235" font-family="serif" font-size="16" font-style="italic">x</text>
+
+  <!-- Y axis -->
+  <line x1="80" y1="275" x2="80" y2="15" stroke="black" stroke-width="1.5"
+        marker-end="url(#arrowAxis)"/>
+  <text x="73" y="11" font-family="serif" font-size="16" font-style="italic">y</text>
+
+  <!-- Origin -->
+  <text x="62" y="248" font-family="serif" font-size="14">O</text>
+
+  <!-- Tick marks x -->
+  <line x1="150" y1="225" x2="150" y2="235" stroke="black" stroke-width="1.2"/>
+  <text x="150" y="248" text-anchor="middle" font-family="serif" font-size="13">1</text>
+  <line x1="220" y1="225" x2="220" y2="235" stroke="black" stroke-width="1.2"/>
+  <text x="220" y="248" text-anchor="middle" font-family="serif" font-size="13">2</text>
+  <line x1="290" y1="225" x2="290" y2="235" stroke="black" stroke-width="1.2"/>
+  <text x="290" y="248" text-anchor="middle" font-family="serif" font-size="13">3</text>
+
+  <!-- Tick marks y -->
+  <line x1="75" y1="160" x2="85" y2="160" stroke="black" stroke-width="1.2"/>
+  <text x="67" y="165" text-anchor="end" font-family="serif" font-size="13">1</text>
+  <line x1="75" y1="90"  x2="85" y2="90"  stroke="black" stroke-width="1.2"/>
+  <text x="67" y="95"  text-anchor="end" font-family="serif" font-size="13">2</text>
+
+  <!-- Dashed parallelogram sides -->
+  <!-- from (1,1)=(150,160) to (3,2)=(290,90) -->
+  <line x1="150" y1="160" x2="290" y2="90" stroke="#aaa" stroke-width="1.2" stroke-dasharray="5,4"/>
+  <!-- from (2,1)=(220,160) to (3,2)=(290,90) -->
+  <line x1="220" y1="160" x2="290" y2="90" stroke="#aaa" stroke-width="1.2" stroke-dasharray="5,4"/>
+
+  <!-- Blue vector (2,1): from (0,0)=(80,230) to (2,1)=(220,160) -->
+  <circle cx="80" cy="230" r="4.5" fill="#3366cc"/>
+  <line x1="80" y1="230" x2="220" y2="160" stroke="#3366cc" stroke-width="2.5"
+        marker-end="url(#arrowBlue)"/>
+  <text x="135" y="183" font-family="serif" font-size="14" fill="#3366cc">(2,1)</text>
+
+  <!-- Red vector (1,1) head-to-tail: from (2,1)=(220,160) to (3,2)=(290,90) -->
+  <circle cx="220" cy="160" r="4.5" fill="#cc3333"/>
+  <line x1="220" y1="160" x2="290" y2="90" stroke="#cc3333" stroke-width="2.5"
+        marker-end="url(#arrowRed)"/>
+  <text x="268" y="130" font-family="serif" font-size="14" fill="#cc3333">(1,1)</text>
+
+  <!-- Dashed red copy from origin (for parallelogram): from (0,0) to (1,1)=(150,160) -->
+  <line x1="80" y1="230" x2="150" y2="160" stroke="#cc3333" stroke-width="1.5"
+        stroke-dasharray="5,4" marker-end="url(#arrowRed)"/>
+
+  <!-- Result vector (3,2): from (0,0)=(80,230) to (3,2)=(290,90) -->
+  <circle cx="290" cy="90" r="4.5" fill="#884499"/>
+  <line x1="80" y1="230" x2="290" y2="90" stroke="#884499" stroke-width="2.5"
+        marker-end="url(#arrowPurple)"/>
+  <text x="192" y="145" font-family="serif" font-size="14" fill="#884499">(3,2)</text>
+</svg>

@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 205">
+  <defs>
+    <!-- Arrowhead for blue vector (v1 = 3) -->
+    <marker id="arrowBlue" markerWidth="10" markerHeight="8" refX="10" refY="4"
+            orient="auto" markerUnits="userSpaceOnUse">
+      <polygon points="0 0, 10 4, 0 8" fill="#3366cc"/>
+    </marker>
+    <!-- Arrowhead for green vector (v2 = 2) -->
+    <marker id="arrowGreen" markerWidth="10" markerHeight="8" refX="10" refY="4"
+            orient="auto" markerUnits="userSpaceOnUse">
+      <polygon points="0 0, 10 4, 0 8" fill="#228833"/>
+    </marker>
+    <!-- Arrowhead for purple result vector (v = 5) -->
+    <marker id="arrowPurple" markerWidth="10" markerHeight="8" refX="10" refY="4"
+            orient="auto" markerUnits="userSpaceOnUse">
+      <polygon points="0 0, 10 4, 0 8" fill="#884499"/>
+    </marker>
+    <!-- Arrowhead for number line -->
+    <marker id="arrowBlack" markerWidth="9" markerHeight="7" refX="9" refY="3.5"
+            orient="auto" markerUnits="userSpaceOnUse">
+      <polygon points="0 0, 9 3.5, 0 7" fill="black"/>
+    </marker>
+  </defs>
+
+  <!-- Number line: y=105, from x=55 to x=558 -->
+  <line x1="55" y1="105" x2="558" y2="105" stroke="black" stroke-width="2"
+        marker-end="url(#arrowBlack)"/>
+
+  <!-- Tick marks and labels (scale: 80px/unit, 0 at x=120) -->
+  <!-- 0: x=120,  1: x=200,  2: x=280,  3: x=360,  4: x=440,  5: x=520 -->
+
+  <line x1="120" y1="100" x2="120" y2="110" stroke="black" stroke-width="2"/>
+  <text x="120" y="125" text-anchor="middle" font-family="serif" font-size="14">0</text>
+
+  <line x1="200" y1="100" x2="200" y2="110" stroke="black" stroke-width="1.5"/>
+  <text x="200" y="125" text-anchor="middle" font-family="serif" font-size="14">1</text>
+
+  <line x1="280" y1="100" x2="280" y2="110" stroke="black" stroke-width="1.5"/>
+  <text x="280" y="125" text-anchor="middle" font-family="serif" font-size="14">2</text>
+
+  <line x1="360" y1="100" x2="360" y2="110" stroke="black" stroke-width="1.5"/>
+  <text x="360" y="125" text-anchor="middle" font-family="serif" font-size="14">3</text>
+
+  <line x1="440" y1="100" x2="440" y2="110" stroke="black" stroke-width="1.5"/>
+  <text x="440" y="125" text-anchor="middle" font-family="serif" font-size="14">4</text>
+
+  <line x1="520" y1="100" x2="520" y2="110" stroke="black" stroke-width="1.5"/>
+  <text x="520" y="125" text-anchor="middle" font-family="serif" font-size="14">5</text>
+
+  <!-- ── Head-to-tail placement (above number line) ── -->
+
+  <!-- Vector 1 (blue): from 0 (x=120) to 3 (x=360) at y=60 -->
+  <circle cx="120" cy="60" r="4" fill="#3366cc"/>
+  <line x1="120" y1="60" x2="360" y2="60" stroke="#3366cc" stroke-width="2.5"
+        marker-end="url(#arrowBlue)"/>
+  <text x="240" y="45" text-anchor="middle" font-family="serif" font-size="15"
+        fill="#3366cc" font-weight="bold">3</text>
+
+  <!-- Vector 2 (green): from 3 (x=360) to 5 (x=520) at y=60  (head-to-tail) -->
+  <circle cx="360" cy="60" r="4" fill="#228833"/>
+  <line x1="360" y1="60" x2="520" y2="60" stroke="#228833" stroke-width="2.5"
+        marker-end="url(#arrowGreen)"/>
+  <text x="440" y="45" text-anchor="middle" font-family="serif" font-size="15"
+        fill="#228833" font-weight="bold">2</text>
+
+  <!-- ── Result vector (below number line) ── -->
+
+  <!-- Dashed verticals connecting endpoints to result level -->
+  <line x1="120" y1="60" x2="120" y2="152" stroke="#884499" stroke-width="1"
+        stroke-dasharray="4,3"/>
+  <line x1="520" y1="60" x2="520" y2="152" stroke="#884499" stroke-width="1"
+        stroke-dasharray="4,3"/>
+
+  <!-- Result vector (purple): from 0 (x=120) to 5 (x=520) at y=152 -->
+  <circle cx="120" cy="152" r="4" fill="#884499"/>
+  <line x1="120" y1="152" x2="520" y2="152" stroke="#884499" stroke-width="2.5"
+        marker-end="url(#arrowPurple)"/>
+  <text x="320" y="175" text-anchor="middle" font-family="serif" font-size="15"
+        fill="#884499" font-weight="bold">3 + 2 = 5</text>
+</svg>

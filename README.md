@@ -38,6 +38,7 @@ What to bring for classes:
 | 2/7 | [N4](Notes/N4.pdf) | 71-88,99-105 | TBD | Chapter II, [Problem 1-4, 7-13](HW/HW4.pdf) |
 | 2/21 | [N5](Notes/N5.pdf) | 88-99,106-110 | TBD | Chapter II, Problem 5,6,14-18 |
 | 2/28 | [N6](Notes/N6.pdf) | 100-107,110-130 | TBD | Chapter II, Problem 19, 21-23, 26-34, 36 |
+| 3/7 | [N7](Notes/N7.pdf) | 145-158 | TBD | Chapter II, Problem 47-59 |
 <!--
 | 2/7 | N5 | TBD | TBD | HW5 |
 | 2/14 | N6 and Quiz 1 | TBD |   |   |
