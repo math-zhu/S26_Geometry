@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 265">
+  <!-- Proof: triangle ABC congruent to triangle DFE by SAS -->
+  <!-- Left  ABC (blue):   A=(120,30), B=(60,220),  C=(180,220) -->
+  <!-- Right DEF (orange): D=(420,30), E=(480,220), F=(360,220) -->
+  <!-- SAS: AB=DF, angle A = angle D, AC=DE -->
+
+  <!-- Triangle ABC (blue) -->
+  <polygon points="120,30 60,220 180,220" fill="#ddeeff" stroke="#3366cc" stroke-width="2"/>
+  <text x="112" y="20"  font-family="serif" font-size="17" font-style="italic">A</text>
+  <text x="42"  y="238" font-family="serif" font-size="17" font-style="italic">B</text>
+  <text x="182" y="238" font-family="serif" font-size="17" font-style="italic">C</text>
+
+  <!-- 1 tick on AB (midpoint (90,125), perp to AB direction (-60,190)) -->
+  <line x1="83" y1="123" x2="97" y2="127" stroke="#3366cc" stroke-width="2"/>
+  <!-- 1 tick on AC (midpoint (150,125), perp to AC direction (60,190)) -->
+  <line x1="143" y1="127" x2="157" y2="123" stroke="#3366cc" stroke-width="2"/>
+  <!-- Angle arc at A -->
+  <path d="M 112,54 A 25,25 0 0,0 128,54" fill="none" stroke="#cc3333" stroke-width="1.8"/>
+
+  <!-- Congruence symbol -->
+  <text x="268" y="138" font-family="serif" font-size="26">&#x2245;</text>
+
+  <!-- Triangle DEF (orange, mirror of ABC): D top, F bottom-left, E bottom-right -->
+  <polygon points="420,30 360,220 480,220" fill="#ffeedd" stroke="#cc6600" stroke-width="2"/>
+  <text x="409" y="20"  font-family="serif" font-size="17" font-style="italic">A'</text>
+  <text x="339" y="238" font-family="serif" font-size="17" font-style="italic">C'</text>
+  <text x="479" y="238" font-family="serif" font-size="17" font-style="italic">B'</text>
+
+  <!-- 1 tick on DF (midpoint (390,125), matches AB) -->
+  <line x1="383" y1="123" x2="397" y2="127" stroke="#cc6600" stroke-width="2"/>
+  <!-- 1 tick on DE (midpoint (450,125), matches AC) -->
+  <line x1="443" y1="127" x2="457" y2="123" stroke="#cc6600" stroke-width="2"/>
+  <!-- Angle arc at D -->
+  <path d="M 412,54 A 25,25 0 0,0 428,54" fill="none" stroke="#cc3333" stroke-width="1.8"/>
+
+  <!-- Caption -->
+  <text x="270" y="258" text-anchor="middle" font-family="serif" font-size="15">AB = A'C',&#160;&#160;AC = A'B',&#160;&#160;&#x2220;A = &#x2220;A'&#160;&#160;&#x27F9;&#160;&#160;&#x25B3;ABC &#x2245; &#x25B3;A'C'B'</text>
+</svg>

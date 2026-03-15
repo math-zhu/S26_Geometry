@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 345">
+  <polygon points="70,165 310,165 140,300" fill="#ffeedd" stroke="#cc6600" stroke-width="2"/>
+  <polygon points="70,165 310,165 140,30"  fill="#ddeeff" stroke="#3366cc" stroke-width="2"/>
+  <line x1="70" y1="165" x2="310" y2="165" stroke="#555555" stroke-width="2.5"/>
+  <text x="52"  y="183" font-family="serif" font-size="17" font-style="italic">A</text>
+  <text x="314" y="183" font-family="serif" font-size="17" font-style="italic">B</text>
+  <text x="133" y="20"  font-family="serif" font-size="17" font-style="italic">C</text>
+  <text x="133" y="320" font-family="serif" font-size="17" font-style="italic">D</text>
+  <text x="200" y="340" text-anchor="middle" font-family="serif" font-size="15">&#x25B3;ABC and &#x25B3;ABD share side AB</text>
+</svg>

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 260">
+  <!--
+    Isosceles triangle ABC: AB = AC (two equal sides)
+    A=(190,30), B=(130,220), C=(250,220)
+    AB = AC = sqrt(60^2 + 190^2) ~ 199, BC = 120
+    Base BC is horizontal. Base angles at B and C are equal.
+  -->
+
+  <!-- Triangle -->
+  <polygon points="190,30 130,220 250,220" fill="#ddeeff" stroke="#3366cc" stroke-width="2"/>
+
+  <!-- Vertex labels -->
+  <text x="183" y="20"  font-family="serif" font-size="17" font-style="italic">A</text>
+  <text x="112" y="238" font-family="serif" font-size="17" font-style="italic">B</text>
+  <text x="252" y="238" font-family="serif" font-size="17" font-style="italic">C</text>
+
+  <!-- 1 tick perpendicular to AB (midpoint (160,125), perp dir (0.954,0.301)) -->
+  <line x1="152" y1="123" x2="168" y2="127" stroke="#3366cc" stroke-width="2"/>
+  <!-- 1 tick perpendicular to AC (midpoint (220,125), perp dir (0.954,-0.301)) -->
+  <line x1="212" y1="127" x2="228" y2="123" stroke="#3366cc" stroke-width="2"/>
+
+  <!-- Equal angle arcs at B and C -->
+  <!-- Arc at B: from point on BC (156,220) sweeping up to point on BA -->
+  <path d="M 156,220 A 26,26 0 0,0 138,195" fill="none" stroke="#cc3333" stroke-width="1.8"/>
+  <!-- Arc at C: from point on CB (224,220) sweeping up to point on CA -->
+  <path d="M 224,220 A 26,26 0 0,1 242,195" fill="none" stroke="#cc3333" stroke-width="1.8"/>
+
+  <!-- Caption -->
+  <text x="190" y="252" text-anchor="middle" font-family="serif" font-size="15">AB = AC&#160;&#160;&#x27F9;&#160;&#160;&#x2220;B = &#x2220;C</text>
+</svg>

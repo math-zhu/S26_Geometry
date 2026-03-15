@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 260">
+  <polygon points="120,30 60,220 180,220" fill="#ddeeff" stroke="#3366cc" stroke-width="2"/>
+  <text x="113" y="20"  font-family="serif" font-size="17" font-style="italic">A</text>
+  <text x="42"  y="238" font-family="serif" font-size="17" font-style="italic">B</text>
+  <text x="182" y="238" font-family="serif" font-size="17" font-style="italic">C</text>
+  <path d="M 86,220 A 26,26 0 0,0 68,195" fill="none" stroke="#cc3333" stroke-width="1.8"/>
+  <path d="M 154,220 A 26,26 0 0,1 165,199" fill="none" stroke="#cc3333" stroke-width="1.8"/>
+  <line x1="120" y1="213" x2="120" y2="227" stroke="#3366cc" stroke-width="2"/>
+  <text x="248" y="138" font-family="serif" font-size="26">&#x2245;</text>
+  <polygon points="400,30 340,220 460,220" fill="#ffeedd" stroke="#cc6600" stroke-width="2"/>
+  <text x="393" y="20"  font-family="serif" font-size="17" font-style="italic">A</text>
+  <text x="322" y="238" font-family="serif" font-size="17" font-style="italic">C</text>
+  <text x="462" y="238" font-family="serif" font-size="17" font-style="italic">B</text>
+  <path d="M 366,220 A 26,26 0 0,0 348,195" fill="none" stroke="#cc3333" stroke-width="1.8"/>
+  <path d="M 434,220 A 26,26 0 0,1 452,195" fill="none" stroke="#cc3333" stroke-width="1.8"/>
+  <line x1="400" y1="213" x2="400" y2="227" stroke="#cc6600" stroke-width="2"/>
+  <text x="260" y="253" text-anchor="middle" font-family="serif" font-size="15">&#x2220;B = &#x2220;C,&#160;&#160;BC = CB,&#160;&#160;&#x2220;C = &#x2220;B&#160;&#160;&#x27F9;&#160;&#160;&#x25B3;ABC &#x2245; &#x25B3;ACB</text>
+</svg>

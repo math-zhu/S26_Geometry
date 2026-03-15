@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 295">
+  <!--
+    Same scalene triangle as congruent_triangles.svg:
+    ABC: A=(50,200), B=(220,200), C=(70,70)
+    DEF: 180-deg rotation of ABC shifted right
+         D=(457,113), E=(287,113), F=(437,243)
+
+    SAS: AB = DE (side a), AC = DF (side b), angle A = angle D
+  -->
+
+  <!-- Triangle ABC (blue) -->
+  <polygon points="50,200 220,200 70,70" fill="#ddeeff" stroke="#3366cc" stroke-width="2"/>
+  <text x="34"  y="218" font-family="serif" font-size="17" font-style="italic">A</text>
+  <text x="224" y="218" font-family="serif" font-size="17" font-style="italic">B</text>
+  <text x="63"  y="58"  font-family="serif" font-size="17" font-style="italic">C</text>
+
+  <!-- Side labels for ABC -->
+  <!-- 2 ticks on AB (midpoint ~(135,200), horizontal seg → vertical ticks) -->
+  <line x1="131" y1="193" x2="131" y2="207" stroke="#3366cc" stroke-width="2"/>
+  <line x1="138" y1="193" x2="138" y2="207" stroke="#3366cc" stroke-width="2"/>
+  <!-- 1 tick on AC (midpoint (60,135), perp direction ~(0.988,0.152)) -->
+  <line x1="52" y1="134" x2="68" y2="136" stroke="#3366cc" stroke-width="2"/>
+  <!-- Angle arc at A: from point on AB (75,200) to point on AC (54,175), radius 25 -->
+  <path d="M 75,200 A 25,25 0 0,0 54,175" fill="none" stroke="#cc3333" stroke-width="1.8"/>
+
+  <!-- Congruence symbol -->
+  <text x="240" y="152" font-family="serif" font-size="26">&#x2245;</text>
+
+  <!-- Triangle DEF (orange): 180-degree rotation of ABC, shifted right -->
+  <polygon points="457,113 287,113 437,243" fill="#ffeedd" stroke="#cc6600" stroke-width="2"/>
+  <text x="462" y="110" font-family="serif" font-size="17" font-style="italic">A'</text>
+  <text x="270" y="110" font-family="serif" font-size="17" font-style="italic">B'</text>
+  <text x="432" y="261" font-family="serif" font-size="17" font-style="italic">C'</text>
+
+  <!-- Side labels for DEF -->
+  <!-- 2 ticks on DE (midpoint ~(372,113), horizontal seg → vertical ticks) -->
+  <line x1="368" y1="106" x2="368" y2="120" stroke="#cc6600" stroke-width="2"/>
+  <line x1="375" y1="106" x2="375" y2="120" stroke="#cc6600" stroke-width="2"/>
+  <!-- 1 tick on DF (midpoint (447,178), same perp direction) -->
+  <line x1="439" y1="177" x2="455" y2="179" stroke="#cc6600" stroke-width="2"/>
+  <!-- Angle arc at D: from point on DE (432,113) to point on DF (453,138), radius 25 -->
+  <path d="M 432,113 A 25,25 0 0,0 453,138" fill="none" stroke="#cc3333" stroke-width="1.8"/>
+
+  <!-- Caption -->
+  <text x="260" y="278" text-anchor="middle" font-family="serif" font-size="15">AB = A'B',&#160;&#160;AC = A'C',&#160;&#160;&#x2220;A = &#x2220;A'&#160;&#160;&#x27F9;&#160;&#160;&#x25B3;ABC &#x2245; &#x25B3;A'B'C'</text>
+</svg>

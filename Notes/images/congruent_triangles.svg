@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 270">
+  <!--
+    Scalene triangle ABC: A=(50,200), B=(220,200), C=(70,70)
+    Side lengths: AB=170, AC~131, BC~199  (all different)
+    Centroid: (113.3, 156.7)
+    DEF = ABC rotated 180 deg around centroid, then shifted +280px right:
+      D=(457,113), E=(287,113), F=(437,243)
+  -->
+
+  <!-- Triangle ABC (blue) -->
+  <polygon points="50,200 220,200 70,70" fill="#ddeeff" stroke="#3366cc" stroke-width="2"/>
+  <text x="34"  y="218" font-family="serif" font-size="17" font-style="italic">A</text>
+  <text x="224" y="218" font-family="serif" font-size="17" font-style="italic">B</text>
+  <text x="64"  y="58"  font-family="serif" font-size="17" font-style="italic">C</text>
+
+  <!-- Congruence symbol -->
+  <text x="240" y="152" font-family="serif" font-size="26">&#x2245;</text>
+
+  <!-- Triangle DEF (orange): exact 180-degree rotation of ABC, shifted right -->
+  <polygon points="457,113 287,113 437,243" fill="#ffeedd" stroke="#cc6600" stroke-width="2"/>
+  <text x="462" y="110" font-family="serif" font-size="17" font-style="italic">A'</text>
+  <text x="270" y="110" font-family="serif" font-size="17" font-style="italic">B'</text>
+  <text x="432" y="261" font-family="serif" font-size="17" font-style="italic">C'</text>
+</svg>
