@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 280">
+  <!-- Triangle ABC: A=(80,220), B=(260,220), C=(160,70) -->
+  <polygon points="80,220 260,220 160,70" fill="#ddeeff" stroke="#3366cc" stroke-width="2"/>
+
+  <!-- Extension of side AB beyond B to point D=(360,220) -->
+  <line x1="260" y1="220" x2="360" y2="220" stroke="#555555" stroke-width="2" stroke-dasharray="6,4"/>
+
+  <!-- Labels for triangle vertices -->
+  <text x="63"  y="238" font-family="serif" font-size="17" font-style="italic">A</text>
+  <text x="264" y="238" font-family="serif" font-size="17" font-style="italic">B</text>
+  <text x="153" y="60"  font-family="serif" font-size="17" font-style="italic">C</text>
+  <text x="362" y="238" font-family="serif" font-size="17" font-style="italic">D</text>
+
+  <!-- Interior angle arc at A (angle CAB): blue -->
+  <path d="M 108,220 A 28,28 0 0,0 96,195" fill="#ddeeff" stroke="#3366cc" stroke-width="1.8"/>
+  <text x="106" y="210" font-family="serif" font-size="14" font-style="italic" fill="#3366cc">&#x3B1;</text>
+
+  <!-- Interior angle arc at C (angle ACB): green -->
+  <path d="M 149,96" font-family="serif"/>
+  <path d="M 146,95 A 26,26 0 0,0 174,94" fill="none" stroke="#228833" stroke-width="1.8"/>
+  <text x="153" y="90" font-family="serif" font-size="14" font-style="italic" fill="#228833">&#x3B3;</text>
+
+  <!-- Exterior angle arc at B (angle CBD): orange, between BC and BD -->
+  <path d="M 248,193 A 30,30 0 0,1 290,220" fill="none" stroke="#cc6600" stroke-width="1.8"/>
+  <text x="278" y="212" font-family="serif" font-size="14" font-style="italic" fill="#cc6600">&#x3B4;</text>
+
+  <!-- Caption -->
+  <text x="210" y="270" text-anchor="middle" font-family="serif" font-size="14">Exterior angle &#x3B4; &gt; &#x3B1; and &#x3B4; &gt; &#x3B3;</text>
+</svg>

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 280">
+  <!-- Two intersecting lines -->
+  <!-- Line 1: from bottom-left to top-right -->
+  <line x1="50" y1="230" x2="330" y2="50" stroke="black" stroke-width="2"/>
+  <!-- Line 2: from top-left to bottom-right -->
+  <line x1="50" y1="50" x2="330" y2="230" stroke="black" stroke-width="2"/>
+
+  <!-- Intersection point P at (190, 140) -->
+
+  <!-- Angle arcs for vertical angle pair 1 (top and bottom): blue -->
+  <!-- Top angle arc: between upper-left and upper-right rays -->
+  <path d="M 162,122 A 36,36 0 0,1 218,122" fill="none" stroke="#3366cc" stroke-width="1.8"/>
+  <!-- Bottom angle arc: between lower-left and lower-right rays -->
+  <path d="M 162,158 A 36,36 0 0,0 218,158" fill="none" stroke="#3366cc" stroke-width="1.8"/>
+
+  <!-- Angle arcs for vertical angle pair 2 (left and right): orange -->
+  <!-- Left angle arc -->
+  <path d="M 162,122 A 36,36 0 0,0 162,158" fill="none" stroke="#cc6600" stroke-width="1.8"/>
+  <!-- Right angle arc -->
+  <path d="M 218,122 A 36,36 0 0,1 218,158" fill="none" stroke="#cc6600" stroke-width="1.8"/>
+
+  <!-- Intersection dot -->
+  <circle cx="190" cy="140" r="3" fill="black"/>
+
+  <!-- Labels -->
+  <text x="183" y="118" font-family="serif" font-size="15" font-style="italic" fill="#3366cc">&#x3B1;</text>
+  <text x="183" y="170" font-family="serif" font-size="15" font-style="italic" fill="#3366cc">&#x3B1;</text>
+  <text x="148" y="144" font-family="serif" font-size="15" font-style="italic" fill="#cc6600">&#x3B2;</text>
+  <text x="218" y="144" font-family="serif" font-size="15" font-style="italic" fill="#cc6600">&#x3B2;</text>
+
+  <!-- Caption -->
+  <text x="190" y="268" text-anchor="middle" font-family="serif" font-size="14">Vertical angles: &#x3B1; = &#x3B1;,&#160;&#160;&#x3B2; = &#x3B2;</text>
+</svg>

@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 290">
+
+  <!-- Direct straight line A to B: green, thick -->
+  <line x1="50" y1="200" x2="430" y2="200" stroke="#228833" stroke-width="2.5"/>
+
+  <!-- Curved path: M 50,200 C 100,50 200,50 250,130 S 400,50 430,200
+       Seg1: P0=(50,200) P1=(100,50) P2=(200,50) P3=(250,130)
+       Seg2: P0=(250,130) P1=(300,210) P2=(400,50) P3=(430,200)
+       Exact on-curve samples used for polyline:
+         t=0.2 seg1 -> (85,127)
+         t=0.6 seg1 -> (172,77)
+         junction   -> (250,130)
+         t=0.3 seg2 -> (305,152)
+         t=0.7 seg2 -> (387,134) -->
+  <path d="M 50,200 C 100,50 200,50 250,130 S 400,50 430,200"
+        fill="none" stroke="#aaaaaa" stroke-width="1.5" stroke-dasharray="5,3"/>
+
+  <!-- Polygonal approximation: all vertices lie exactly on the curve -->
+  <polyline points="50,200 85,127 172,77 250,130 305,152 387,134 430,200"
+            fill="none" stroke="#3366cc" stroke-width="2"/>
+
+  <!-- Dots at intermediate polygonal vertices (on curve) -->
+  <circle cx="85"  cy="127" r="3.5" fill="#3366cc"/>
+  <circle cx="172" cy="77"  r="3.5" fill="#3366cc"/>
+  <circle cx="250" cy="130" r="3.5" fill="#3366cc"/>
+  <circle cx="305" cy="152" r="3.5" fill="#3366cc"/>
+  <circle cx="387" cy="134" r="3.5" fill="#3366cc"/>
+
+  <!-- Endpoints -->
+  <circle cx="50"  cy="200" r="4.5" fill="black"/>
+  <circle cx="430" cy="200" r="4.5" fill="black"/>
+
+  <!-- Labels A and B -->
+  <text x="32"  y="218" font-family="serif" font-size="18" font-style="italic">A</text>
+  <text x="434" y="218" font-family="serif" font-size="18" font-style="italic">B</text>
+
+  <!-- Label for straight line -->
+  <text x="225" y="222" text-anchor="middle" font-family="serif" font-size="13" fill="#228833">AB (straight)</text>
+
+  <!-- Label for polygonal path -->
+  <text x="175" y="50" text-anchor="middle" font-family="serif" font-size="13" fill="#3366cc">polygonal approximation</text>
+
+  <!-- Label for curved path -->
+  <text x="360" y="38" text-anchor="middle" font-family="serif" font-size="13" fill="#888888">curved path</text>
+
+  <!-- Inequality annotation -->
+  <text x="240" y="270" text-anchor="middle" font-family="serif" font-size="14">
+    polygonal path &#x2265; AB &#x27F9; curved path &#x2265; AB
+  </text>
+
+</svg>

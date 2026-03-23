@@ -40,6 +40,7 @@ What to bring for classes:
 | 2/28 | [N6](Notes/N6.pdf) | 100-107,110-130 | TBD | Chapter II, Problem 19, 21-23, 26-34, 36 |
 | 3/7 | [N7](Notes/N7.pdf) | 145-158 | TBD | Chapter II, Problem 47-59 |
 | 3/14 | [N8](Notes/N8.pdf) | Class notes [N8](Notes/N8.pdf) | TBD | See [N8](Notes/N8.pdf), 9 problems |
+| 3/21 | [N9](Notes/N9.pdf) | Kiselev p34-41 | [Elements BOOK I, Proposition 15-20](https://www.c82.net/euclid/en/book1/)  | Kiselev p44, 86-95 |
 <!--
 | 2/7 | N5 | TBD | TBD | HW5 |
 | 2/14 | N6 and Quiz 1 | TBD |   |   |
