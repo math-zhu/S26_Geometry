@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 320">
+  <!-- Byrne-style: Prop I.9 — Bisect an angle -->
+  <!-- Angle vertex at A=(60,210) -->
+  <!-- Upper arm towards B=(340,75) -->
+  <line x1="60" y1="210" x2="360" y2="66" stroke="#333" stroke-width="2"/>
+  <!-- Lower arm towards C=(355,315) -->
+  <line x1="60" y1="210" x2="360" y2="315" stroke="#333" stroke-width="2"/>
+  <!-- D on upper arm, E on lower arm, equidistant from A (dist≈135) -->
+  <!-- D: unit vec to B=(280,-135)/|...| |280²+135²|=sqrt(78400+18225)=sqrt(96625)≈310.8; D=(60+135*280/310.8,210-135*135/310.8)=(60+121.7,210-58.7)=(182,151) -->
+  <!-- E: unit vec to C=(295,105)/|...| |295²+105²|=sqrt(87025+11025)=sqrt(98050)≈313.1; E=(60+135*295/313.1,210+135*105/313.1)=(60+127.3,210+45.3)=(187,255) -->
+  <circle cx="182" cy="151" r="4" fill="#3366cc"/>
+  <circle cx="187" cy="255" r="4" fill="#cc3333"/>
+  <!-- Equilateral triangle DEF — D and E as base, F away from A -->
+  <!-- midDE=(184.5,203), vec DE=(5,104), |DE|=sqrt(25+10816)=104.1 -->
+  <!-- perp CW: (104,-5)/104.1 -->
+  <!-- height = 104.1*sqrt3/2 = 90.1 -->
+  <!-- F = (184.5+90.1*104/104.1, 203+90.1*(-5)/104.1) = (184.5+90.0, 203-4.3) = (274.5,198.7) ≈ (275,199) -->
+  <polygon points="182,151 187,255 275,199" fill="#fffacc" stroke="#999" stroke-width="1"/>
+  <!-- Bisector: A to F and beyond -->
+  <line x1="60" y1="210" x2="345" y2="195" stroke="#cc3333" stroke-width="2" stroke-dasharray="5,3"/>
+  <!-- Angle arc to show the bisected angles (two equal small arcs) -->
+  <path d="M 130,171 A 80,80 0 0,1 125,242" fill="none" stroke="#3366cc" stroke-width="1.5"/>
+  <!-- Equal-angle marks -->
+  <text x="138" y="188" font-family="serif" font-size="13">&#x2019;</text>
+  <text x="134" y="230" font-family="serif" font-size="13">&#x2019;</text>
+  <!-- Vertex dots (A already implicit) -->
+  <circle cx="60" cy="210" r="4" fill="#333"/>
+  <!-- Labels -->
+  <text x="40"  y="216" font-family="serif" font-size="17" font-style="italic">A</text>
+  <text x="363" y="70"  font-family="serif" font-size="17" font-style="italic">B</text>
+  <text x="363" y="320" font-family="serif" font-size="17" font-style="italic">C</text>
+  <text x="177" y="143" font-family="serif" font-size="15" font-style="italic">D</text>
+  <text x="190" y="273" font-family="serif" font-size="15" font-style="italic">E</text>
+  <text x="278" y="205" font-family="serif" font-size="15" font-style="italic">F</text>
+</svg>

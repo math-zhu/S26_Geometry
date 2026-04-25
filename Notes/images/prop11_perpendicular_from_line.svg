@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 310">
+  <!-- Byrne-style: Prop I.11 — Draw perpendicular to a line from a point on it -->
+  <!-- Line AB, horizontal at y=230 -->
+  <line x1="30"  y1="230" x2="390" y2="230" stroke="#333" stroke-width="2.2"/>
+  <!-- Point D on line at (195,230) -->
+  <circle cx="195" cy="230" r="4" fill="#333"/>
+  <!-- E and F equidistant from D on the line: E=(125,230), F=(265,230) -->
+  <circle cx="125" cy="230" r="4" fill="#3366cc"/>
+  <circle cx="265" cy="230" r="4" fill="#cc3333"/>
+  <!-- Short tick marks EF equal -->
+  <line x1="155" y1="222" x2="159" y2="238" stroke="#555" stroke-width="1.8"/>
+  <line x1="231" y1="222" x2="235" y2="238" stroke="#555" stroke-width="1.8"/>
+  <!-- Equilateral triangle EGF above: midEF=(195,230), EF=140, height=121 -->
+  <!-- G=(195,109) -->
+  <polygon points="125,230 265,230 195,109" fill="#fffacc" stroke="none"/>
+  <line x1="125" y1="230" x2="195" y2="109" stroke="#3366cc" stroke-width="2"/>
+  <line x1="265" y1="230" x2="195" y2="109" stroke="#cc3333" stroke-width="2"/>
+  <!-- Perpendicular DG extended through line to H (use G through D down a bit) -->
+  <line x1="195" y1="50" x2="195" y2="270" stroke="#228833" stroke-width="2.2" stroke-dasharray="none"/>
+  <!-- G as open circle -->
+  <circle cx="195" cy="109" r="4" fill="#555"/>
+  <!-- Right-angle marker at D -->
+  <rect x="198" y="218" width="10" height="10" fill="none" stroke="#555" stroke-width="1.3"/>
+  <!-- Labels -->
+  <text x="14"  y="236" font-family="serif" font-size="17" font-style="italic">A</text>
+  <text x="393" y="236" font-family="serif" font-size="17" font-style="italic">B</text>
+  <text x="113" y="249" font-family="serif" font-size="17" font-style="italic">E</text>
+  <text x="270" y="249" font-family="serif" font-size="17" font-style="italic">F</text>
+  <text x="183" y="249" font-family="serif" font-size="17" font-style="italic">D</text>
+  <text x="199" y="103" font-family="serif" font-size="17" font-style="italic">G</text>
+</svg>

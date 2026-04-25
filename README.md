@@ -41,7 +41,8 @@ What to bring for classes:
 | 3/7 | [N7](Notes/N7.pdf) | 145-158 | TBD | Chapter II, Problem 47-59 |
 | 3/14 | [N8](Notes/N8.pdf) | Class notes [N8](Notes/N8.pdf) | TBD | See [N8](Notes/N8.pdf), 9 problems |
 | 3/21 | [N9](Notes/N9.pdf) | Kiselev p34-41 | [Elements BOOK I, Proposition 15-20](https://www.c82.net/euclid/en/book1/)  | Kiselev p44, 86-95 |
-| 4/18 | Read Element Book I | Kiselev p55-66 | [Elements BOOK I, Proposition 1, 4, 5, 8, 9, 10, 11, 12, 15, 27, 28, 30, 32](https://www.c82.net/euclid/en/book1/) | Kiselev p66-67, 153-158, 171, 172 |
+| 4/18 | [N10](Notes/N10.pdf) | Kiselev p55-66 | [Elements BOOK I, Proposition 1, 4, 5, 8, 9, 10, 11, 12, 15, 27, 28, 30, 32](https://www.c82.net/euclid/en/book1/) | Kiselev p66-67, 153-158, 171, 172 |
+| 4/25 | [N11](Notes/N11.pdf) | TBD | [Elements BOOK I, Proposition 33, 34, 35, 36, 37, 38, 47, 48](https://www.c82.net/euclid/en/book1/) | TBD |
 <!--
 | 2/7 | N5 | TBD | TBD | HW5 |
 | 2/14 | N6 and Quiz 1 | TBD |   |   |
