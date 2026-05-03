@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 280">
+
+  <!-- Parallelogram ABCD: A=(60,220), B=(320,220), C=(360,60), D=(100,60), O=(210,140) -->
+
+  <!-- Parallelogram sides -->
+  <line x1="60"  y1="220" x2="320" y2="220" stroke="black" stroke-width="2"/>
+  <line x1="100" y1="60"  x2="360" y2="60"  stroke="black" stroke-width="2"/>
+  <line x1="60"  y1="220" x2="100" y2="60"  stroke="black" stroke-width="2"/>
+  <line x1="320" y1="220" x2="360" y2="60"  stroke="black" stroke-width="2"/>
+
+  <!-- Diagonals AC and BD -->
+  <line x1="60"  y1="220" x2="360" y2="60"  stroke="black" stroke-width="2" stroke-dasharray="7,4"/>
+  <line x1="320" y1="220" x2="100" y2="60"  stroke="black" stroke-width="2" stroke-dasharray="7,4"/>
+
+  <!-- Single tick marks on AB midpoint (190,220) and CD midpoint (230,60) -->
+  <line x1="190" y1="213" x2="190" y2="227" stroke="black" stroke-width="1.8"/>
+  <line x1="230" y1="53"  x2="230" y2="67"  stroke="black" stroke-width="1.8"/>
+
+  <!-- Blue arcs: ∠OAB at A and ∠OCD at C (alternate interior angles) -->
+  <path d="M 81,205 A 25,25 0 0,1 85,220" fill="none" stroke="blue" stroke-width="1.8"/>
+  <path d="M 339,75 A 25,25 0 0,1 335,60"  fill="none" stroke="blue" stroke-width="1.8"/>
+
+  <!-- Red arcs: ∠OBA at B and ∠ODC at D (alternate interior angles) -->
+  <path d="M 295,220 A 25,25 0 0,1 300,205" fill="none" stroke="red" stroke-width="1.8"/>
+  <path d="M 125,60  A 25,25 0 0,1 120,75"  fill="none" stroke="red" stroke-width="1.8"/>
+
+  <!-- Intersection point O -->
+  <circle cx="210" cy="140" r="3" fill="black"/>
+
+  <!-- Vertex labels -->
+  <text x="44"  y="238" font-family="serif" font-style="italic" font-size="18">A</text>
+  <text x="326" y="238" font-family="serif" font-style="italic" font-size="18">B</text>
+  <text x="366" y="56"  font-family="serif" font-style="italic" font-size="18">C</text>
+  <text x="82"  y="52"  font-family="serif" font-style="italic" font-size="18">D</text>
+  <text x="216" y="134" font-family="serif" font-style="italic" font-size="16">O</text>
+
+</svg>

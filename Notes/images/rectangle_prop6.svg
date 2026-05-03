@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 290">
+
+  <!-- Rectangle ABCD: A=(60,220), B=(380,220), C=(380,60), D=(60,60) -->
+
+  <!-- Sides -->
+  <line x1="60"  y1="220" x2="380" y2="220" stroke="black" stroke-width="2"/>
+  <line x1="380" y1="220" x2="380" y2="60"  stroke="black" stroke-width="2"/>
+  <line x1="380" y1="60"  x2="60"  y2="60"  stroke="black" stroke-width="2"/>
+  <line x1="60"  y1="60"  x2="60"  y2="220" stroke="black" stroke-width="2"/>
+
+  <!-- Diagonals AC and BD -->
+  <line x1="60"  y1="220" x2="380" y2="60"  stroke="black" stroke-width="2" stroke-dasharray="7,4"/>
+  <line x1="380" y1="220" x2="60"  y2="60"  stroke="black" stroke-width="2" stroke-dasharray="7,4"/>
+
+  <!-- Red right-angle arcs at A and B only -->
+  <!-- A=(60,220): from (78,220)[east/→B] to (60,202)[north/→D], CCW in SVG -->
+  <path d="M 78,220 A 18,18 0 0,0 60,202"   fill="none" stroke="red" stroke-width="1.8"/>
+  <!-- B=(380,220): from (362,220)[west/→A] to (380,202)[north/→C], CW in SVG -->
+  <path d="M 362,220 A 18,18 0 0,1 380,202"  fill="none" stroke="red" stroke-width="1.8"/>
+
+  <!-- Single tick on AB (shared), midpoint (220,220) -->
+  <line x1="220" y1="213" x2="220" y2="227" stroke="black" stroke-width="1.8"/>
+
+  <!-- Double ticks on BC=DA (Prop 1 equal opposite sides) -->
+  <!-- BC right side, midpoint (380,140), perpendicular = horizontal -->
+  <line x1="373" y1="136" x2="387" y2="136" stroke="black" stroke-width="1.8"/>
+  <line x1="373" y1="144" x2="387" y2="144" stroke="black" stroke-width="1.8"/>
+  <!-- DA left side, midpoint (60,140) -->
+  <line x1="53"  y1="136" x2="67"  y2="136" stroke="black" stroke-width="1.8"/>
+  <line x1="53"  y1="144" x2="67"  y2="144" stroke="black" stroke-width="1.8"/>
+
+  <!-- Equal ticks on diagonals (conclusion: AC=BD) -->
+  <!-- AC: dir=(320,-160)/358=(0.894,-0.447), perp=(0.447,0.894). At t=0.38: (181,159) -->
+  <line x1="178" y1="154" x2="184" y2="164" stroke="black" stroke-width="1.8"/>
+  <!-- BD: dir=(-320,-160)/358, perp same magnitude. At t=0.38 from B: (259,159) -->
+  <line x1="256" y1="154" x2="262" y2="164" stroke="black" stroke-width="1.8"/>
+
+  <!-- Vertex labels -->
+  <text x="42"  y="238" font-family="serif" font-style="italic" font-size="18">A</text>
+  <text x="386" y="238" font-family="serif" font-style="italic" font-size="18">B</text>
+  <text x="386" y="56"  font-family="serif" font-style="italic" font-size="18">C</text>
+  <text x="42"  y="56"  font-family="serif" font-style="italic" font-size="18">D</text>
+
+</svg>

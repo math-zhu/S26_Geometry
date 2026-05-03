@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 340">
+  <!-- Square ABCD (side = 260) -->
+  <polygon points="40,300 300,300 300,40 40,40" fill="none" stroke="black" stroke-width="2"/>
+  <!-- Diagonals -->
+  <line x1="40" y1="300" x2="300" y2="40" stroke="black" stroke-width="1.5" stroke-dasharray="7,4"/>
+  <line x1="300" y1="300" x2="40" y2="40" stroke="black" stroke-width="1.5" stroke-dasharray="7,4"/>
+  <!-- Vertex labels -->
+  <text x="18" y="312" font-family="serif" font-style="italic" font-size="18">A</text>
+  <text x="308" y="312" font-family="serif" font-style="italic" font-size="18">B</text>
+  <text x="308" y="38" font-family="serif" font-style="italic" font-size="18">C</text>
+  <text x="18" y="38" font-family="serif" font-style="italic" font-size="18">D</text>
+</svg>

@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 300">
+
+  <!-- Parallelogram ABCD (with perpendicular diagonals → rhombus conclusion)
+       A=(210,250), B=(370,155), C=(210,60), D=(50,155), O=(210,155) -->
+
+  <!-- Sides -->
+  <line x1="210" y1="250" x2="370" y2="155" stroke="black" stroke-width="2"/>
+  <line x1="370" y1="155" x2="210" y2="60"  stroke="black" stroke-width="2"/>
+  <line x1="210" y1="60"  x2="50"  y2="155" stroke="black" stroke-width="2"/>
+  <line x1="50"  y1="155" x2="210" y2="250" stroke="black" stroke-width="2"/>
+
+  <!-- Diagonals AC and BD (given perpendicular) -->
+  <line x1="210" y1="250" x2="210" y2="60"  stroke="black" stroke-width="2" stroke-dasharray="7,4"/>
+  <line x1="50"  y1="155" x2="370" y2="155" stroke="black" stroke-width="2" stroke-dasharray="7,4"/>
+
+  <!-- Single tick on AO (midpoint 210,202) and OC (midpoint 210,107) from Prop 3 -->
+  <line x1="204" y1="202" x2="216" y2="202" stroke="black" stroke-width="1.8"/>
+  <line x1="204" y1="107" x2="216" y2="107" stroke="black" stroke-width="1.8"/>
+
+  <!-- Single tick on OB (midpoint 290,155) as shared side -->
+  <line x1="290" y1="149" x2="290" y2="161" stroke="black" stroke-width="1.8"/>
+
+  <!-- Red right-angle mark at O=(210,155): given AC⊥BD -->
+  <polyline points="210,145 220,145 220,155" fill="none" stroke="red" stroke-width="1.8"/>
+
+  <!-- Conclusion: triple tick marks on all sides (result: AB=BC=CD=DA) -->
+  <!-- AB midpoint (290,202) -->
+  <line x1="284" y1="197" x2="296" y2="207" stroke="black" stroke-width="1.8"/>
+  <line x1="287" y1="192" x2="299" y2="202" stroke="black" stroke-width="1.8"/>
+  <line x1="281" y1="202" x2="293" y2="212" stroke="black" stroke-width="1.8"/>
+  <!-- BC midpoint (290,107) -->
+  <line x1="284" y1="102" x2="296" y2="112" stroke="black" stroke-width="1.8"/>
+  <line x1="287" y1="97"  x2="299" y2="107" stroke="black" stroke-width="1.8"/>
+  <line x1="281" y1="107" x2="293" y2="117" stroke="black" stroke-width="1.8"/>
+
+
+  <!-- Intersection point O -->
+  <circle cx="210" cy="155" r="3" fill="black"/>
+
+  <!-- Vertex labels -->
+  <text x="198" y="270" font-family="serif" font-style="italic" font-size="18">A</text>
+  <text x="376" y="160" font-family="serif" font-style="italic" font-size="18">B</text>
+  <text x="198" y="54"  font-family="serif" font-style="italic" font-size="18">C</text>
+  <text x="28"  y="160" font-family="serif" font-style="italic" font-size="18">D</text>
+  <text x="216" y="150" font-family="serif" font-style="italic" font-size="16">O</text>
+
+</svg>

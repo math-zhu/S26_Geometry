@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 280">
+
+  <!-- Parallelogram ABCD: A=(60,220), B=(320,220), C=(360,60), D=(100,60) -->
+
+  <!-- Sides -->
+  <line x1="60"  y1="220" x2="320" y2="220" stroke="black" stroke-width="2"/>
+  <line x1="100" y1="60"  x2="360" y2="60"  stroke="black" stroke-width="2"/>
+  <line x1="60"  y1="220" x2="100" y2="60"  stroke="black" stroke-width="2"/>
+  <line x1="320" y1="220" x2="360" y2="60"  stroke="black" stroke-width="2"/>
+
+  <!-- Diagonals AC and BD (given equal) -->
+  <line x1="60"  y1="220" x2="360" y2="60"  stroke="black" stroke-width="2" stroke-dasharray="7,4"/>
+  <line x1="320" y1="220" x2="100" y2="60"  stroke="black" stroke-width="2" stroke-dasharray="7,4"/>
+
+  <!-- Single tick on AB (shared), midpoint (190,220) -->
+  <line x1="190" y1="213" x2="190" y2="227" stroke="black" stroke-width="1.8"/>
+
+  <!-- Double ticks on BC=AD (Prop 1 equal sides) -->
+  <!-- BC: (320,220)→(360,60), dir=(40,-160)/165=(0.242,-0.970), perp=(0.970,0.242). midpoint=(340,140) -->
+  <!-- Two tick lines offset ±4 along BC direction from midpoint -->
+  <line x1="333" y1="142" x2="345" y2="145" stroke="black" stroke-width="1.8"/>
+  <line x1="335" y1="134" x2="347" y2="137" stroke="black" stroke-width="1.8"/>
+  <!-- AD: (60,220)→(100,60), same direction. midpoint=(80,140) -->
+  <line x1="73"  y1="142" x2="85"  y2="145" stroke="black" stroke-width="1.8"/>
+  <line x1="75"  y1="134" x2="87"  y2="137" stroke="black" stroke-width="1.8"/>
+
+  <!-- Equal ticks on diagonals AC=BD (hypothesis) -->
+  <!-- AC: at t=0.4 from A: (180,156). dir=(300,-160)/340=(0.882,-0.471), perp=(0.471,0.882) -->
+  <line x1="177" y1="151" x2="183" y2="161" stroke="black" stroke-width="1.8"/>
+  <!-- BD: at t=0.4 from B: (232,156). dir=(-220,-160)/272=(-0.809,-0.588), perp=(0.588,0.809) -->
+  <line x1="228" y1="151" x2="236" y2="162" stroke="black" stroke-width="1.8"/>
+
+  <!-- Conclusion: red right-angle arcs at A and B -->
+  <!-- A=(60,220): ∠DAB=90°. Ray→D pt at r=18: (64,203). Ray→B pt: (78,220). sweep=1 (CW, inside) -->
+  <path d="M 64,203 A 18,18 0 0,1 78,220"  fill="none" stroke="red" stroke-width="1.8"/>
+  <!-- B=(320,220): ∠ABC=90°. Ray→A pt: (302,220). Ray→C pt at r=18: (324,203). sweep=1 (CW, inside) -->
+  <path d="M 302,220 A 18,18 0 0,1 324,203" fill="none" stroke="red" stroke-width="1.8"/>
+
+  <!-- Vertex labels -->
+  <text x="44"  y="238" font-family="serif" font-style="italic" font-size="18">A</text>
+  <text x="326" y="238" font-family="serif" font-style="italic" font-size="18">B</text>
+  <text x="366" y="56"  font-family="serif" font-style="italic" font-size="18">C</text>
+  <text x="82"  y="52"  font-family="serif" font-style="italic" font-size="18">D</text>
+
+</svg>

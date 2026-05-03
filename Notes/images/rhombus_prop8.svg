@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 280">
+
+  <!-- Rhombus ABCD: A=(60,220), B=(280,220), C=(360,60), D=(140,60)
+       All sides = sqrt((220)^2+(160)^2) ≈ 272, approximately equal for visual rhombus -->
+
+  <!-- Sides (all equal) -->
+  <line x1="60"  y1="220" x2="280" y2="220" stroke="black" stroke-width="2"/>
+  <line x1="280" y1="220" x2="360" y2="60"  stroke="black" stroke-width="2"/>
+  <line x1="360" y1="60"  x2="140" y2="60"  stroke="black" stroke-width="2"/>
+  <line x1="140" y1="60"  x2="60"  y2="220" stroke="black" stroke-width="2"/>
+
+  <!-- Diagonal BD -->
+  <line x1="280" y1="220" x2="140" y2="60"  stroke="black" stroke-width="2" stroke-dasharray="7,4"/>
+
+  <!-- Triple tick marks on all four sides (rhombus: all sides equal) -->
+  <!-- AB midpoint (170,220) -->
+  <line x1="166" y1="213" x2="166" y2="227" stroke="black" stroke-width="1.8"/>
+  <line x1="170" y1="213" x2="170" y2="227" stroke="black" stroke-width="1.8"/>
+  <line x1="174" y1="213" x2="174" y2="227" stroke="black" stroke-width="1.8"/>
+  <!-- CD midpoint (250,60) -->
+  <line x1="246" y1="53"  x2="246" y2="67"  stroke="black" stroke-width="1.8"/>
+  <line x1="250" y1="53"  x2="250" y2="67"  stroke="black" stroke-width="1.8"/>
+  <line x1="254" y1="53"  x2="254" y2="67"  stroke="black" stroke-width="1.8"/>
+  <!-- BC: (280,220)→(360,60), midpoint (320,140), dir=(80,-160)/179=(0.447,-0.894), perp=(0.894,0.447) -->
+  <line x1="314" y1="137" x2="326" y2="143" stroke="black" stroke-width="1.8"/>
+  <line x1="317" y1="131" x2="329" y2="137" stroke="black" stroke-width="1.8"/>
+  <line x1="311" y1="143" x2="323" y2="149" stroke="black" stroke-width="1.8"/>
+  <!-- AD: (60,220)→(140,60), midpoint (100,140), same direction -->
+  <line x1="94"  y1="137" x2="106" y2="143" stroke="black" stroke-width="1.8"/>
+  <line x1="97"  y1="131" x2="109" y2="137" stroke="black" stroke-width="1.8"/>
+  <line x1="91"  y1="143" x2="103" y2="149" stroke="black" stroke-width="1.8"/>
+
+  <!-- Blue arcs: ∠ABD at B and ∠BDC at D (alternate interior angles, AB∥CD conclusion) -->
+  <!-- B=(280,220): ray BA (left) pt (255,220); ray BD (upper-left) pt (269,206); sweep=0 -->
+  <path d="M 255,220 A 25,25 0 0,0 269,206" fill="none" stroke="blue" stroke-width="1.8"/>
+  <!-- D=(140,60): ray DC (right) pt (165,60); ray DB (lower-right) pt (153,74); sweep=1 -->
+  <path d="M 165,60  A 25,25 0 0,1 153,74"  fill="none" stroke="blue" stroke-width="1.8"/>
+
+  <!-- Vertex labels -->
+  <text x="42"  y="238" font-family="serif" font-style="italic" font-size="18">A</text>
+  <text x="286" y="238" font-family="serif" font-style="italic" font-size="18">B</text>
+  <text x="366" y="56"  font-family="serif" font-style="italic" font-size="18">C</text>
+  <text x="120" y="52"  font-family="serif" font-style="italic" font-size="18">D</text>
+
+</svg>

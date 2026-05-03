@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 290">
+
+  <!-- Coordinates:
+       ℓ  at y=250: A=(80,250), B=(210,250), C=(340,250)
+       ℓ' slanted:  A'=(80,180), B'=(210,150), C'=(340,120)  [B' is on ℓ' by design]
+       Projection lines vertical: AA', BB', CC'
+       Horizontal through B' at y=150: E=(80,150), F=(340,150)  -->
+
+  <!-- Bottom line ℓ -->
+  <line x1="30"  y1="250" x2="415" y2="250" stroke="black" stroke-width="2"/>
+  <text x="420" y="254" font-family="serif" font-style="italic" font-size="17">ℓ</text>
+
+  <!-- Top line ℓ': through A'=(80,180) and C'=(340,120), extended -->
+  <!-- slope = -60/260; at x=20: y≈194; at x=405: y≈104 -->
+  <line x1="20"  y1="194" x2="405" y2="104" stroke="black" stroke-width="2"/>
+  <text x="408" y="108" font-family="serif" font-style="italic" font-size="17">ℓ'</text>
+
+  <!-- Projection lines (all vertical = parallel) -->
+  <!-- AA' -->
+  <line x1="80"  y1="250" x2="80"  y2="180" stroke="black" stroke-width="1.8"/>
+  <!-- BB' -->
+  <line x1="210" y1="250" x2="210" y2="150" stroke="black" stroke-width="1.8"/>
+  <!-- CC' -->
+  <line x1="340" y1="250" x2="340" y2="120" stroke="black" stroke-width="1.8"/>
+
+  <!-- Construction: dashed horizontal through B' at y=150 -->
+  <line x1="80"  y1="150" x2="340" y2="150" stroke="black" stroke-width="1.5" stroke-dasharray="6,4"/>
+
+  <!-- Double tick marks: AB=BC (given equal segments on ℓ) -->
+  <!-- AB midpoint (145,250) -->
+  <line x1="141" y1="243" x2="141" y2="257" stroke="black" stroke-width="1.8"/>
+  <line x1="148" y1="243" x2="148" y2="257" stroke="black" stroke-width="1.8"/>
+  <!-- BC midpoint (275,250) -->
+  <line x1="271" y1="243" x2="271" y2="257" stroke="black" stroke-width="1.8"/>
+  <line x1="278" y1="243" x2="278" y2="257" stroke="black" stroke-width="1.8"/>
+
+  <!-- Single tick marks: EB'=B'F (from the two parallelograms) -->
+  <!-- EB' midpoint (145,150) -->
+  <line x1="145" y1="143" x2="145" y2="157" stroke="black" stroke-width="1.8"/>
+  <!-- B'F midpoint (275,150) -->
+  <line x1="275" y1="143" x2="275" y2="157" stroke="black" stroke-width="1.8"/>
+
+  <!-- Blue arcs: ∠B'A'E at A' and ∠B'C'F at C' (equal angles by parallel lines on ℓ') -->
+  <!-- At A'=(80,180): ray A'→E dir (0,-30) → pt (80,162); ray A'→B' dir (130,-30)/133.4 → pt (98,176); sweep=1 -->
+  <path d="M 80,162 A 18,18 0 0,1 98,176"   fill="none" stroke="blue" stroke-width="1.8"/>
+  <!-- At C'=(340,120): ray C'→F dir (0,30) → pt (340,138); ray C'→B' dir (-130,30)/133.4 → pt (323,124); sweep=1 -->
+  <path d="M 340,138 A 18,18 0 0,1 323,124" fill="none" stroke="blue" stroke-width="1.8"/>
+
+  <!-- Dashed segment EA': E=(80,150) to A'=(80,180), extension of AA' beyond A' -->
+  <line x1="80" y1="150" x2="80" y2="180" stroke="black" stroke-width="1.5" stroke-dasharray="4,3"/>
+
+  <!-- Red arcs: ∠B'EA' at E and ∠B'FC' at F -->
+  <!-- At E=(80,150): ray→B' (right) pt (98,150); ray→A' (down) pt (80,168); angle opens lower-right; sweep=1 -->
+  <path d="M 98,150 A 18,18 0 0,1 80,168" fill="none" stroke="red" stroke-width="1.8"/>
+  <!-- At F=(340,150): ray→B' (left) pt (322,150); ray→C' (up) pt (340,132); angle opens upper-left; sweep=1 -->
+  <path d="M 322,150 A 18,18 0 0,1 340,132" fill="none" stroke="red" stroke-width="1.8"/>
+
+  <!-- Vertex points -->
+  <circle cx="80"  cy="250" r="3" fill="black"/>
+  <circle cx="210" cy="250" r="3" fill="black"/>
+  <circle cx="340" cy="250" r="3" fill="black"/>
+  <circle cx="80"  cy="180" r="3" fill="black"/>
+  <circle cx="210" cy="150" r="3" fill="black"/>
+  <circle cx="340" cy="120" r="3" fill="black"/>
+  <circle cx="80"  cy="150" r="3" fill="black"/>
+  <circle cx="340" cy="150" r="3" fill="black"/>
+
+  <!-- Labels -->
+  <text x="68"  y="268" font-family="serif" font-style="italic" font-size="18">A</text>
+  <text x="198" y="268" font-family="serif" font-style="italic" font-size="18">B</text>
+  <text x="328" y="268" font-family="serif" font-style="italic" font-size="18">C</text>
+  <text x="48"  y="183" font-family="serif" font-style="italic" font-size="18">A'</text>
+  <text x="216" y="143" font-family="serif" font-style="italic" font-size="18">B'</text>
+  <text x="346" y="122" font-family="serif" font-style="italic" font-size="18">C'</text>
+  <text x="56"  y="147" font-family="serif" font-style="italic" font-size="17">E</text>
+  <text x="346" y="147" font-family="serif" font-style="italic" font-size="17">F</text>
+
+</svg>
