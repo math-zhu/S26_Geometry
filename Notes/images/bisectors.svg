@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 300">
+  <!-- Triangle ABC: A=(210,40), B=(60,260), C=(390,260) -->
+  <!-- Angle bisectors meet at incenter I -->
+  <!-- D on BC: BD/DC = AB/AC = ~250/210 => D~(240,260) -->
+  <!-- E on CA: CE/EA = BC/AB = ~330/250 => E~(282,136) -->
+  <!-- F on AB: AF/FB = AC/BC = ~210/330 => F~(148,142) -->
+  <!-- Incenter I = (aA+bB+cC)/(a+b+c), a=BC=330,b=CA=210,c=AB=250, sum=790 -->
+  <!-- Ix=(330*210+210*60+250*390)/790=(69300+12600+97500)/790=179400/790=227 -->
+  <!-- Iy=(330*40+210*260+250*260)/790=(13200+54600+65000)/790=132800/790=168 -->
+
+  <!-- Triangle sides -->
+  <line x1="210" y1="40" x2="60" y2="260" stroke="black" stroke-width="2"/>
+  <line x1="60" y1="260" x2="390" y2="260" stroke="black" stroke-width="2"/>
+  <line x1="390" y1="260" x2="210" y2="40" stroke="black" stroke-width="2"/>
+  <!-- Angle bisectors -->
+  <line x1="210" y1="40" x2="220" y2="260" stroke="black" stroke-width="1.5"/>
+  <line x1="60" y1="260" x2="290" y2="138" stroke="black" stroke-width="1.5"/>
+  <line x1="390" y1="260" x2="141" y2="142" stroke="black" stroke-width="1.5"/>
+  <!-- Incenter dot -->
+  <circle cx="216" cy="178" r="3" fill="black"/>
+  <!-- Vertex labels -->
+  <text x="202" y="28" font-family="serif" font-style="italic" font-size="18">A</text>
+  <text x="40" y="274" font-family="serif" font-style="italic" font-size="18">B</text>
+  <text x="396" y="274" font-family="serif" font-style="italic" font-size="18">C</text>
+  <!-- Foot labels -->
+  <text x="216" y="276" font-family="serif" font-style="italic" font-size="18">D</text>
+  <text x="296" y="136" font-family="serif" font-style="italic" font-size="18">E</text>
+  <text x="122" y="144" font-family="serif" font-style="italic" font-size="18">F</text>
+  <!-- Incenter label -->
+  <text x="222" y="176" font-family="serif" font-style="italic" font-size="18">I</text>
+</svg>

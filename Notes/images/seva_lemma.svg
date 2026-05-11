@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 300">
+  <!-- Triangle ABC: A=(210,50), B=(60,250), C=(390,250), D=(290,250), P on AD=(260,170) -->
+  <line x1="210" y1="50" x2="60" y2="250" stroke="black" stroke-width="2"/>
+  <line x1="60" y1="250" x2="390" y2="250" stroke="black" stroke-width="2"/>
+  <line x1="390" y1="250" x2="210" y2="50" stroke="black" stroke-width="2"/>
+  <!-- Cevian AD through P -->
+  <line x1="210" y1="50" x2="290" y2="250" stroke="black" stroke-width="1.5"/>
+  <!-- Lines BP and CP -->
+  <line x1="60" y1="250" x2="258" y2="170" stroke="black" stroke-width="1.5"/>
+  <line x1="390" y1="250" x2="258" y2="170" stroke="black" stroke-width="1.5"/>
+  <!-- P dot -->
+  <circle cx="258" cy="170" r="3" fill="black"/>
+  <!-- Labels -->
+  <text x="202" y="38" font-family="serif" font-style="italic" font-size="18">A</text>
+  <text x="40" y="262" font-family="serif" font-style="italic" font-size="18">B</text>
+  <text x="396" y="262" font-family="serif" font-style="italic" font-size="18">C</text>
+  <text x="286" y="272" font-family="serif" font-style="italic" font-size="18">D</text>
+  <text x="266" y="168" font-family="serif" font-style="italic" font-size="18">P</text>
+</svg>

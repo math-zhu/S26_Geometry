@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 300">
+  <!-- Triangle ABC: A=(210,40), B=(60,260), C=(390,260) -->
+  <!-- Interior point P=(220,165) -->
+  <!-- D on BC: cevian from A through P hits BC -->
+  <!-- D = intersection of line AP with BC (y=260) -->
+  <!-- AP direction: (220-210,165-40)=(10,125), param t: y=40+125t=260 => t=1.76, x=210+10*1.76=227.6 => D=(228,260) -->
+  <!-- E on CA: cevian from B=(60,260) through P=(220,165) hits CA -->
+  <!-- Line BP: dir (160,-95), param: (60+160t, 260-95t) -->
+  <!-- Line CA: from C=(390,260) to A=(210,40), param s: (390-180s, 260-220s) -->
+  <!-- 60+160t=390-180s, 260-95t=260-220s => 95t=220s => s=95t/220 -->
+  <!-- 60+160t=390-180*(95t/220) => 60+160t=390-77.7t => 237.7t=330 => t=1.388 -->
+  <!-- E=(60+160*1.388, 260-95*1.388)=(282,128) -->
+  <!-- F on AB: cevian from C=(390,260) through P=(220,165) hits AB -->
+  <!-- Line CP: dir (-170,-95), param: (390-170t,260-95t) -->
+  <!-- Line AB: from A=(210,40) to B=(60,260), param s: (210-150s,40+220s) -->
+  <!-- 390-170t=210-150s, 260-95t=40+220s => 220-95t=220s+40 => 180=220s+95t -->
+  <!-- 390-170t=210-150s => 180=170t-150s -->
+  <!-- 180=170t-150s and 180=220s+95t => 170t-150s=220s+95t => 75t=370s => t=4.933s -->
+  <!-- 180=170*4.933s-150s=838.6s-150s=688.6s => s=0.2613 => F=(210-150*0.2613,40+220*0.2613)=(171,97) -->
+
+  <!-- Triangle sides -->
+  <line x1="210" y1="40" x2="60" y2="260" stroke="black" stroke-width="2"/>
+  <line x1="60" y1="260" x2="390" y2="260" stroke="black" stroke-width="2"/>
+  <line x1="390" y1="260" x2="210" y2="40" stroke="black" stroke-width="2"/>
+  <!-- Cevians AD, BE, CF -->
+  <line x1="210" y1="40" x2="228" y2="260" stroke="black" stroke-width="1.5"/>
+  <line x1="60" y1="260" x2="282" y2="128" stroke="black" stroke-width="1.5"/>
+  <line x1="390" y1="260" x2="151" y2="127" stroke="black" stroke-width="1.5"/>
+  <!-- P dot -->
+  <circle cx="220" cy="165" r="3" fill="black"/>
+  <!-- Vertex labels -->
+  <text x="202" y="28" font-family="serif" font-style="italic" font-size="18">A</text>
+  <text x="40" y="274" font-family="serif" font-style="italic" font-size="18">B</text>
+  <text x="396" y="274" font-family="serif" font-style="italic" font-size="18">C</text>
+  <!-- Foot labels -->
+  <text x="224" y="276" font-family="serif" font-style="italic" font-size="18">D</text>
+  <text x="288" y="124" font-family="serif" font-style="italic" font-size="18">E</text>
+  <text x="132" y="130" font-family="serif" font-style="italic" font-size="18">F</text>
+  <!-- P label -->
+  <text x="228" y="163" font-family="serif" font-style="italic" font-size="18">P</text>
+</svg>

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 300">
+  <!-- Triangle ABC with angle bisector AD -->
+  <!-- A=(200,50), B=(60,250), C=(390,250), D=(230,250) -->
+  <line x1="200" y1="50" x2="60" y2="250" stroke="black" stroke-width="2"/>
+  <line x1="60" y1="250" x2="390" y2="250" stroke="black" stroke-width="2"/>
+  <line x1="390" y1="250" x2="200" y2="50" stroke="black" stroke-width="2"/>
+  <!-- Angle bisector AD -->
+  <line x1="200" y1="50" x2="230" y2="250" stroke="black" stroke-width="1.5"/>
+  <!-- Altitudes from D to AB and AC -->
+  <line x1="230" y1="250" x2="116" y2="170" stroke="gray" stroke-width="1.5" stroke-dasharray="7,4"/>
+  <line x1="230" y1="250" x2="314" y2="170" stroke="gray" stroke-width="1.5" stroke-dasharray="7,4"/>
+  <!-- Right-angle marks at E and F -->
+  <!-- E=(116,170): AB direction ~(-140,200), perp ~(200,140), normalized small -->
+  <polyline points="122,159 132,167 123,178" fill="none" stroke="gray" stroke-width="1.2"/>
+  <!-- F=(314,170): along AC (0.689,0.725)*8=(5.5,5.8), perp toward D (-0.724,0.689)*8=(-5.8,5.5) -->
+  <polyline points="308,176 314,182 320,176" fill="none" stroke="gray" stroke-width="1.2"/>
+  <!-- Labels -->
+  <text x="192" y="38" font-family="serif" font-style="italic" font-size="18">A</text>
+  <text x="40" y="262" font-family="serif" font-style="italic" font-size="18">B</text>
+  <text x="396" y="262" font-family="serif" font-style="italic" font-size="18">C</text>
+  <text x="226" y="272" font-family="serif" font-style="italic" font-size="18">D</text>
+  <text x="96" y="168" font-family="serif" font-style="italic" font-size="18">E</text>
+  <text x="322" y="162" font-family="serif" font-style="italic" font-size="18">F</text>
+
+</svg>

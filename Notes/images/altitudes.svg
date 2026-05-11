@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 300">
+  <!-- Triangle ABC: A=(210,40), B=(60,260), C=(390,260) -->
+  <!-- Triangle sides -->
+  <line x1="210" y1="40" x2="60" y2="260" stroke="black" stroke-width="2"/>
+  <line x1="60" y1="260" x2="390" y2="260" stroke="black" stroke-width="2"/>
+  <line x1="390" y1="260" x2="210" y2="40" stroke="black" stroke-width="2"/>
+  <!-- Altitudes -->
+  <line x1="210" y1="40" x2="210" y2="260" stroke="black" stroke-width="1.5" stroke-dasharray="7,4"/>
+  <line x1="60" y1="260" x2="258" y2="98" stroke="black" stroke-width="1.5" stroke-dasharray="7,4"/>
+  <line x1="390" y1="260" x2="165" y2="106" stroke="black" stroke-width="1.5" stroke-dasharray="7,4"/>
+  <!-- Right-angle mark at D=(210,260) -->
+  <polyline points="200,260 200,250 210,250" fill="none" stroke="black" stroke-width="1.2"/>
+  <!-- Right-angle mark at E=(258,98) -->
+  <polyline points="263,104 257,109 252,103" fill="none" stroke="black" stroke-width="1.2"/>
+  <!-- Right-angle mark at F=(165,106) -->
+  <polyline points="161,113 167,117 172,111" fill="none" stroke="black" stroke-width="1.2"/>
+  <!-- Orthocenter dot -->
+  <circle cx="210" cy="137" r="3" fill="black"/>
+  <!-- Vertex labels -->
+  <text x="202" y="28" font-family="serif" font-style="italic" font-size="18">A</text>
+  <text x="40" y="274" font-family="serif" font-style="italic" font-size="18">B</text>
+  <text x="396" y="274" font-family="serif" font-style="italic" font-size="18">C</text>
+  <!-- Foot labels -->
+  <text x="216" y="276" font-family="serif" font-style="italic" font-size="18">D</text>
+  <text x="264" y="96" font-family="serif" font-style="italic" font-size="18">E</text>
+  <text x="145" y="108" font-family="serif" font-style="italic" font-size="18">F</text>
+  <!-- Orthocenter label -->
+  <text x="218" y="138" font-family="serif" font-style="italic" font-size="18">H</text>
+</svg>

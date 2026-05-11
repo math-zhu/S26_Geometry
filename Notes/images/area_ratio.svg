@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 300">
+  <!-- Triangle ABC with cevian AD -->
+  <!-- A=(210,50), B=(60,250), C=(390,250), D=(290,250) -->
+  <line x1="210" y1="50" x2="60" y2="250" stroke="black" stroke-width="2"/>
+  <line x1="60" y1="250" x2="390" y2="250" stroke="black" stroke-width="2"/>
+  <line x1="390" y1="250" x2="210" y2="50" stroke="black" stroke-width="2"/>
+  <!-- Cevian AD -->
+  <line x1="210" y1="50" x2="290" y2="250" stroke="black" stroke-width="1.5"/>
+  <!-- Height from A -->
+  <line x1="210" y1="50" x2="210" y2="250" stroke="gray" stroke-width="1.2" stroke-dasharray="4,3"/>
+  <!-- Right-angle mark at foot of height -->
+  <polyline points="200,250 200,240 210,240" fill="none" stroke="gray" stroke-width="1.2"/>
+  <!-- Labels -->
+  <text x="202" y="38" font-family="serif" font-style="italic" font-size="18">A</text>
+  <text x="40" y="262" font-family="serif" font-style="italic" font-size="18">B</text>
+  <text x="396" y="262" font-family="serif" font-style="italic" font-size="18">C</text>
+  <text x="284" y="272" font-family="serif" font-style="italic" font-size="18">D</text>
+  <!-- h label -->
+  <text x="216" y="158" font-family="serif" font-style="italic" font-size="16" fill="gray">h</text>
+  <!-- b and c labels -->
+  <text x="163" y="244" font-family="serif" font-style="italic" font-size="16">b</text>
+  <text x="332" y="244" font-family="serif" font-style="italic" font-size="16">c</text>
+</svg>
