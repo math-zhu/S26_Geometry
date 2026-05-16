@@ -45,6 +45,7 @@ What to bring for classes:
 | 4/25 | [N11](Notes/N11.pdf) | TBD | [Elements BOOK I, Proposition 33, 34, 35, 36, 37, 38, 47, 48](https://www.c82.net/euclid/en/book1/) | TBD |
 | 5/2 | [N12](Notes/N12.pdf) | Kiselev p68-75 | TBD | Kiselev p76 179, 180, 181, 182, 192, 193, 194, 196 |
 | 5/9 | [N13](Notes/N13.pdf) | TBD | TBD | Kiselev p216, 522-525 |
+| 5/16 | [N14](Notes/N14.pdf) | TBD | TBD | Kiselev p133 345-351 |
 <!--
 | 2/7 | N5 | TBD | TBD | HW5 |
 | 2/14 | N6 and Quiz 1 | TBD |   |   |

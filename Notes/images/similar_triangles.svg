@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 275">
+  <!-- Left (larger) triangle ABC: A=(90,30), B=(20,250), C=(240,250)  -->
+  <!-- Clearly scalene: angle A≈52°, B≈72°, C≈56°                     -->
+  <!-- Right (smaller) triangle A'B'C': exact scale 0.5 of left        -->
+  <!--   A'=(345,140), B'=(310,250), C'=(420,250)                       -->
+
+  <!-- Left triangle fill -->
+  <polygon points="90,30 20,250 240,250" fill="#f0f4ff" stroke="black" stroke-width="2"/>
+  <!-- Right triangle fill -->
+  <polygon points="345,140 310,250 420,250" fill="#fff4e8" stroke="black" stroke-width="2"/>
+
+  <!-- Angle arcs – matching colors at corresponding vertices -->
+  <!-- Angle A (blue, single arc) -->
+  <path d="M 83,51 A 22,22 0 0,1 102,48" fill="none" stroke="#2255cc" stroke-width="1.8"/>
+  <!-- Angle A' (blue, single arc, smaller) -->
+  <path d="M 340,155 A 16,16 0 0,1 354,153" fill="none" stroke="#2255cc" stroke-width="1.8"/>
+
+  <!-- Angle B (orange, single arc) -->
+  <path d="M 27,229 A 22,22 0 0,1 42,250" fill="none" stroke="#cc5500" stroke-width="1.8"/>
+  <!-- Angle B' (orange, single arc) -->
+  <path d="M 315,235 A 16,16 0 0,1 326,250" fill="none" stroke="#cc5500" stroke-width="1.8"/>
+
+  <!-- Angle C (green, single arc) -->
+  <path d="M 228,232 A 22,22 0 0,0 218,250" fill="none" stroke="#228833" stroke-width="1.8"/>
+  <!-- Angle C' (green, single arc) -->
+  <path d="M 411,237 A 16,16 0 0,0 404,250" fill="none" stroke="#228833" stroke-width="1.8"/>
+
+  <!-- Similarity symbol "∼" between the two triangles -->
+  <text x="277" y="160" font-family="serif" font-size="26" text-anchor="middle">&#x223C;</text>
+
+  <!-- Vertex labels – left triangle -->
+  <text x="83"  y="18"  font-family="serif" font-style="italic" font-size="18">A</text>
+  <text x="2"   y="265" font-family="serif" font-style="italic" font-size="18">B</text>
+  <text x="244" y="265" font-family="serif" font-style="italic" font-size="18">C</text>
+
+  <!-- Vertex labels – right triangle -->
+  <text x="346" y="130" font-family="serif" font-style="italic" font-size="18">A&#x2032;</text>
+  <text x="294" y="265" font-family="serif" font-style="italic" font-size="18">B&#x2032;</text>
+  <text x="424" y="265" font-family="serif" font-style="italic" font-size="18">C&#x2032;</text>
+</svg>

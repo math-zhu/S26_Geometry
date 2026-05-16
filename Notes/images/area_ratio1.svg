@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 280">
+  <!--
+    Left (larger) triangle ABC: A=(90,30), B=(20,240), C=(230,240)
+    Altitude from C to AB: AB direction=(−70,210), |AB|=220.5
+    unit along AB=(−0.318,0.953), foot H = A + t*(B−A) where t=(AC·AB)/|AB|²
+    AC=(140,210), AB=(−70,210), dot=−9800+44100=34300, t=34300/48620≈0.706
+    H=(90−0.706*70, 30+0.706*210)=(40.6, 178.2) ≈ (41, 178)
+    Altitude from A to BC: BC is horizontal y=240, so foot is (90,240)
+
+    Right (smaller) triangle A'B'C': scale k=0.55 of left, translated
+    A'=(320,90), B'=(272,222), C'=(399,222)
+    Altitude from A' to B'C': foot is (320,222)
+  -->
+
+  <!-- Left triangle fill -->
+  <polygon points="90,30 20,240 230,240" fill="#e8f0ff" stroke="black" stroke-width="2"/>
+  <!-- Right triangle fill -->
+  <polygon points="320,90 272,222 399,222" fill="#fff0e0" stroke="black" stroke-width="2"/>
+
+  <!-- Altitude h in left triangle: from A=(90,30) to foot (90,240) -->
+  <line x1="90" y1="30" x2="90" y2="240" stroke="#3366cc" stroke-width="1.5" stroke-dasharray="5,4"/>
+  <!-- Right-angle mark at foot (90,240) -->
+  <polyline points="90,228 100,228 100,240" fill="none" stroke="#3366cc" stroke-width="1.4"/>
+  <!-- h label -->
+  <text x="96" y="148" font-family="serif" font-style="italic" font-size="16" fill="#3366cc">h</text>
+
+  <!-- Altitude h' in right triangle: from A'=(320,90) to foot (320,222) -->
+  <line x1="320" y1="90" x2="320" y2="222" stroke="#cc5500" stroke-width="1.5" stroke-dasharray="5,4"/>
+  <!-- Right-angle mark at foot (320,222) -->
+  <polyline points="320,212 330,212 330,222" fill="none" stroke="#cc5500" stroke-width="1.4"/>
+  <!-- h' label -->
+  <text x="326" y="164" font-family="serif" font-style="italic" font-size="16" fill="#cc5500">h&#x2032;</text>
+
+  <!-- Base labels: AB and A'B' with length indicators -->
+  <!-- Brace / double-headed arrow under AB (y=252) -->
+  <line x1="20" y1="252" x2="230" y2="252" stroke="#555" stroke-width="1.2"/>
+  <line x1="20" y1="248" x2="20"  y2="256" stroke="#555" stroke-width="1.2"/>
+  <line x1="230" y1="248" x2="230" y2="256" stroke="#555" stroke-width="1.2"/>
+  <text x="125" y="268" font-family="serif" font-style="italic" font-size="15" text-anchor="middle" fill="#555">AB</text>
+
+  <!-- Brace under A'B' (y=234) -->
+  <line x1="272" y1="234" x2="399" y2="234" stroke="#555" stroke-width="1.2"/>
+  <line x1="272" y1="230" x2="272" y2="238" stroke="#555" stroke-width="1.2"/>
+  <line x1="399" y1="230" x2="399" y2="238" stroke="#555" stroke-width="1.2"/>
+  <text x="336" y="250" font-family="serif" font-style="italic" font-size="15" text-anchor="middle" fill="#555">A&#x2032;B&#x2032;</text>
+
+  <!-- Vertex labels – left -->
+  <text x="83"  y="18"  font-family="serif" font-style="italic" font-size="18">A</text>
+  <text x="2"   y="254" font-family="serif" font-style="italic" font-size="18">B</text>
+  <text x="234" y="254" font-family="serif" font-style="italic" font-size="18">C</text>
+
+  <!-- Vertex labels – right -->
+  <text x="321" y="80"  font-family="serif" font-style="italic" font-size="18">A&#x2032;</text>
+  <text x="256" y="236" font-family="serif" font-style="italic" font-size="18">B&#x2032;</text>
+  <text x="403" y="236" font-family="serif" font-style="italic" font-size="18">C&#x2032;</text>
+
+  <!-- Scale factor label between triangles -->
+  <text x="250" y="145" font-family="serif" font-size="14" text-anchor="middle" fill="#888">k&#xD7;</text>
+</svg>

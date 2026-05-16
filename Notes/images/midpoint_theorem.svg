@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 300">
+  <!--
+    Scalene triangle: A=(150,40), B=(40,260), C=(400,260)
+    M = midpoint of AB = (95,150)
+    N = midpoint of AC = (275,150)  [MN parallel to BC]
+    P on BC with BP = MN = 180, so P=(220,260)
+    BPNM is a parallelogram: BM || NP (both || AB) and BP || MN (both || BC)
+    Triangle NPC is congruent to triangle AMN
+  -->
+
+  <!-- Parallelogram BPNM shaded (yellow) -->
+  <polygon points="40,260 220,260 275,150 95,150" fill="#fffacc" stroke="none"/>
+  <!-- Triangle AMN shaded (blue) -->
+  <polygon points="150,40 95,150 275,150" fill="#ddeeff" stroke="none"/>
+  <!-- Triangle NPC shaded (orange) -->
+  <polygon points="275,150 220,260 400,260" fill="#ffeedd" stroke="none"/>
+
+  <!-- Triangle sides -->
+  <line x1="150" y1="40"  x2="40"  y2="260" stroke="black" stroke-width="2"/>
+  <line x1="40"  y1="260" x2="400" y2="260" stroke="black" stroke-width="2"/>
+  <line x1="400" y1="260" x2="150" y2="40"  stroke="black" stroke-width="2"/>
+
+  <!-- Midline MN -->
+  <line x1="95"  y1="150" x2="275" y2="150" stroke="#3366cc" stroke-width="1.8"/>
+
+  <!-- NP dashed (parallel to AB, completing the parallelogram) -->
+  <line x1="275" y1="150" x2="220" y2="260" stroke="#cc3333" stroke-width="1.5" stroke-dasharray="6,4"/>
+
+  <!-- Equal-length tick marks on AM and MB (perp to AB; AB unit=(-0.447,0.894), perp=(0.894,0.447)) -->
+  <!-- midpoint of AM = (122.5, 95) -->
+  <line x1="118" y1="92"  x2="128" y2="97"  stroke="black" stroke-width="1.8"/>
+  <!-- midpoint of MB = (67.5, 205) -->
+  <line x1="63"  y1="202" x2="73"  y2="207" stroke="black" stroke-width="1.8"/>
+
+  <!-- Equal-length tick marks on AN and NC (perp to AC; AC unit=(0.752,0.659), perp=(0.659,-0.752)) -->
+  <!-- midpoint of AN = (212.5, 95) -->
+  <line x1="217" y1="91"  x2="208" y2="99"  stroke="black" stroke-width="1.8"/>
+  <!-- midpoint of NC = (337.5, 205) -->
+  <line x1="342" y1="201" x2="333" y2="209" stroke="black" stroke-width="1.8"/>
+
+  <!-- Double tick on MN and BP (equal, both = half BC) -->
+  <line x1="178" y1="143" x2="178" y2="157" stroke="#3366cc" stroke-width="1.8"/>
+  <line x1="182" y1="143" x2="182" y2="157" stroke="#3366cc" stroke-width="1.8"/>
+  <line x1="128" y1="253" x2="128" y2="267" stroke="black" stroke-width="1.8"/>
+  <line x1="132" y1="253" x2="132" y2="267" stroke="black" stroke-width="1.8"/>
+
+  <!-- Labels -->
+  <text x="142" y="28"  font-family="serif" font-style="italic" font-size="18">A</text>
+  <text x="20"  y="274" font-family="serif" font-style="italic" font-size="18">B</text>
+  <text x="406" y="274" font-family="serif" font-style="italic" font-size="18">C</text>
+  <text x="70"  y="163" font-family="serif" font-style="italic" font-size="18">M</text>
+  <text x="281" y="163" font-family="serif" font-style="italic" font-size="18">N</text>
+  <text x="214" y="276" font-family="serif" font-style="italic" font-size="18">P</text>
+</svg>

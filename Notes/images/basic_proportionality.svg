@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 300">
+  <!-- Scalene triangle: A=(150,40) left-of-centre, B=(40,260), C=(400,260) -->
+  <!-- D on AB at t=0.55: (90,161),  E on AC at t=0.55: (288,161)           -->
+  <!-- DE is parallel to BC                                                   -->
+
+  <!-- Shaded sub-triangle ADE -->
+  <polygon points="150,40 90,161 288,161" fill="#ddeeff" stroke="none"/>
+  <!-- Trapezoid BDEC (lower part) -->
+  <polygon points="90,161 288,161 400,260 40,260" fill="#fff8ee" stroke="none"/>
+
+  <!-- Triangle sides -->
+  <line x1="150" y1="40"  x2="40"  y2="260" stroke="black" stroke-width="2"/>
+  <line x1="40"  y1="260" x2="400" y2="260" stroke="black" stroke-width="2"/>
+  <line x1="400" y1="260" x2="150" y2="40"  stroke="black" stroke-width="2"/>
+
+  <!-- Line DE (parallel to BC) -->
+  <line x1="90"  y1="161" x2="288" y2="161" stroke="#3366cc" stroke-width="1.8"/>
+
+  <!-- Parallel tick on DE at midpoint (189,161) -->
+  <line x1="189" y1="154" x2="189" y2="168" stroke="#3366cc" stroke-width="1.8"/>
+
+  <!-- Parallel tick on BC at midpoint (220,260) -->
+  <line x1="220" y1="253" x2="220" y2="267" stroke="black" stroke-width="1.8"/>
+
+  <!-- Labels -->
+  <text x="142" y="28"  font-family="serif" font-style="italic" font-size="18">A</text>
+  <text x="20"  y="274" font-family="serif" font-style="italic" font-size="18">B</text>
+  <text x="406" y="274" font-family="serif" font-style="italic" font-size="18">C</text>
+  <text x="66"  y="176" font-family="serif" font-style="italic" font-size="18">D</text>
+  <text x="293" y="176" font-family="serif" font-style="italic" font-size="18">E</text>
+</svg>

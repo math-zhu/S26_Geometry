@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 450">
+  <!--
+    Scalene triangle: A=(180,70), B=(40,220), C=(400,220)
+    Angle bisector from A meets BC at D=(197,220)
+      AB≈205, AC≈266, BD/DC=AB/AC≈0.770 → D = B + (0.770/1.770)*360 ≈ (197,220)
+    Line through C parallel to AB meets extension of AD at E=(219,414)
+      CE direction = AB direction = (-140,150) verified ✓
+    △ABD (blue) ~ △ECD (orange) — the two similar triangles in the proof
+  -->
+
+  <!-- △ABD filled blue -->
+  <polygon points="180,70 40,220 197,220" fill="#ddeeff" stroke="none"/>
+  <!-- △ECD filled orange -->
+  <polygon points="219,414 400,220 197,220" fill="#ffeedd" stroke="none"/>
+
+  <!-- Triangle sides -->
+  <line x1="180" y1="70"  x2="40"  y2="220" stroke="black" stroke-width="2"/>
+  <line x1="40"  y1="220" x2="400" y2="220" stroke="black" stroke-width="2"/>
+  <line x1="400" y1="220" x2="180" y2="70"  stroke="black" stroke-width="2"/>
+
+  <!-- Angle bisector AD (solid) -->
+  <line x1="180" y1="70"  x2="197" y2="220" stroke="#3366cc" stroke-width="1.6"/>
+  <!-- Extension of AD beyond D to E (dashed) -->
+  <line x1="197" y1="220" x2="219" y2="414" stroke="#3366cc" stroke-width="1.5" stroke-dasharray="6,4"/>
+
+  <!-- CE parallel to AB (dashed, orange) -->
+  <line x1="400" y1="220" x2="219" y2="414" stroke="#cc5500" stroke-width="1.6" stroke-dasharray="6,4"/>
+
+  <!-- Equal angle arcs at A showing angle bisector (radius 22, clockwise through interior) -->
+  <!-- Ray AB point at r=22: (165,86);  Ray AD point at r=22: (183,92);  Ray AC point at r=22: (198,82) -->
+  <path d="M 165,86 A 22,22 0 0,1 183,92" fill="none" stroke="#228833" stroke-width="1.7"/>
+  <path d="M 183,92 A 22,22 0 0,1 198,82" fill="none" stroke="#228833" stroke-width="1.7"/>
+
+  <!-- Parallel tick marks on AB and CE (direction along AB ≈ perp (0.731,0.682)) -->
+  <!-- Tick on AB at midpoint (110,145) -->
+  <line x1="106" y1="142" x2="114" y2="148" stroke="black" stroke-width="1.8"/>
+  <!-- Tick on CE at midpoint ≈ (310,317) -->
+  <line x1="306" y1="314" x2="314" y2="320" stroke="#cc5500" stroke-width="1.8"/>
+
+  <!-- Labels -->
+  <text x="172" y="58"  font-family="serif" font-style="italic" font-size="18">A</text>
+  <text x="20"  y="238" font-family="serif" font-style="italic" font-size="18">B</text>
+  <text x="406" y="238" font-family="serif" font-style="italic" font-size="18">C</text>
+  <text x="195" y="240" font-family="serif" font-style="italic" font-size="18">D</text>
+  <text x="210" y="432" font-family="serif" font-style="italic" font-size="18">E</text>
+
+  <!-- "CE ∥ AB" annotation -->
+  <text x="330" y="395" font-family="serif" font-size="14" fill="#cc5500">CE &#x2225; AB</text>
+</svg>
