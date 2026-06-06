@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 300">
+  <!-- Circle center O=(170,150), R=120
+       A=(66,90), B=(274,90) — arc endpoints (top)
+       P1 at 220°: x=170+120cos(220°)=78,  y=150-120sin(220°)=227  → P1=(78,227)
+       P2 at 270°: x=170,                    y=150+120=270           → P2=(170,270)
+       P3 at 320°: x=170+120cos(320°)=262,  y=150-120sin(320°)=227  → P3=(262,227)
+       All on lower arc; all inscribed angles subtend arc AB → all equal α
+  -->
+  <circle cx="170" cy="150" r="120" fill="#eef4ff" stroke="#3366cc" stroke-width="2"/>
+
+  <!-- Arc AB highlighted (minor, top) -->
+  <path d="M 66,90 A 120,120 0 0,1 274,90" fill="none" stroke="#cc3333" stroke-width="2.5"/>
+
+  <!-- Lines from P1 to A and B -->
+  <line x1="78"  y1="227" x2="66"  y2="90"  stroke="#3366cc" stroke-width="1.5"/>
+  <line x1="78"  y1="227" x2="274" y2="90"  stroke="#3366cc" stroke-width="1.5"/>
+  <!-- Lines from P2 to A and B -->
+  <line x1="170" y1="270" x2="66"  y2="90"  stroke="#228833" stroke-width="1.5"/>
+  <line x1="170" y1="270" x2="274" y2="90"  stroke="#228833" stroke-width="1.5"/>
+  <!-- Lines from P3 to A and B -->
+  <line x1="262" y1="227" x2="66"  y2="90"  stroke="#993399" stroke-width="1.5"/>
+  <line x1="262" y1="227" x2="274" y2="90"  stroke="#993399" stroke-width="1.5"/>
+
+  <!-- Points A, B -->
+  <circle cx="66"  cy="90"  r="3.5" fill="#cc3333"/>
+  <circle cx="274" cy="90"  r="3.5" fill="#cc3333"/>
+  <text x="48"  y="88"  font-family="serif" font-size="16" font-style="italic" fill="#cc3333">A</text>
+  <text x="278" y="88"  font-family="serif" font-size="16" font-style="italic" fill="#cc3333">B</text>
+
+  <!-- Points P1, P2, P3 -->
+  <circle cx="78"  cy="227" r="3.5" fill="#3366cc"/>
+  <circle cx="170" cy="270" r="3.5" fill="#228833"/>
+  <circle cx="262" cy="227" r="3.5" fill="#993399"/>
+  <text x="58"  y="240" font-family="serif" font-size="15" font-style="italic" fill="#3366cc">P&#x2081;</text>
+  <text x="155" y="287" font-family="serif" font-size="15" font-style="italic" fill="#228833">P&#x2082;</text>
+  <text x="266" y="240" font-family="serif" font-size="15" font-style="italic" fill="#993399">P&#x2083;</text>
+
+  <!-- Angle arcs at each P (all equal α, opening upward toward arc AB) -->
+  <!-- P1=(78,227): PA unit=(-0.087,-0.996); PB unit=(0.820,-0.573)
+       18px toward A: (76,209); 18px toward B: (93,217); sweep=0 (arc curves upward) -->
+  <path d="M 76,209 A 18,18 0 0,1 93,217" fill="none" stroke="#3366cc" stroke-width="1.6"/>
+  <text x="76" y="207" font-family="serif" font-size="13" font-style="italic" fill="#3366cc">&#x3B1;</text>
+
+  <!-- P2=(170,270): PA unit=(-0.500,-0.866); PB unit=(0.500,-0.866)
+       18px toward A: (161,255); 18px toward B: (179,255); sweep=0 -->
+  <path d="M 161,255 A 18,18 0 0,1 179,255" fill="none" stroke="#228833" stroke-width="1.6"/>
+  <text x="161" y="253" font-family="serif" font-size="13" font-style="italic" fill="#228833">&#x3B1;</text>
+
+  <!-- P3=(262,227): PA unit=(-0.820,-0.573); PB unit=(0.087,-0.996)
+       18px toward A: (247,217); 18px toward B: (264,209); sweep=0 -->
+  <path d="M 247,217 A 18,18 0 0,1 264,209" fill="none" stroke="#993399" stroke-width="1.6"/>
+  <text x="255" y="208" font-family="serif" font-size="13" font-style="italic" fill="#993399">&#x3B1;</text>
+
+  <text x="170" y="292" text-anchor="middle" font-family="serif" font-size="13">
+    All inscribed angles subtending arc AB are equal.
+  </text>
+</svg>

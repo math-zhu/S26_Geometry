@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 300">
+  <!-- Circle center O=(170,150), R=120
+       P at 250°=(129,263); D at 70°=(211,37) — diameter PD through O
+       A at 10°=(288,129); B at 40°=(262,73)
+       β₁=∠APD=30°, β₂=∠BPD=15°, ∠APB=β₁-β₂=15°
+       O is outside ∠APB (Case 3)
+  -->
+  <circle cx="170" cy="150" r="120" fill="#eef4ff" stroke="#3366cc" stroke-width="2"/>
+
+  <!-- Diameter PD (dashed grey) -->
+  <line x1="129" y1="263" x2="211" y2="37" stroke="#888" stroke-width="1.5" stroke-dasharray="6,4"/>
+
+  <!-- OA, OB (blue) -->
+  <line x1="170" y1="150" x2="288" y2="129" stroke="#3366cc" stroke-width="1.8"/>
+  <line x1="170" y1="150" x2="262" y2="73"  stroke="#3366cc" stroke-width="1.8"/>
+
+  <!-- PA, PB (orange) -->
+  <line x1="129" y1="263" x2="288" y2="129" stroke="#cc6600" stroke-width="2"/>
+  <line x1="129" y1="263" x2="262" y2="73"  stroke="#cc6600" stroke-width="2"/>
+
+  <!-- Points -->
+  <circle cx="129" cy="263" r="3.5" fill="#cc6600"/>
+  <circle cx="211" cy="37"  r="3.5" fill="#888"/>
+  <circle cx="288" cy="129" r="3.5" fill="#3366cc"/>
+  <circle cx="262" cy="73"  r="3.5" fill="#3366cc"/>
+  <circle cx="170" cy="150" r="3.5" fill="black"/>
+
+  <text x="112" y="280" font-family="serif" font-size="16" font-style="italic" fill="#cc6600">P</text>
+  <text x="214" y="32"  font-family="serif" font-size="16" font-style="italic" fill="#888">D</text>
+  <text x="292" y="128" font-family="serif" font-size="16" font-style="italic" fill="#3366cc">A</text>
+  <text x="265" y="68"  font-family="serif" font-size="16" font-style="italic" fill="#3366cc">B</text>
+  <text x="175" y="168" font-family="serif" font-size="16" font-style="italic">O</text>
+
+  <!-- β₁ = ∠APD at P (larger, outer arc)
+       PA unit: (0.764,-0.645); PD unit: (0.342,-0.942)
+       20px toward A: (129+15.3,263-12.9)=(144,250)
+       20px toward D: (129+6.8,263-18.8)=(136,244)
+       sweep=1 (CW in SVG: from A-side rotating to D-side going right→up) -->
+  <path d="M 144,250 A 20,20 0 0,1 136,244" fill="none" stroke="#cc6600" stroke-width="1.8"/>
+  <text x="148" y="245" font-family="serif" font-size="13" font-style="italic" fill="#cc6600">&#x3B2;&#x2081;</text>
+
+  <!-- β₂ = ∠BPD at P (smaller, inner arc)
+       PB unit: (0.576,-0.822); PD unit: (0.342,-0.942)
+       14px toward B: (129+8.1,263-11.5)=(137,252)
+       14px toward D: (129+4.8,263-13.2)=(134,250)
+       sweep=0 (CCW in SVG: from D-side rotating to B-side) -->
+  <path d="M 134,250 A 14,14 0 0,0 137,252" fill="none" stroke="#cc6600" stroke-width="1.8"/>
+  <text x="126" y="252" font-family="serif" font-size="13" font-style="italic" fill="#cc6600">&#x3B2;&#x2082;</text>
+
+  <!-- β₁ = ∠OAP at A — isosceles OAP (OA=OP=R)
+       AO unit: (-0.983,-0.175); AP unit: (-0.765,0.644)
+       18px toward O: (288-17.7,129-3.2)=(270,126)
+       18px toward P: (288-13.8,129+11.6)=(274,141)
+       sweep=1 -->
+  <path d="M 270,126 A 18,18 0 0,1 274,141" fill="none" stroke="#993399" stroke-width="1.8"/>
+  <text x="256" y="138" font-family="serif" font-size="13" font-style="italic" fill="#993399">&#x3B2;&#x2081;</text>
+
+  <!-- β₂ = ∠OBP at B — isosceles OBP (OB=OP=R)
+       BO unit: (-0.767,0.642); BP unit: (-0.576,0.823)
+       22px toward O: (262-16.9,73+14.1)=(245,87)
+       22px toward P: (262-12.7,73+18.1)=(249,91)
+       sweep=0 -->
+  <path d="M 245,87 A 22,22 0 0,0 249,91" fill="none" stroke="#993399" stroke-width="1.8"/>
+  <text x="234" y="100" font-family="serif" font-size="13" font-style="italic" fill="#993399">&#x3B2;&#x2082;</text>
+
+  <!-- 2β₁ = ∠AOD at O (outer arc)
+       OA unit: (0.985,-0.174); OD unit: (0.342,-0.940)
+       28px toward A: (170+27.6,150-4.9)=(198,145)
+       28px toward D: (170+9.6,150-26.3)=(180,124)
+       sweep=0 (CCW in SVG: from A going upward to D) -->
+  <path d="M 198,145 A 28,28 0 0,0 180,124" fill="none" stroke="#3366cc" stroke-width="1.8"/>
+  <text x="194" y="126" font-family="serif" font-size="13" font-style="italic" fill="#3366cc">2&#x3B2;&#x2081;</text>
+
+  <!-- 2β₂ = ∠BOD at O (inner arc)
+       OB unit: (0.766,-0.643); OD unit: (0.342,-0.940)
+       18px toward B: (170+13.8,150-11.6)=(184,138)
+       18px toward D: (170+6.2,150-16.9)=(176,133)
+       sweep=0 -->
+  <path d="M 184,138 A 18,18 0 0,0 176,133" fill="none" stroke="#3366cc" stroke-width="1.8"/>
+  <text x="185" y="130" font-family="serif" font-size="13" font-style="italic" fill="#3366cc">2&#x3B2;&#x2082;</text>
+
+  <!-- Arc AB highlighted (minor arc not containing P) -->
+  <!-- A at 10°, B at 40°, going CCW in screen from A to B: sweep=0 -->
+  <path d="M 288,129 A 120,120 0 0,0 262,73" fill="none" stroke="#cc3333" stroke-width="2.5"/>
+
+  <!-- Caption -->
+  <text x="170" y="293" text-anchor="middle" font-family="serif" font-size="13">
+    Case 3: O outside &#x2220;APB; &#x2220;APB = &#x3B2;&#x2081;&#x2212;&#x3B2;&#x2082; = &#xBD;(2&#x3B2;&#x2081;&#x2212;2&#x3B2;&#x2082;) = &#xBD;&#x2220;AOB
+  </text>
+</svg>

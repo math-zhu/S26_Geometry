@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 300">
+  <!-- Circle center O=(170,150), R=120
+       A at 200°=(57,109); B at 330°=(274,90)  — arc AB (minor, top-right)
+       P at 120°=(110,46) — on major arc (top-left)
+       Q at 310°=(247,242) — on minor arc (bottom)
+       ∠APB + ∠AQB = 180°
+  -->
+  <circle cx="170" cy="150" r="120" fill="#eef4ff" stroke="#3366cc" stroke-width="2"/>
+
+  <!-- Quadrilateral APBQ (sides) -->
+  <line x1="57"  y1="109" x2="110" y2="46"  stroke="#3366cc" stroke-width="1.8"/>
+  <line x1="110" y1="46"  x2="274" y2="90"  stroke="#3366cc" stroke-width="1.8"/>
+  <line x1="274" y1="90"  x2="247" y2="242" stroke="#3366cc" stroke-width="1.8"/>
+  <line x1="247" y1="242" x2="57"  y2="109" stroke="#3366cc" stroke-width="1.8"/>
+
+  <!-- Diagonals AB and PQ -->
+  <line x1="57"  y1="109" x2="274" y2="90"  stroke="#aaa" stroke-width="1.2" stroke-dasharray="5,3"/>
+  <line x1="110" y1="46"  x2="247" y2="242" stroke="#aaa" stroke-width="1.2" stroke-dasharray="5,3"/>
+
+  <!-- Points -->
+  <circle cx="57"  cy="109" r="3.5" fill="#3366cc"/>
+  <circle cx="274" cy="90"  r="3.5" fill="#3366cc"/>
+  <circle cx="110" cy="46"  r="3.5" fill="#cc6600"/>
+  <circle cx="247" cy="242" r="3.5" fill="#cc6600"/>
+
+  <text x="38"  y="108" font-family="serif" font-size="16" font-style="italic" fill="#3366cc">A</text>
+  <text x="278" y="88"  font-family="serif" font-size="16" font-style="italic" fill="#3366cc">B</text>
+  <text x="96"  y="38"  font-family="serif" font-size="16" font-style="italic" fill="#cc6600">P</text>
+  <text x="251" y="258" font-family="serif" font-size="16" font-style="italic" fill="#cc6600">Q</text>
+
+  <!-- Angle α = ∠APB at P
+       PA unit: (-0.350,0.937); PB unit: (0.883,0.470)
+       18px toward A: (104,63); 18px toward B: (126,55) sweep=0 -->
+  <path d="M 104,63 A 18,18 0 0,0 126,55" fill="none" stroke="#cc6600" stroke-width="1.8"/>
+  <text x="106" y="75" font-family="serif" font-size="14" font-style="italic" fill="#cc6600">&#x3B1;</text>
+
+  <!-- Angle (180°-α) = ∠AQB at Q
+       QA unit: (-0.798,-0.603); QB unit: (0.132,-0.991)
+       18px toward A: (233,231); 18px toward B: (249,224) sweep=1 -->
+  <path d="M 233,231 A 18,18 0 0,1 249,224" fill="none" stroke="#cc6600" stroke-width="1.8"/>
+  <text x="224" y="224" font-family="serif" font-size="14" font-style="italic" fill="#cc6600">180°&#x2212;&#x3B1;</text>
+
+  <text x="170" y="292" text-anchor="middle" font-family="serif" font-size="13">
+    Opposite angles of a cyclic quadrilateral sum to 180°.
+  </text>
+</svg>

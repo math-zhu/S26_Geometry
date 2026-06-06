@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 300">
+  <!-- Circle center O=(170,150), R=120
+       A=(50,150), B=(290,150) — diameter AB
+       P at 50°: x=170+120cos(50°)=247, y=150-120sin(50°)=58 → P=(247,58)
+  -->
+  <circle cx="170" cy="150" r="120" fill="#eef4ff" stroke="#3366cc" stroke-width="2"/>
+
+  <!-- Diameter AB -->
+  <line x1="50" y1="150" x2="290" y2="150" stroke="#3366cc" stroke-width="2"/>
+
+  <!-- PA, PB (orange) -->
+  <line x1="247" y1="58" x2="50"  y2="150" stroke="#cc6600" stroke-width="2"/>
+  <line x1="247" y1="58" x2="290" y2="150" stroke="#cc6600" stroke-width="2"/>
+
+  <!-- Points -->
+  <circle cx="50"  cy="150" r="3.5" fill="#3366cc"/>
+  <circle cx="290" cy="150" r="3.5" fill="#3366cc"/>
+  <circle cx="247" cy="58"  r="3.5" fill="#cc6600"/>
+  <circle cx="170" cy="150" r="3.5" fill="black"/>
+
+  <text x="33"  y="168" font-family="serif" font-size="16" font-style="italic" fill="#3366cc">A</text>
+  <text x="294" y="168" font-family="serif" font-size="16" font-style="italic" fill="#3366cc">B</text>
+  <text x="251" y="52"  font-family="serif" font-size="16" font-style="italic" fill="#cc6600">P</text>
+  <text x="175" y="168" font-family="serif" font-size="16" font-style="italic">O</text>
+
+  <!-- Right angle mark at P -->
+  <!-- PA unit: (-0.906,0.423); PB unit: (0.423,0.906)
+       12px along PA: (236,63); 12px along PB: (252,69); corner=(241,74) -->
+  <path d="M 236,63 L 241,74 L 252,69" fill="none" stroke="#cc3333" stroke-width="1.8"/>
+
+  <!-- Central angle 180° label -->
+  <path d="M 50,150 A 120,120 0 0,0 290,150" fill="none" stroke="#3366cc" stroke-width="2.5"/>
+  <text x="170" y="285" text-anchor="middle" font-family="serif" font-size="13">
+    AB diameter &#x21D2; &#x2220;APB = 90°
+  </text>
+</svg>

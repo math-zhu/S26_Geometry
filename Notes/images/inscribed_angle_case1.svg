@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 300">
+  <!-- Same circle: center O=(170,150), R=120
+       A=(66,90), B=(274,90), P=(129,263)
+       D = antipodal of P = 2O-P = (211,37)
+       Diameter PD passes through O — O is inside angle APB (Case 1)
+  -->
+  <circle cx="170" cy="150" r="120" fill="#eef4ff" stroke="#3366cc" stroke-width="2"/>
+
+  <!-- Diameter PD (dashed grey) -->
+  <line x1="129" y1="263" x2="211" y2="37" stroke="#888" stroke-width="1.5" stroke-dasharray="6,4"/>
+
+  <!-- Lines OA, OB (blue) -->
+  <line x1="170" y1="150" x2="66"  y2="90"  stroke="#3366cc" stroke-width="2"/>
+  <line x1="170" y1="150" x2="274" y2="90"  stroke="#3366cc" stroke-width="2"/>
+  <!-- Lines OD, extended to make central angles visible -->
+  <line x1="170" y1="150" x2="211" y2="37"  stroke="#888" stroke-width="1.3" stroke-dasharray="5,3"/>
+
+  <!-- Lines PA, PB (orange) -->
+  <line x1="129" y1="263" x2="66"  y2="90"  stroke="#cc6600" stroke-width="2"/>
+  <line x1="129" y1="263" x2="274" y2="90"  stroke="#cc6600" stroke-width="2"/>
+
+  <!-- Points -->
+  <circle cx="66"  cy="90"  r="3.5" fill="#3366cc"/>
+  <circle cx="274" cy="90"  r="3.5" fill="#3366cc"/>
+  <circle cx="129" cy="263" r="3.5" fill="#cc6600"/>
+  <circle cx="211" cy="37"  r="3.5" fill="#888"/>
+  <circle cx="170" cy="150" r="3.5" fill="black"/>
+
+  <text x="48"  y="88"  font-family="serif" font-size="16" font-style="italic" fill="#3366cc">A</text>
+  <text x="278" y="88"  font-family="serif" font-size="16" font-style="italic" fill="#3366cc">B</text>
+  <text x="112" y="280" font-family="serif" font-size="16" font-style="italic" fill="#cc6600">P</text>
+  <text x="214" y="32"  font-family="serif" font-size="16" font-style="italic" fill="#888">D</text>
+  <text x="176" y="155" font-family="serif" font-size="16" font-style="italic">O</text>
+
+  <!-- Angle β₁ = ∠APD at P (left sub-angle)
+       PA unit: (-0.346,-0.950); PD unit: (0.342,-0.942)
+       18px toward A from P: (129-6.2,263-17.1)=(123,246)
+       18px toward D from P: (129+6.2,263-17.0)=(135,246) -->
+  <path d="M 123,246 A 18,18 0 0,1 135,246" fill="none" stroke="#cc6600" stroke-width="1.6"/>
+  <text x="118" y="236" font-family="serif" font-size="13" font-style="italic" fill="#cc6600">&#x3B2;&#x2081;</text>
+
+  <!-- Angle β₂ = ∠BPD at P (right sub-angle)
+       PB unit: (0.643,-0.766); PD unit: (0.342,-0.942)
+       18px toward D: (135,246); 18px toward B: (129+11.6,263-13.8)=(141,249) -->
+  <path d="M 135,246 A 18,18 0 0,1 141,249" fill="none" stroke="#cc6600" stroke-width="1.6"/>
+  <text x="140" y="237" font-family="serif" font-size="13" font-style="italic" fill="#cc6600">&#x3B2;&#x2082;</text>
+
+  <!-- Angle β₁ = ∠PAO at A (isosceles OAP: OA=OP=R)
+       AO unit: (104,60)/120=(0.867,0.500); AP unit: (63,173)/184=(0.342,0.940)
+       18px toward O from A: (66+15.6,90+9.0)=(82,99)
+       18px toward P from A: (66+6.2,90+16.9)=(72,107)
+       sweep=1 (clockwise in screen, opening between the two rays) -->
+  <path d="M 82,99 A 18,18 0 0,1 72,107" fill="none" stroke="#993399" stroke-width="1.6"/>
+  <text x="71" y="99" font-family="serif" font-size="13" font-style="italic" fill="#993399">&#x3B2;&#x2081;</text>
+
+  <!-- Angle β₂ = ∠PBO at B (isosceles OBP: OB=OP=R)
+       BO unit: (-104,60)/120=(-0.867,0.500); BP unit: (-145,173)/226=(-0.642,0.766)
+       18px toward O from B: (274-15.6,90+9.0)=(258,99)
+       18px toward P from B: (274-11.6,90+13.8)=(262,104)
+       sweep=0 -->
+  <path d="M 258,99 A 18,18 0 0,0 262,104" fill="none" stroke="#993399" stroke-width="1.6"/>
+  <text x="260" y="97" font-family="serif" font-size="13" font-style="italic" fill="#993399">&#x3B2;&#x2082;</text>
+
+  <!-- Angle 2β₁ = ∠AOD at O
+       OA unit: (-0.867,-0.5) → 210°; OD unit: (0.342,-0.942) → 344° (~-16°)
+       Going from OD to OA ccw (large arc): large=1, sweep=0
+       OR going from OA to OD cw through bottom: large=1, sweep=1 ... 
+       Actually ∠AOD: from 210° to 344° cw = 134°; ccw = 226°.
+       The "interior" angle is 134°. cw from OA to OD: sweep=1, large=0.
+       22px toward A: (170-19.1,150-11)=(151,139)
+       22px toward D: (170+7.5,150-20.7)=(178,129) -->
+  <path d="M 151,139 A 22,22 0 0,1 178,129" fill="none" stroke="#3366cc" stroke-width="1.6"/>
+  <text x="148" y="120" font-family="serif" font-size="13" font-style="italic" fill="#3366cc">2&#x3B2;&#x2081;</text>
+
+  <!-- Angle 2β₂ = ∠BOD at O
+       OB unit: (0.867,-0.5) → 330°; OD unit: (0.342,-0.942) → 344°
+       ∠BOD from 330° to 344° cw = 14°
+       22px toward B: (170+19.1,150-11)=(189,139)
+       22px toward D: (178,129) -->
+  <path d="M 178,129 A 22,22 0 0,1 189,139" fill="none" stroke="#3366cc" stroke-width="1.6"/>
+  <text x="183" y="120" font-family="serif" font-size="13" font-style="italic" fill="#3366cc">2&#x3B2;&#x2082;</text>
+
+  <!-- Arc AB (minor, top) highlighted -->
+  <path d="M 66,90 A 120,120 0 0,1 274,90" fill="none" stroke="#cc3333" stroke-width="2.5"/>
+
+  <!-- Caption -->
+  <text x="170" y="294" text-anchor="middle" font-family="serif" font-size="13">
+    Case 1: O inside &#x2220;APB; &#x2220;APB = &#x3B2;&#x2081;+&#x3B2;&#x2082; = &#xBD;(2&#x3B2;&#x2081;+2&#x3B2;&#x2082;) = &#xBD;&#x2220;AOB
+  </text>
+</svg>

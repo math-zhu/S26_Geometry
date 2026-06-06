@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 360">
+  <!-- Triangle A=(80,270), B=(340,270), C=(170,90)
+       Circumcenter: perp bisector of AB is x=210
+       mid AC=(125,180), slope AC=(270-90)/(80-170)=180/(-90)=-2, perp slope=0.5
+       at x=210: y=180+0.5*(210-125)=180+42.5=222.5 → O=(210,222)
+       R=dist(210,222,80,270)=sqrt(130²+48²)=sqrt(16900+2304)=sqrt(19204)≈138.6
+  -->
+
+  <!-- Circumscribed circle -->
+  <circle cx="210" cy="222" r="139" fill="#eef4ff" stroke="#3366cc" stroke-width="2"/>
+
+  <!-- Triangle sides -->
+  <line x1="80"  y1="270" x2="340" y2="270" stroke="#3366cc" stroke-width="2"/>
+  <line x1="80"  y1="270" x2="170" y2="90"  stroke="#3366cc" stroke-width="2"/>
+  <line x1="340" y1="270" x2="170" y2="90"  stroke="#3366cc" stroke-width="2"/>
+
+  <!-- Vertices -->
+  <circle cx="80"  cy="270" r="3.5" fill="#3366cc"/>
+  <circle cx="340" cy="270" r="3.5" fill="#3366cc"/>
+  <circle cx="170" cy="90"  r="3.5" fill="#3366cc"/>
+  <text x="62"  y="288" font-family="serif" font-size="17" font-style="italic">A</text>
+  <text x="344" y="288" font-family="serif" font-size="17" font-style="italic">B</text>
+  <text x="163" y="80"  font-family="serif" font-size="17" font-style="italic">C</text>
+
+  <!-- Circumcenter O -->
+  <circle cx="210" cy="222" r="4" fill="#cc3333"/>
+  <text x="216" y="219" font-family="serif" font-size="16" font-style="italic" fill="#cc3333">O</text>
+
+  <!-- Caption -->
+  <text x="210" y="350" text-anchor="middle" font-family="serif" font-size="14">
+    Unique circle through 3 non-collinear points
+  </text>
+</svg>

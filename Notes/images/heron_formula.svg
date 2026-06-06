@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 290">
+  <!-- Triangle A=(60,240), B=(360,240), C=(200,70)
+       a=BC=sqrt(160²+170²)=sqrt(25600+28900)≈233
+       b=CA=sqrt(140²+170²)=sqrt(19600+28900)≈220
+       c=AB=300
+       s=(a+b+c)/2
+  -->
+  <polygon points="60,240 360,240 200,70" fill="#eef4ff" stroke="#3366cc" stroke-width="2"/>
+
+  <!-- Vertices -->
+  <circle cx="60"  cy="240" r="3.5" fill="#3366cc"/>
+  <circle cx="360" cy="240" r="3.5" fill="#3366cc"/>
+  <circle cx="200" cy="70"  r="3.5" fill="#3366cc"/>
+  <text x="42"  y="258" font-family="serif" font-size="17" font-style="italic">A</text>
+  <text x="364" y="258" font-family="serif" font-size="17" font-style="italic">B</text>
+  <text x="203" y="62"  font-family="serif" font-size="17" font-style="italic">C</text>
+
+  <!-- Side labels with lengths -->
+  <text x="292" y="168" font-family="serif" font-size="15" font-style="italic" fill="#cc3333">a</text>
+  <text x="108" y="168" font-family="serif" font-size="15" font-style="italic" fill="#cc3333">b</text>
+  <text x="203" y="260" font-family="serif" font-size="15" font-style="italic" fill="#cc3333">c</text>
+
+  <!-- Incircle: for Heron, Area = r·s
+       Incenter at (a·A + b·B + c·C)/(a+b+c)
+       a≈233, b≈220, c=300; s≈376.5
+       I_x=(233*60+220*360+300*200)/(233+220+300)=(13980+79200+60000)/753=153180/753≈203
+       I_y=(233*240+220*240+300*70)/(753)=(55920+52800+21000)/753=129720/753≈172
+       r = Area/s; Area=0.5*300*170=25500; r=25500/376.5≈67.7≈68
+  -->
+  <circle cx="203" cy="172" r="68" fill="none" stroke="#228833" stroke-width="1.8" stroke-dasharray="6,4"/>
+  <circle cx="203" cy="172" r="2.5" fill="#228833"/>
+  <text x="208" y="170" font-family="serif" font-size="13" font-style="italic" fill="#228833">I</text>
+
+  <!-- Inradius line -->
+  <!-- Foot from I to AB (y=240): (203,240) -->
+  <line x1="203" y1="172" x2="203" y2="240" stroke="#228833" stroke-width="1.2" stroke-dasharray="4,3"/>
+  <rect x="203" y="231" width="8" height="8" fill="none" stroke="#228833" stroke-width="1.2"/>
+  <text x="208" y="215" font-family="serif" font-size="13" font-style="italic" fill="#228833">r</text>
+
+  <!-- s-a, s-b, s-c labels on sides -->
+  <!-- tangent lengths from A: s-a; from B: s-b; from C: s-c -->
+  <text x="60"  y="212" font-family="serif" font-size="12" fill="#555">s&#x2212;a</text>
+  <text x="330" y="212" font-family="serif" font-size="12" fill="#555">s&#x2212;b</text>
+  <text x="60"  y="258" font-family="serif" font-size="12" fill="#555">s&#x2212;a</text>
+  <text x="300" y="258" font-family="serif" font-size="12" fill="#555">s&#x2212;b</text>
+
+  <!-- Formulas -->
+  <text x="210" y="278" text-anchor="middle" font-family="serif" font-size="14">
+    s = (a+b+c)/2;&#160;&#160; S = &#x221A;(s(s&#x2212;a)(s&#x2212;b)(s&#x2212;c)) = rs
+  </text>
+</svg>

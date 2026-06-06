@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 290">
+  <!-- Triangle A=(165,65), B=(70,245), C=(355,245)
+       Altitude from A to D=(165,245) on BC
+       d=CD=190, BD=a-d=95, h=180
+  -->
+
+  <!-- Triangle -->
+  <polygon points="165,65 70,245 355,245" fill="#eef4ff" stroke="#3366cc" stroke-width="2"/>
+
+  <!-- Altitude AD (dashed) -->
+  <line x1="165" y1="65" x2="165" y2="245" stroke="#888" stroke-width="1.4" stroke-dasharray="5,3"/>
+
+  <!-- Right angle at D -->
+  <path d="M 165,237 L 173,237 L 173,245" fill="none" stroke="#888" stroke-width="1.2"/>
+
+  <!-- Vertices -->
+  <circle cx="165" cy="65"  r="3" fill="#3366cc"/>
+  <circle cx="70"  cy="245" r="3" fill="#3366cc"/>
+  <circle cx="355" cy="245" r="3" fill="#3366cc"/>
+
+  <!-- Vertex labels -->
+  <text x="158" y="56"  font-family="serif" font-size="17" font-style="italic">A</text>
+  <text x="52"  y="263" font-family="serif" font-size="17" font-style="italic">B</text>
+  <text x="358" y="263" font-family="serif" font-size="17" font-style="italic">C</text>
+
+  <!-- D label -->
+  <text x="175" y="263" font-family="serif" font-size="14" font-style="italic" fill="#666">D</text>
+
+  <!-- Altitude label h -->
+  <text x="146" y="160" font-family="serif" font-size="15" font-style="italic" fill="#555">h</text>
+
+  <!-- Base segment labels: BD = a-d, DC = d -->
+  <text x="101" y="266" font-family="serif" font-size="14" font-style="italic" fill="#555">a&#x2212;d</text>
+  <text x="253" y="266" font-family="serif" font-size="14" font-style="italic" fill="#555">d</text>
+
+  <!-- Side labels -->
+  <!-- b = CA, midpoint (260,155) -->
+  <text x="272" y="152" font-family="serif" font-size="15" font-style="italic">b</text>
+  <!-- c = AB, midpoint (117,155) -->
+  <text x="100" y="152" font-family="serif" font-size="15" font-style="italic">c</text>
+
+  <!-- Angle C arc (highlighted: c²=a²+b²-2ab cosC) -->
+  <!-- C=(355,245); 18px along CA: (342,233); 18px along CB: (337,245) -->
+  <path d="M 342,233 A 18,18 0 0,0 337,245" fill="none" stroke="#cc6600" stroke-width="1.8"/>
+</svg>

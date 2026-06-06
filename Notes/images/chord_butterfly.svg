@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 300">
+  <!-- Circle center O_c=(170,150), R=120
+       A=(57,191), B=(211,37), C=(93,58), D=(230,254)
+       Chords AB and CD intersect at O=(133,115)
+       AO·OB ≈ CO·OD ✓
+  -->
+  <circle cx="170" cy="150" r="120" fill="#eef4ff" stroke="#3366cc" stroke-width="2"/>
+
+  <!-- Triangle AOC shaded blue -->
+  <polygon points="57,191 133,115 93,58" fill="#ddeeff" stroke="none"/>
+  <!-- Triangle BOD shaded orange -->
+  <polygon points="211,37 133,115 230,254" fill="#ffeedd" stroke="none"/>
+
+  <!-- Chord AB -->
+  <line x1="57"  y1="191" x2="211" y2="37"  stroke="#3366cc" stroke-width="2"/>
+  <!-- Chord CD -->
+  <line x1="93"  y1="58"  x2="230" y2="254" stroke="#cc6600" stroke-width="2"/>
+  <!-- Side AC of triangle AOC -->
+  <line x1="57"  y1="191" x2="93"  y2="58"  stroke="#3366cc" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <!-- Side BD of triangle BOD -->
+  <line x1="211" y1="37"  x2="230" y2="254" stroke="#cc6600" stroke-width="1.5" stroke-dasharray="5,3"/>
+
+  <!-- Points on circle -->
+  <circle cx="57"  cy="191" r="3.5" fill="#3366cc"/>
+  <circle cx="211" cy="37"  r="3.5" fill="#3366cc"/>
+  <circle cx="93"  cy="58"  r="3.5" fill="#cc6600"/>
+  <circle cx="230" cy="254" r="3.5" fill="#cc6600"/>
+
+  <text x="38"  y="196" font-family="serif" font-size="16" font-style="italic" fill="#3366cc">A</text>
+  <text x="215" y="33"  font-family="serif" font-size="16" font-style="italic" fill="#3366cc">B</text>
+  <text x="77"  y="52"  font-family="serif" font-size="16" font-style="italic" fill="#cc6600">C</text>
+  <text x="233" y="270" font-family="serif" font-size="16" font-style="italic" fill="#cc6600">D</text>
+
+  <!-- Intersection point O -->
+  <circle cx="133" cy="115" r="3.5" fill="black"/>
+  <text x="137" y="111" font-family="serif" font-size="16" font-style="italic">O</text>
+
+  <!-- Blue angle mark at A: ∠CAB subtends blue arc CB
+       AC unit=(0.261,-0.965); AB unit=(0.707,-0.707)
+       14px toward C: (61,178); 14px toward B: (67,181) sweep=0 -->
+  <path d="M 61,178 A 14,14 0 0,0 67,181" fill="none" stroke="#3366cc" stroke-width="1.8"/>
+
+  <!-- Blue angle mark at D: ∠CDB subtends blue arc CB
+       DC unit=(-0.573,-0.820); DB unit=(-0.087,-0.996)
+       14px toward C: (222,243); 14px toward B: (229,240) sweep=1 -->
+  <path d="M 222,243 A 14,14 0 0,1 229,240" fill="none" stroke="#3366cc" stroke-width="1.8"/>
+
+  <!-- Red angle mark at B: ∠ABD subtends red arc AD
+       BA unit=(-0.707,0.707); BD unit=(0.087,0.996)
+       18px toward A: (198,50); 18px toward D: (213,55) sweep=0 -->
+  <path d="M 198,50 A 18,18 0 0,0 213,55" fill="none" stroke="#cc3333" stroke-width="1.8"/>
+
+  <!-- Red angle mark at C: ∠ACD subtends red arc AD
+       CA unit=(-0.261,0.965); CD unit=(0.573,0.820)
+       14px toward A: (89,72); 14px toward D: (101,70) sweep=0 -->
+  <path d="M 89,72 A 14,14 0 0,0 101,70" fill="none" stroke="#cc3333" stroke-width="1.8"/>
+
+  <!-- Caption -->
+  <text x="170" y="292" text-anchor="middle" font-family="serif" font-size="13">
+    AO &#xB7; OB = CO &#xB7; OD&#160;&#160;(&#x25B3;AOC ~ &#x25B3;BOD)
+  </text>
+</svg>

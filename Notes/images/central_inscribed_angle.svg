@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 300">
+  <!-- Circle, center O=(170,150), R=120 -->
+  <circle cx="170" cy="150" r="120" fill="#eef4ff" stroke="#3366cc" stroke-width="2"/>
+  <!-- Center O -->
+  <circle cx="170" cy="150" r="3.5" fill="black"/>
+  <text x="176" y="155" font-family="serif" font-size="16" font-style="italic">O</text>
+
+  <!-- Arc endpoints A=(63,85) and B=(277,85) — symmetric about vertical through O
+       angle AOB: A is at angle ~150° from positive x (measuring from center)
+         A: 170+120*cos(150°)=170-103.9=66.1, 150+120*sin(150°)=150+60=210 — let me recalculate
+         Let A be at 210° from positive x: x=170+120*cos(210°)=170-103.9=66, y=150+120*sin(210°)=150-60=90
+         Let B be at 330° (=-30°): x=170+120*cos(330°)=170+103.9=274, y=150+120*sin(330°)=150-60=90
+         So A=(66,90), B=(274,90), both at y=90. Angle AOB = 120°.
+  -->
+  <!-- Points on circle -->
+  <!-- A at 210°, B at 330°, P at lower x=129 -->
+  <!-- A=(66,90), B=(274,90), P=(129,263) -->
+  <circle cx="66"  cy="90"  r="3.5" fill="#3366cc"/>
+  <circle cx="274" cy="90"  r="3.5" fill="#3366cc"/>
+  <circle cx="129" cy="263" r="3.5" fill="#cc6600"/>
+  <text x="48"  y="88"  font-family="serif" font-size="16" font-style="italic" fill="#3366cc">A</text>
+  <text x="278" y="88"  font-family="serif" font-size="16" font-style="italic" fill="#3366cc">B</text>
+  <text x="112" y="280" font-family="serif" font-size="16" font-style="italic" fill="#cc6600">P</text>
+
+  <!-- Central angle: lines OA and OB -->
+  <line x1="170" y1="150" x2="66"  y2="90"  stroke="#3366cc" stroke-width="2"/>
+  <line x1="170" y1="150" x2="274" y2="90"  stroke="#3366cc" stroke-width="2"/>
+
+  <!-- Arc for central angle at O (120°, blue) -->
+  <path d="M 144,135 A 30,30 0 0,1 196,135" fill="none" stroke="#3366cc" stroke-width="1.8"/>
+  <text x="163" y="127" font-family="serif" font-size="15" font-style="italic" fill="#3366cc">2&#x3B1;</text>
+
+  <!-- Inscribed angle: lines PA and PB -->
+  <line x1="129" y1="263" x2="66"  y2="90"  stroke="#cc6600" stroke-width="2"/>
+  <line x1="129" y1="263" x2="274" y2="90"  stroke="#cc6600" stroke-width="2"/>
+
+  <!-- Arc for inscribed angle at P
+       PA unit: (-0.342,-0.939); PB unit: (0.643,-0.766)
+       18px toward A: (123,246); 18px toward B: (141,249) -->
+  <path d="M 123,246 A 18,18 0 0,1 141,249" fill="none" stroke="#cc6600" stroke-width="1.8"/>
+  <text x="130" y="238" font-family="serif" font-size="15" font-style="italic" fill="#cc6600">&#x3B1;</text>
+
+  <!-- Arc AB (minor, top) highlighted -->
+  <!-- from A(66,90) to B(274,90) going through P(170,30): large-arc=0, sweep=1 -->
+  <path d="M 66,90 A 120,120 0 0,1 274,90" fill="none" stroke="#cc3333" stroke-width="2.5"/>
+
+  <!-- Divider -->
+  <line x1="330" y1="10" x2="330" y2="290" stroke="#aaa" stroke-width="1" stroke-dasharray="4,3"/>
+
+  <!-- Right panel: label summary -->
+  <text x="405" y="80"  text-anchor="middle" font-family="serif" font-size="15">Central angle</text>
+  <text x="405" y="100" text-anchor="middle" font-family="serif" font-size="15" fill="#3366cc">&#x2220;AOB = 2&#x3B1;</text>
+  <text x="405" y="140" text-anchor="middle" font-family="serif" font-size="15">Inscribed angle</text>
+  <text x="405" y="160" text-anchor="middle" font-family="serif" font-size="15" fill="#cc6600">&#x2220;APB = &#x3B1;</text>
+  <text x="405" y="210" text-anchor="middle" font-family="serif" font-size="13" fill="#555">Both subtend</text>
+  <text x="405" y="228" text-anchor="middle" font-family="serif" font-size="13" fill="#cc3333">arc AB</text>
+</svg>

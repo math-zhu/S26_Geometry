@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <!-- Point A at (200, 170) -->
+
+  <!-- Circle 1: center O1=(200,110), r=60 — smaller, center above A -->
+  <circle cx="200" cy="110" r="60" fill="none" stroke="#3366cc" stroke-width="1.8"/>
+  <circle cx="200" cy="110" r="2.5" fill="#3366cc"/>
+  <text x="205" y="107" font-family="serif" font-size="15" font-style="italic" fill="#3366cc">O&#x2081;</text>
+  <!-- radius line O1 to A -->
+  <line x1="200" y1="110" x2="200" y2="170" stroke="#3366cc" stroke-width="1.2" stroke-dasharray="4,3"/>
+
+  <!-- Circle 2: center O2=(175,170), r=25 — smaller; dist to A=25 exactly -->
+  <circle cx="175" cy="170" r="25" fill="none" stroke="#cc6600" stroke-width="1.8"/>
+  <circle cx="175" cy="170" r="2.5" fill="#cc6600"/>
+  <text x="148" y="167" font-family="serif" font-size="15" font-style="italic" fill="#cc6600">O&#x2082;</text>
+  <line x1="175" y1="170" x2="200" y2="170" stroke="#cc6600" stroke-width="1.2" stroke-dasharray="4,3"/>
+
+  <!-- Point A (drawn on top) -->
+  <circle cx="200" cy="170" r="4" fill="black"/>
+  <text x="207" y="167" font-family="serif" font-size="17" font-style="italic">A</text>
+
+  <!-- Caption -->
+  <text x="200" y="292" text-anchor="middle" font-family="serif" font-size="14" fill="#333">
+    Any center O and radius OA gives a circle through A.
+  </text>
+</svg>

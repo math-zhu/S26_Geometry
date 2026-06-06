@@ -46,6 +46,8 @@ What to bring for classes:
 | 5/2 | [N12](Notes/N12.pdf) | Kiselev p68-75 | TBD | Kiselev p76 179, 180, 181, 182, 192, 193, 194, 196 |
 | 5/9 | [N13](Notes/N13.pdf) | TBD | TBD | Kiselev p216, 522-525 |
 | 5/16 | [N14](Notes/N14.pdf) | TBD | TBD | Kiselev p133 345-351 |
+| 5/30 | [N15](Notes/N15.pdf) | TBD | TBD |  |
+| 6/6 | [N16](Notes/N16.pdf) | TBD | TBD |  |
 <!--
 | 2/7 | N5 | TBD | TBD | HW5 |
 | 2/14 | N6 and Quiz 1 | TBD |   |   |

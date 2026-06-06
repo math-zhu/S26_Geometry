@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 300">
+  <!-- Circle center O=(170,150), R=120
+       P=(50,150), A=(290,150) — PA is diameter
+       B=(230,46): OB=sqrt(60²+104²)=120 ✓
+       ∠APB = 30°, ∠AOB = 60°, so ∠APB = ½∠AOB ✓
+  -->
+  <circle cx="170" cy="150" r="120" fill="#eef4ff" stroke="#3366cc" stroke-width="2"/>
+
+  <!-- Diameter PA (blue) -->
+  <line x1="50"  y1="150" x2="290" y2="150" stroke="#3366cc" stroke-width="2"/>
+
+  <!-- PB (orange) -->
+  <line x1="50"  y1="150" x2="230" y2="46"  stroke="#cc6600" stroke-width="2"/>
+  <!-- OB (blue) -->
+  <line x1="170" y1="150" x2="230" y2="46"  stroke="#3366cc" stroke-width="2"/>
+
+  <!-- Points -->
+  <circle cx="50"  cy="150" r="3.5" fill="#cc6600"/>
+  <circle cx="290" cy="150" r="3.5" fill="#3366cc"/>
+  <circle cx="230" cy="46"  r="3.5" fill="#3366cc"/>
+  <circle cx="170" cy="150" r="3.5" fill="black"/>
+
+  <text x="32"  y="168" font-family="serif" font-size="16" font-style="italic" fill="#cc6600">P</text>
+  <text x="294" y="168" font-family="serif" font-size="16" font-style="italic" fill="#3366cc">A</text>
+  <text x="234" y="40"  font-family="serif" font-size="16" font-style="italic" fill="#3366cc">B</text>
+  <text x="175" y="168" font-family="serif" font-size="16" font-style="italic">O</text>
+
+  <!-- β = ∠APB = ∠OPB at P
+       PA direction: (1,0); PB direction: (0.866,-0.500)
+       20px toward A: (70,150); 20px toward B: (50+17.3,150-10)=(67,140) -->
+  <path d="M 70,150 A 20,20 0 0,0 67,140" fill="none" stroke="#cc6600" stroke-width="1.8"/>
+  <text x="72" y="143" font-family="serif" font-size="14" font-style="italic" fill="#cc6600">&#x3B2;</text>
+
+  <!-- β = ∠OBP at B (isosceles OBP: OB=OP=R)
+       BO unit: (-0.500,0.867); BP unit: (-0.866,0.500)
+       18px toward O from B: (230-9,46+15.6)=(221,62)
+       18px toward P from B: (230-15.6,46+9)=(214,55) -->
+  <path d="M 221,62 A 18,18 0 0,1 214,55" fill="none" stroke="#993399" stroke-width="1.8"/>
+  <text x="213" y="73" font-family="serif" font-size="14" font-style="italic" fill="#993399">&#x3B2;</text>
+
+  <!-- 2β = ∠AOB at O (central angle)
+       OA direction: (1,0); OB direction: (0.500,-0.867)
+       25px toward A: (195,150); 25px toward B: (183,128) -->
+  <path d="M 195,150 A 25,25 0 0,0 183,128" fill="none" stroke="#3366cc" stroke-width="1.8"/>
+  <text x="192" y="133" font-family="serif" font-size="14" font-style="italic" fill="#3366cc">2&#x3B2;</text>
+
+  <!-- Arc AB highlighted -->
+  <!-- A at 0°, B at 60° (upper), going counterclockwise in screen from A to B = sweep=0 -->
+  <path d="M 290,150 A 120,120 0 0,0 230,46" fill="none" stroke="#cc3333" stroke-width="2.5"/>
+
+  <!-- Caption -->
+  <text x="170" y="292" text-anchor="middle" font-family="serif" font-size="13">
+    Case 2: PA diameter; &#x2220;APB = &#x3B2; = &#xBD;&#x2220;AOB
+  </text>
+</svg>
